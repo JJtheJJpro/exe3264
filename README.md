@@ -2,4 +2,4 @@
 
 Converts 32-bit Windows Programs to 64-bit Windows Programs.
 
-For converting 64-bit Programs to 32-bit, visit [XPDev's 64232 Project](https://github.com/XPDevs/64232).
+This currenlty does not support converting 64-bit to 32-bit.  For that kind of conversion, check out [XPDev's 64232 Project](https://github.com/XPDevs/64232).

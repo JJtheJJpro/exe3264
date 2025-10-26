@@ -1,3 +1,6 @@
+mod section_helper;
+mod x86_to_x64;
+
 use object::{
     LittleEndian,
     pe::{
@@ -150,9 +153,27 @@ fn main() {
     }
 
     println!("Valid Checks complete!");
-    print!("Rewriting Header Info...");
-    stdout().flush().unwrap();
 
+    println!("code:");
+    println!();
+    for (_, section) in pe
+        .sections(&PROG1[pe_start..], section_start_old)
+        .unwrap()
+        .enumerate()
+    {
+        if str::from_utf8(section.raw_name()).unwrap() == ".text" {
+            let (offset, size) = section.pe_file_range();
+            let (offset, size) = (offset as usize, size as usize);
+            x86_to_x64::convert_i386_to_amd64(
+                &PROG1[offset..offset + size],
+                pe_opt.image_base.get(LittleEndian) as u64
+                    + section.virtual_address.get(LittleEndian) as u64,
+            )
+            .unwrap();
+        }
+    }
+
+    /*
     output.push_u16_le(0x020B);
     output.push(pe_opt.major_linker_version);
     output.push(pe_opt.minor_linker_version);
@@ -466,7 +487,6 @@ fn main() {
         match str::from_utf8(section.raw_name()).unwrap() {
             ".text" => {
                 println!(".text -> code recompile x86 => x64");
-
             }
             ".rdata" => {
                 println!(".rdata -> widen any pointers");
@@ -488,6 +508,8 @@ fn main() {
     while output.len() % fa != 0 {
         output.push(0);
     }
+
+    */
 
     let mut outputfile = File::create(PROG1FIX).unwrap();
     outputfile.write(output).unwrap();

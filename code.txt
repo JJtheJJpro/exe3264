@@ -1,0 +1,6507 @@
+00401000 push ebp
+00401001 mov ebp,esp
+00401003 sub esp,220h
+00401009 push edi
+0040100A push dword [ebp+8]
+0040100D lea eax,[ebp-220h]
+00401013 push eax
+00401014 call 004015DEh
+00401019 lea eax,[ebp-220h]
+0040101F push 40623Ch
+00401024 push eax
+00401025 call 004015ADh
+0040102A add esp,10h
+0040102D push 1
+0040102F lea eax,[ebp-220h]
+00401035 push eax
+00401036 push dword [ebp+8]
+00401039 call dword [406054h]
+0040103F xor edi,edi
+00401041 push edi
+00401042 push 80h
+00401047 push 3
+00401049 push edi
+0040104A push 1
+0040104C push 0C0000000h
+00401051 push dword [ebp+8]
+00401054 call dword [406078h]
+0040105A mov [ebp-4],eax
+0040105D cmp eax,0FFFFFFFFh
+00401060 jne short 0040107Ch
+00401062 push 30h
+00401064 push 406228h
+00401069 push 4061F4h
+0040106E push edi
+0040106F call dword [406180h]
+00401075 xor eax,eax
+00401077 jmp 0040115Ch
+0040107C push ebx
+0040107D push edi
+0040107E push eax
+0040107F call dword [40607Ch]
+00401085 mov ebx,8000h
+0040108A mov [ebp-8],eax
+0040108D cmp eax,ebx
+0040108F jbe short 00401094h
+00401091 mov [ebp-8],ebx
+00401094 push esi
+00401095 push 4
+00401097 push 1000h
+0040109C push dword [ebp-8]
+0040109F push edi
+004010A0 call dword [406080h]
+004010A6 mov esi,eax
+004010A8 push edi
+004010A9 lea eax,[ebp-10h]
+004010AC push eax
+004010AD push dword [ebp-8]
+004010B0 mov [ebp-0Ch],esi
+004010B3 push esi
+004010B4 push dword [ebp-4]
+004010B7 call dword [406084h]
+004010BD test eax,eax
+004010BF jne short 004010EAh
+004010C1 push ebx
+004010C2 push edi
+004010C3 push esi
+004010C4 call dword [406088h]
+004010CA push dword [ebp-4]
+004010CD call dword [40608Ch]
+004010D3 push 30h
+004010D5 push 406228h
+004010DA push 4061C0h
+004010DF push edi
+004010E0 call dword [406180h]
+004010E6 xor eax,eax
+004010E8 jmp short 0040115Ah
+004010EA mov ebx,[406090h]
+004010F0 push edi
+004010F1 push edi
+004010F2 push edi
+004010F3 push dword [ebp-4]
+004010F6 call ebx
+004010F8 mov esi,[esi+3Ch]
+004010FB add esi,[ebp-0Ch]
+004010FE push edi
+004010FF or word [esi+16h],20h
+00401104 lea eax,[ebp-10h]
+00401107 push eax
+00401108 push dword [ebp-8]
+0040110B push dword [ebp-0Ch]
+0040110E push dword [ebp-4]
+00401111 call dword [406098h]
+00401117 lea eax,[ebp-14h]
+0040111A push eax
+0040111B lea eax,[ebp-18h]
+0040111E push eax
+0040111F push dword [ebp+8]
+00401122 call dword [406188h]
+00401128 test eax,eax
+0040112A jne short 0040114Eh
+0040112C mov eax,[ebp-14h]
+0040112F push edi
+00401130 push edi
+00401131 push edi
+00401132 push dword [ebp-4]
+00401135 mov [esi+58h],eax
+00401138 call ebx
+0040113A push edi
+0040113B lea eax,[ebp-10h]
+0040113E push eax
+0040113F push dword [ebp-8]
+00401142 push dword [ebp-0Ch]
+00401145 push dword [ebp-4]
+00401148 call dword [406098h]
+0040114E push dword [ebp-4]
+00401151 call dword [40608Ch]
+00401157 xor eax,eax
+00401159 inc eax
+0040115A pop esi
+0040115B pop ebx
+0040115C pop edi
+0040115D leave
+0040115E ret
+0040115F push ebp
+00401160 mov ebp,esp
+00401162 sub esp,260h
+00401168 push 208h
+0040116D lea eax,[ebp-260h]
+00401173 push 0
+00401175 push eax
+00401176 call 00401600h
+0040117B push 58h
+0040117D lea eax,[ebp-58h]
+00401180 push 0
+00401182 push eax
+00401183 call 00401600h
+00401188 and dword [ebp-54h],0
+0040118C lea eax,[ebp-260h]
+00401192 mov [ebp-3Ch],eax
+00401195 add esp,18h
+00401198 lea eax,[ebp-58h]
+0040119B push eax
+0040119C mov dword [ebp-58h],58h
+004011A3 mov dword [ebp-4Ch],406278h
+004011AA mov dword [ebp-38h],104h
+004011B1 mov dword [ebp-28h],40624Ch
+004011B8 call dword [406000h]
+004011BE test eax,eax
+004011C0 jne short 004011C7h
+004011C2 push 2
+004011C4 pop eax
+004011C5 leave
+004011C6 ret
+004011C7 lea eax,[ebp-260h]
+004011CD push eax
+004011CE call 00401000h
+004011D3 pop ecx
+004011D4 leave
+004011D5 ret
+004011D6 push ebp
+004011D7 mov ebp,esp
+004011D9 push esi
+004011DA mov esi,[ebp+8]
+004011DD push esi
+004011DE call 0040167Ah
+004011E3 cmp word [esi+eax*2-2],22h
+004011E9 pop ecx
+004011EA jne short 00401215h
+004011EC xor ecx,ecx
+004011EE mov [esi+eax*2-2],cx
+004011F3 lea ecx,[eax-2]
+004011F6 test ecx,ecx
+004011F8 js short 00401204h
+004011FA cmp word [esi+ecx*2],22h
+004011FF je short 00401204h
+00401201 dec ecx
+00401202 jns short 004011FAh
+00401204 lea edx,[ecx+1]
+00401207 cmp edx,eax
+00401209 jl short 0040120Fh
+0040120B xor eax,eax
+0040120D jmp short 00401243h
+0040120F lea eax,[esi+ecx*2+2]
+00401213 jmp short 00401243h
+00401215 lea ecx,[eax-1]
+00401218 test ecx,ecx
+0040121A js short 00401226h
+0040121C cmp word [esi+ecx*2],22h
+00401221 je short 00401239h
+00401223 dec ecx
+00401224 jns short 0040121Ch
+00401226 dec eax
+00401227 js short 00401233h
+00401229 cmp word [esi+eax*2],20h
+0040122E je short 00401233h
+00401230 dec eax
+00401231 jns short 00401229h
+00401233 lea eax,[esi+eax*2+2]
+00401237 jmp short 00401243h
+00401239 add ecx,2
+0040123C cmp ecx,eax
+0040123E jge short 0040120Bh
+00401240 lea eax,[esi+ecx*2]
+00401243 pop esi
+00401244 pop ebp
+00401245 ret
+00401246 push ebp
+00401247 mov ebp,esp
+00401249 push ebx
+0040124A mov ebx,[406178h]
+00401250 push esi
+00401251 mov esi,[ebp+0Ch]
+00401254 push edi
+00401255 push esi
+00401256 push dword [ebp+8]
+00401259 call ebx
+0040125B lea edi,[esi+8]
+0040125E push edi
+0040125F push dword [ebp+8]
+00401262 call ebx
+00401264 push 0FFFFFFECh
+00401266 push dword [ebp+8]
+00401269 call dword [40617Ch]
+0040126F test eax,400000h
+00401274 je short 0040127Eh
+00401276 mov eax,[esi]
+00401278 mov ecx,[edi]
+0040127A mov [esi],ecx
+0040127C mov [edi],eax
+0040127E pop edi
+0040127F pop esi
+00401280 pop ebx
+00401281 pop ebp
+00401282 ret
+00401283 push ebp
+00401284 mov ebp,esp
+00401286 sub esp,5Ch
+00401289 cmp dword [ebp+0Ch],0Fh
+0040128D jne near 00401352h
+00401293 push ebx
+00401294 push esi
+00401295 push edi
+00401296 lea eax,[ebp-5Ch]
+00401299 push eax
+0040129A push dword [ebp+8]
+0040129D call dword [40615Ch]
+004012A3 mov edi,eax
+004012A5 push 1
+004012A7 push edi
+004012A8 call dword [40600Ch]
+004012AE push 0Fh
+004012B0 call dword [406160h]
+004012B6 push eax
+004012B7 push edi
+004012B8 call dword [406010h]
+004012BE push dword [409B20h]
+004012C4 mov ebx,[406014h]
+004012CA push edi
+004012CB call ebx
+004012CD push 0FF0000h
+004012D2 push edi
+004012D3 mov [ebp-4],eax
+004012D6 call dword [406018h]
+004012DC lea eax,[ebp-0Ch]
+004012DF push eax
+004012E0 mov esi,4062D4h
+004012E5 push esi
+004012E6 call 0040167Ah
+004012EB pop ecx
+004012EC push eax
+004012ED push esi
+004012EE push edi
+004012EF call dword [40601Ch]
+004012F5 lea eax,[ebp-1Ch]
+004012F8 push eax
+004012F9 push dword [ebp+8]
+004012FC call dword [406164h]
+00401302 lea eax,[ebp-1Ch]
+00401305 push eax
+00401306 push dword [ebp+8]
+00401309 call dword [406168h]
+0040130F push eax
+00401310 call 00401246h
+00401315 pop ecx
+00401316 pop ecx
+00401317 push 0
+00401319 push dword [ebp-8]
+0040131C push dword [ebp-0Ch]
+0040131F push dword [ebp-18h]
+00401322 push dword [ebp-1Ch]
+00401325 push dword [ebp+8]
+00401328 call dword [40616Ch]
+0040132E push 0Eh
+00401330 push esi
+00401331 push 0
+00401333 push 0
+00401335 push edi
+00401336 call dword [406020h]
+0040133C push dword [ebp-4]
+0040133F push edi
+00401340 call ebx
+00401342 lea eax,[ebp-5Ch]
+00401345 push eax
+00401346 push dword [ebp+8]
+00401349 call dword [406170h]
+0040134F pop edi
+00401350 pop esi
+00401351 pop ebx
+00401352 push dword [ebp+14h]
+00401355 push dword [ebp+10h]
+00401358 push dword [ebp+0Ch]
+0040135B push dword [ebp+8]
+0040135E push dword [409B28h]
+00401364 call dword [406174h]
+0040136A leave
+0040136B ret 10h
+0040136E push ebp
+0040136F mov ebp,esp
+00401371 mov eax,[ebp+0Ch]
+00401374 sub esp,3Ch
+00401377 sub eax,10h
+0040137A push esi
+0040137B push edi
+0040137C je near 00401544h
+00401382 sub eax,100h
+00401387 je near 004014D2h
+0040138D dec eax
+0040138E je near 0040146Bh
+00401394 sub eax,0EFh
+00401399 je short 0040141Ah
+0040139B dec eax
+0040139C jne near 0040155Bh
+004013A2 mov eax,[ebp+14h]
+004013A5 movzx ecx,ax
+004013A8 shr eax,10h
+004013AB push eax
+004013AC push ecx
+004013AD push dword [ebp+8]
+004013B0 call dword [406134h]
+004013B6 push 3EBh
+004013BB push dword [ebp+8]
+004013BE mov esi,eax
+004013C0 call dword [406138h]
+004013C6 cmp esi,eax
+004013C8 jne near 0040155Bh
+004013CE mov edi,[40613Ch]
+004013D4 xor esi,esi
+004013D6 push esi
+004013D7 call edi
+004013D9 push dword [409B30h]
+004013DF call dword [406140h]
+004013E5 push 1
+004013E7 call edi
+004013E9 push 3Ch
+004013EB pop edi
+004013EC push edi
+004013ED lea eax,[ebp-3Ch]
+004013F0 push esi
+004013F1 push eax
+004013F2 call 00401600h
+004013F7 add esp,0Ch
+004013FA lea eax,[ebp-3Ch]
+004013FD push eax
+004013FE mov [ebp-3Ch],edi
+00401401 mov dword [ebp-2Ch],406380h
+00401408 mov dword [ebp-20h],1
+0040140F call dword [406128h]
+00401415 jmp 0040155Bh
+0040141A mov eax,[ebp+14h]
+0040141D movzx ecx,ax
+00401420 shr eax,10h
+00401423 push eax
+00401424 push ecx
+00401425 push dword [ebp+8]
+00401428 call dword [406134h]
+0040142E push 3EBh
+00401433 push dword [ebp+8]
+00401436 mov esi,eax
+00401438 call dword [406138h]
+0040143E cmp esi,eax
+00401440 mov esi,[40613Ch]
+00401446 push 0
+00401448 jne short 00401454h
+0040144A call esi
+0040144C push dword [409B30h]
+00401452 jmp short 0040145Ch
+00401454 call esi
+00401456 push dword [409B2Ch]
+0040145C call dword [406140h]
+00401462 push 1
+00401464 call esi
+00401466 jmp 0040155Bh
+0040146B movzx eax,word [ebp+10h]
+0040146F sub eax,3E9h
+00401474 je short 004014BEh
+00401476 dec eax
+00401477 jne near 0040155Bh
+0040147D call 0040115Fh
+00401482 cmp eax,1
+00401485 jne short 0040149Fh
+00401487 push 406338h
+0040148C push 3ECh
+00401491 push dword [ebp+8]
+00401494 call dword [406144h]
+0040149A jmp 0040153Ah
+0040149F test eax,eax
+004014A1 jne near 0040155Bh
+004014A7 push 406300h
+004014AC push 3ECh
+004014B1 push dword [ebp+8]
+004014B4 call dword [406144h]
+004014BA push 30h
+004014BC jmp short 0040153Ch
+004014BE xor esi,esi
+004014C0 push esi
+004014C1 push esi
+004014C2 push 10h
+004014C4 push dword [ebp+8]
+004014C7 call dword [406148h]
+004014CD jmp 0040155Bh
+004014D2 mov edi,[40614Ch]
+004014D8 push 7F00h
+004014DD xor esi,esi
+004014DF push esi
+004014E0 call edi
+004014E2 push 6Bh
+004014E4 push dword [409B24h]
+004014EA mov [409B2Ch],eax
+004014EF call edi
+004014F1 push 4062F4h
+004014F6 push esi
+004014F7 push 4
+004014F9 push esi
+004014FA push esi
+004014FB push esi
+004014FC push esi
+004014FD push esi
+004014FE push esi
+004014FF push 2BCh
+00401504 push esi
+00401505 push esi
+00401506 push esi
+00401507 push 0Eh
+00401509 mov [409B30h],eax
+0040150E call dword [406024h]
+00401514 push 401283h
+00401519 push 0FFFFFFFCh
+0040151B push 3EBh
+00401520 push dword [ebp+8]
+00401523 mov [409B20h],eax
+00401528 call dword [406138h]
+0040152E push eax
+0040152F call dword [406150h]
+00401535 mov [409B28h],eax
+0040153A push 40h
+0040153C call dword [406154h]
+00401542 jmp short 0040155Bh
+00401544 push dword [409B20h]
+0040154A call dword [406008h]
+00401550 push 0
+00401552 push dword [ebp+8]
+00401555 call dword [406158h]
+0040155B pop edi
+0040155C xor eax,eax
+0040155E pop esi
+0040155F leave
+00401560 ret 10h
+00401563 push ebp
+00401564 mov ebp,esp
+00401566 push esi
+00401567 mov esi,[ebp+8]
+0040156A mov [409B24h],esi
+00401570 call dword [40602Ch]
+00401576 push eax
+00401577 call 004011D6h
+0040157C pop ecx
+0040157D test eax,eax
+0040157F je short 0040158Ah
+00401581 push eax
+00401582 call 00401000h
+00401587 pop ecx
+00401588 jmp short 004015A6h
+0040158A call 0040115Fh
+0040158F cmp eax,1
+00401592 jne short 004015A6h
+00401594 push 0
+00401596 push 40136Eh
+0040159B push 0
+0040159D push 65h
+0040159F push esi
+004015A0 call dword [406130h]
+004015A6 xor eax,eax
+004015A8 pop esi
+004015A9 pop ebp
+004015AA ret 10h
+004015AD mov edi,edi
+004015AF push ebp
+004015B0 mov ebp,esp
+004015B2 mov eax,[ebp+8]
+004015B5 cmp word [eax],0
+004015B9 push esi
+004015BA mov esi,eax
+004015BC je short 004015C7h
+004015BE add esi,2
+004015C1 cmp word [esi],0
+004015C5 jne short 004015BEh
+004015C7 mov ecx,[ebp+0Ch]
+004015CA sub esi,ecx
+004015CC movzx edx,word [ecx]
+004015CF mov [esi+ecx],dx
+004015D3 add ecx,2
+004015D6 test dx,dx
+004015D9 jne short 004015CCh
+004015DB pop esi
+004015DC pop ebp
+004015DD ret
+004015DE mov edi,edi
+004015E0 push ebp
+004015E1 mov ebp,esp
+004015E3 mov edx,[ebp+8]
+004015E6 mov eax,[ebp+0Ch]
+004015E9 sub edx,eax
+004015EB movzx ecx,word [eax]
+004015EE mov [edx+eax],cx
+004015F2 add eax,2
+004015F5 test cx,cx
+004015F8 jne short 004015EBh
+004015FA mov eax,[ebp+8]
+004015FD pop ebp
+004015FE ret
+004015FF int3
+00401600 mov edx,[esp+0Ch]
+00401604 mov ecx,[esp+4]
+00401608 test edx,edx
+0040160A je short 00401675h
+0040160C xor eax,eax
+0040160E mov al,[esp+8]
+00401612 test al,al
+00401614 jne short 0040162Ch
+00401616 cmp edx,80h
+0040161C jb short 0040162Ch
+0040161E cmp dword [40A9D8h],0
+00401625 je short 0040162Ch
+00401627 jmp 00401835h
+0040162C push edi
+0040162D mov edi,ecx
+0040162F cmp edx,4
+00401632 jb short 00401665h
+00401634 neg ecx
+00401636 and ecx,3
+00401639 je short 00401647h
+0040163B sub edx,ecx
+0040163D mov [edi],al
+0040163F add edi,1
+00401642 sub ecx,1
+00401645 jne short 0040163Dh
+00401647 mov ecx,eax
+00401649 shl eax,8
+0040164C add eax,ecx
+0040164E mov ecx,eax
+00401650 shl eax,10h
+00401653 add eax,ecx
+00401655 mov ecx,edx
+00401657 and edx,3
+0040165A shr ecx,2
+0040165D je short 00401665h
+0040165F rep stosd
+00401661 test edx,edx
+00401663 je short 0040166Fh
+00401665 mov [edi],al
+00401667 add edi,1
+0040166A sub edx,1
+0040166D jne short 00401665h
+0040166F mov eax,[esp+8]
+00401673 pop edi
+00401674 ret
+00401675 mov eax,[esp+4]
+00401679 ret
+0040167A mov edi,edi
+0040167C push ebp
+0040167D mov ebp,esp
+0040167F mov eax,[ebp+8]
+00401682 mov cx,[eax]
+00401685 add eax,2
+00401688 test cx,cx
+0040168B jne short 00401682h
+0040168D sub eax,[ebp+8]
+00401690 sar eax,1
+00401692 dec eax
+00401693 pop ebp
+00401694 ret
+00401695 mov edi,edi
+00401697 push ebp
+00401698 mov ebp,esp
+0040169A cmp dword [409B3Ch],1
+004016A1 jne short 004016A8h
+004016A3 call 00401E0Fh
+004016A8 push dword [ebp+8]
+004016AB call 00401C60h
+004016B0 push 0FFh
+004016B5 call 0040197Ah
+004016BA pop ecx
+004016BB pop ecx
+004016BC pop ebp
+004016BD ret
+004016BE push 58h
+004016C0 push 407B10h
+004016C5 call 00402A40h
+004016CA lea eax,[ebp-68h]
+004016CD push eax
+004016CE call dword [4060ACh]
+004016D4 xor esi,esi
+004016D6 cmp [40A9E0h],esi
+004016DC jne short 004016E9h
+004016DE push esi
+004016DF push esi
+004016E0 push 1
+004016E2 push esi
+004016E3 call dword [4060A8h]
+004016E9 mov eax,5A4Dh
+004016EE cmp [400000h],ax
+004016F5 je short 004016FCh
+004016F7 mov [ebp-1Ch],esi
+004016FA jmp short 00401732h
+004016FC mov eax,[40003Ch]
+00401701 cmp dword [eax+400000h],4550h
+0040170B jne short 004016F7h
+0040170D mov ecx,10Bh
+00401712 cmp [eax+400018h],cx
+00401719 jne short 004016F7h
+0040171B cmp dword [eax+400074h],0Eh
+00401722 jbe short 004016F7h
+00401724 xor ecx,ecx
+00401726 cmp [eax+4000E8h],esi
+0040172C setne cl
+0040172F mov [ebp-1Ch],ecx
+00401732 call 00402A15h
+00401737 test eax,eax
+00401739 jne short 00401743h
+0040173B push 1Ch
+0040173D call 00401695h
+00401742 pop ecx
+00401743 call 0040289Ah
+00401748 test eax,eax
+0040174A jne short 00401754h
+0040174C push 10h
+0040174E call 00401695h
+00401753 pop ecx
+00401754 call 00402555h
+00401759 mov [ebp-4],esi
+0040175C call 00402310h
+00401761 test eax,eax
+00401763 jns short 0040176Dh
+00401765 push 1Bh
+00401767 call 00401C1Ch
+0040176C pop ecx
+0040176D call dword [40602Ch]
+00401773 mov [40A9DCh],eax
+00401778 call 004022B8h
+0040177D mov [409B38h],eax
+00401782 call 0040220Ah
+00401787 test eax,eax
+00401789 jns short 00401793h
+0040178B push 8
+0040178D call 00401C1Ch
+00401792 pop ecx
+00401793 call 00401FD8h
+00401798 test eax,eax
+0040179A jns short 004017A4h
+0040179C push 9
+0040179E call 00401C1Ch
+004017A3 pop ecx
+004017A4 push 1
+004017A6 call 004019FBh
+004017AB pop ecx
+004017AC cmp eax,esi
+004017AE je short 004017B7h
+004017B0 push eax
+004017B1 call 00401C1Ch
+004017B6 pop ecx
+004017B7 call 00401F92h
+004017BC test byte [ebp-3Ch],1
+004017C0 je short 004017C8h
+004017C2 movzx ecx,word [ebp-38h]
+004017C6 jmp short 004017CBh
+004017C8 push 0Ah
+004017CA pop ecx
+004017CB push ecx
+004017CC push eax
+004017CD push esi
+004017CE push 400000h
+004017D3 call 00401563h
+004017D8 mov [ebp-20h],eax
+004017DB cmp [ebp-1Ch],esi
+004017DE jne short 004017E6h
+004017E0 push eax
+004017E1 call 00401BD2h
+004017E6 call 00401BFEh
+004017EB jmp short 0040181Bh
+004017ED mov eax,[ebp-14h]
+004017F0 mov ecx,[eax]
+004017F2 mov ecx,[ecx]
+004017F4 mov [ebp-24h],ecx
+004017F7 push eax
+004017F8 push ecx
+004017F9 call 00401E48h
+004017FE pop ecx
+004017FF pop ecx
+00401800 ret
+00401801 mov esp,[ebp-18h]
+00401804 mov eax,[ebp-24h]
+00401807 mov [ebp-20h],eax
+0040180A cmp dword [ebp-1Ch],0
+0040180E jne short 00401816h
+00401810 push eax
+00401811 call 00401BE8h
+00401816 call 00401C0Dh
+0040181B mov dword [ebp-4],0FFFFFFFEh
+00401822 mov eax,[ebp-20h]
+00401825 call 00402A85h
+0040182A ret
+0040182B call 00402C2Fh
+00401830 jmp 004016BEh
+00401835 pxor xmm0,xmm0
+00401839 push ecx
+0040183A push ebx
+0040183B mov eax,ecx
+0040183D and eax,0Fh
+00401840 test eax,eax
+00401842 jne short 004018C3h
+00401844 mov eax,edx
+00401846 and edx,7Fh
+00401849 shr eax,7
+0040184C je short 00401885h
+0040184E lea esp,[esp]
+00401855 movdqa [ecx],xmm0
+00401859 movdqa [ecx+10h],xmm0
+0040185E movdqa [ecx+20h],xmm0
+00401863 movdqa [ecx+30h],xmm0
+00401868 movdqa [ecx+40h],xmm0
+0040186D movdqa [ecx+50h],xmm0
+00401872 movdqa [ecx+60h],xmm0
+00401877 movdqa [ecx+70h],xmm0
+0040187C lea ecx,[ecx+80h]
+00401882 dec eax
+00401883 jne short 00401855h
+00401885 test edx,edx
+00401887 je short 004018C0h
+00401889 mov eax,edx
+0040188B shr eax,4
+0040188E je short 0040189Fh
+00401890 jmp short 00401895h
+00401892 lea ecx,[ecx]
+00401895 movdqa [ecx],xmm0
+00401899 lea ecx,[ecx+10h]
+0040189C dec eax
+0040189D jne short 00401895h
+0040189F and edx,0Fh
+004018A2 je short 004018C0h
+004018A4 mov eax,edx
+004018A6 xor ebx,ebx
+004018A8 shr edx,2
+004018AB je short 004018B5h
+004018AD mov [ecx],ebx
+004018AF lea ecx,[ecx+4]
+004018B2 dec edx
+004018B3 jne short 004018ADh
+004018B5 and eax,3
+004018B8 je short 004018C0h
+004018BA mov [ecx],bl
+004018BC inc ecx
+004018BD dec eax
+004018BE jne short 004018BAh
+004018C0 pop ebx
+004018C1 pop eax
+004018C2 ret
+004018C3 mov ebx,eax
+004018C5 neg ebx
+004018C7 add ebx,10h
+004018CA sub edx,ebx
+004018CC xor eax,eax
+004018CE push edx
+004018CF mov edx,ebx
+004018D1 and edx,3
+004018D4 je short 004018DCh
+004018D6 mov [ecx],al
+004018D8 inc ecx
+004018D9 dec edx
+004018DA jne short 004018D6h
+004018DC shr ebx,2
+004018DF je short 004018E9h
+004018E1 mov [ecx],eax
+004018E3 lea ecx,[ecx+4]
+004018E6 dec ebx
+004018E7 jne short 004018E1h
+004018E9 pop edx
+004018EA jmp 00401844h
+004018EF push 0Ah
+004018F1 call dword [4060B0h]
+004018F7 mov [40A9D8h],eax
+004018FC xor eax,eax
+004018FE ret
+004018FF mov edi,edi
+00401901 push ebp
+00401902 mov ebp,esp
+00401904 mov eax,[ebp+8]
+00401907 mov eax,[eax]
+00401909 cmp dword [eax],0E06D7363h
+0040190F jne short 0040193Bh
+00401911 cmp dword [eax+10h],3
+00401915 jne short 0040193Bh
+00401917 mov eax,[eax+14h]
+0040191A cmp eax,19930520h
+0040191F je short 00401936h
+00401921 cmp eax,19930521h
+00401926 je short 00401936h
+00401928 cmp eax,19930522h
+0040192D je short 00401936h
+0040192F cmp eax,1994000h
+00401934 jne short 0040193Bh
+00401936 call 00402CCAh
+0040193B xor eax,eax
+0040193D pop ebp
+0040193E ret 4
+00401941 push 4018FFh
+00401946 call dword [4060B4h]
+0040194C xor eax,eax
+0040194E ret
+0040194F mov edi,edi
+00401951 push ebp
+00401952 mov ebp,esp
+00401954 push 4063D0h
+00401959 call dword [4060A0h]
+0040195F test eax,eax
+00401961 je short 00401978h
+00401963 push 4063C0h
+00401968 push eax
+00401969 call dword [4060B8h]
+0040196F test eax,eax
+00401971 je short 00401978h
+00401973 push dword [ebp+8]
+00401976 call eax
+00401978 pop ebp
+00401979 ret
+0040197A mov edi,edi
+0040197C push ebp
+0040197D mov ebp,esp
+0040197F push dword [ebp+8]
+00401982 call 0040194Fh
+00401987 pop ecx
+00401988 push dword [ebp+8]
+0040198B call dword [4060C0h]
+00401991 int3
+00401992 push 8
+00401994 call 00402E8Eh
+00401999 pop ecx
+0040199A ret
+0040199B push 8
+0040199D call 00402DB5h
+004019A2 pop ecx
+004019A3 ret
+004019A4 mov edi,edi
+004019A6 push esi
+004019A7 call 004025A1h
+004019AC mov esi,eax
+004019AE push esi
+004019AF call 0040327Eh
+004019B4 push esi
+004019B5 call 004030E4h
+004019BA push esi
+004019BB call 004030D5h
+004019C0 push esi
+004019C1 call 004030C6h
+004019C6 push esi
+004019C7 call 00402EC1h
+004019CC push esi
+004019CD call 00402D03h
+004019D2 add esp,18h
+004019D5 pop esi
+004019D6 ret
+004019D7 mov edi,edi
+004019D9 push ebp
+004019DA mov ebp,esp
+004019DC push esi
+004019DD mov esi,[ebp+8]
+004019E0 xor eax,eax
+004019E2 jmp short 004019F3h
+004019E4 test eax,eax
+004019E6 jne short 004019F8h
+004019E8 mov ecx,[esi]
+004019EA test ecx,ecx
+004019EC je short 004019F0h
+004019EE call ecx
+004019F0 add esi,4
+004019F3 cmp esi,[ebp+0Ch]
+004019F6 jb short 004019E4h
+004019F8 pop esi
+004019F9 pop ebp
+004019FA ret
+004019FB mov edi,edi
+004019FD push ebp
+004019FE mov ebp,esp
+00401A00 cmp dword [40A9D0h],0
+00401A07 je short 00401A22h
+00401A09 push 40A9D0h
+00401A0E call 00403500h
+00401A13 pop ecx
+00401A14 test eax,eax
+00401A16 je short 00401A22h
+00401A18 push dword [ebp+8]
+00401A1B call dword [40A9D0h]
+00401A21 pop ecx
+00401A22 call 00403444h
+00401A27 push 4061ACh
+00401A2C push 406198h
+00401A31 call 004019D7h
+00401A36 pop ecx
+00401A37 pop ecx
+00401A38 test eax,eax
+00401A3A jne short 00401A90h
+00401A3C push esi
+00401A3D push edi
+00401A3E push 40257Bh
+00401A43 call 0040342Dh
+00401A48 mov eax,406190h
+00401A4D mov esi,406194h
+00401A52 pop ecx
+00401A53 mov edi,eax
+00401A55 cmp eax,esi
+00401A57 jae short 00401A68h
+00401A59 mov eax,[edi]
+00401A5B test eax,eax
+00401A5D je short 00401A61h
+00401A5F call eax
+00401A61 add edi,4
+00401A64 cmp edi,esi
+00401A66 jb short 00401A59h
+00401A68 cmp dword [40A9D4h],0
+00401A6F pop edi
+00401A70 pop esi
+00401A71 je short 00401A8Eh
+00401A73 push 40A9D4h
+00401A78 call 00403500h
+00401A7D pop ecx
+00401A7E test eax,eax
+00401A80 je short 00401A8Eh
+00401A82 push 0
+00401A84 push 2
+00401A86 push 0
+00401A88 call dword [40A9D4h]
+00401A8E xor eax,eax
+00401A90 pop ebp
+00401A91 ret
+00401A92 push 20h
+00401A94 push 407B30h
+00401A99 call 00402A40h
+00401A9E push 8
+00401AA0 call 00402E8Eh
+00401AA5 pop ecx
+00401AA6 and dword [ebp-4],0
+00401AAA xor eax,eax
+00401AAC inc eax
+00401AAD cmp [409B70h],eax
+00401AB3 je near 00401B91h
+00401AB9 mov [409B6Ch],eax
+00401ABE mov al,[ebp+10h]
+00401AC1 mov [409B68h],al
+00401AC6 cmp dword [ebp+0Ch],0
+00401ACA jne near 00401B70h
+00401AD0 push dword [40A9C8h]
+00401AD6 mov esi,[4060C4h]
+00401ADC call esi
+00401ADE mov ebx,eax
+00401AE0 mov [ebp-30h],ebx
+00401AE3 test ebx,ebx
+00401AE5 je short 00401B4Fh
+00401AE7 push dword [40A9C4h]
+00401AED call esi
+00401AEF mov edi,eax
+00401AF1 mov [ebp-2Ch],edi
+00401AF4 mov [ebp-24h],ebx
+00401AF7 mov [ebp-28h],edi
+00401AFA sub edi,4
+00401AFD mov [ebp-2Ch],edi
+00401B00 cmp edi,ebx
+00401B02 jb short 00401B4Fh
+00401B04 call 004025A1h
+00401B09 cmp [edi],eax
+00401B0B je short 00401AFAh
+00401B0D cmp edi,ebx
+00401B0F jb short 00401B4Fh
+00401B11 push dword [edi]
+00401B13 call esi
+00401B15 mov ebx,eax
+00401B17 call 004025A1h
+00401B1C mov [edi],eax
+00401B1E call ebx
+00401B20 push dword [40A9C8h]
+00401B26 call esi
+00401B28 mov ebx,eax
+00401B2A push dword [40A9C4h]
+00401B30 call esi
+00401B32 cmp [ebp-24h],ebx
+00401B35 jne short 00401B3Ch
+00401B37 cmp [ebp-28h],eax
+00401B3A je short 00401B4Ah
+00401B3C mov [ebp-24h],ebx
+00401B3F mov [ebp-30h],ebx
+00401B42 mov [ebp-28h],eax
+00401B45 mov edi,eax
+00401B47 mov [ebp-2Ch],edi
+00401B4A mov ebx,[ebp-30h]
+00401B4D jmp short 00401AFAh
+00401B4F mov dword [ebp-1Ch],4061B0h
+00401B56 cmp dword [ebp-1Ch],4061B4h
+00401B5D jae short 00401B70h
+00401B5F mov eax,[ebp-1Ch]
+00401B62 mov eax,[eax]
+00401B64 test eax,eax
+00401B66 je short 00401B6Ah
+00401B68 call eax
+00401B6A add dword [ebp-1Ch],4
+00401B6E jmp short 00401B56h
+00401B70 mov dword [ebp-20h],4061B8h
+00401B77 cmp dword [ebp-20h],4061BCh
+00401B7E jae short 00401B91h
+00401B80 mov eax,[ebp-20h]
+00401B83 mov eax,[eax]
+00401B85 test eax,eax
+00401B87 je short 00401B8Bh
+00401B89 call eax
+00401B8B add dword [ebp-20h],4
+00401B8F jmp short 00401B77h
+00401B91 mov dword [ebp-4],0FFFFFFFEh
+00401B98 call 00401BBDh
+00401B9D cmp dword [ebp+10h],0
+00401BA1 jne short 00401BCCh
+00401BA3 mov dword [409B70h],1
+00401BAD push 8
+00401BAF call 00402DB5h
+00401BB4 pop ecx
+00401BB5 push dword [ebp+8]
+00401BB8 call 0040197Ah
+00401BBD cmp dword [ebp+10h],0
+00401BC1 je short 00401BCBh
+00401BC3 push 8
+00401BC5 call 00402DB5h
+00401BCA pop ecx
+00401BCB ret
+00401BCC call 00402A85h
+00401BD1 ret
+00401BD2 mov edi,edi
+00401BD4 push ebp
+00401BD5 mov ebp,esp
+00401BD7 push 0
+00401BD9 push 0
+00401BDB push dword [ebp+8]
+00401BDE call 00401A92h
+00401BE3 add esp,0Ch
+00401BE6 pop ebp
+00401BE7 ret
+00401BE8 mov edi,edi
+00401BEA push ebp
+00401BEB mov ebp,esp
+00401BED push 0
+00401BEF push 1
+00401BF1 push dword [ebp+8]
+00401BF4 call 00401A92h
+00401BF9 add esp,0Ch
+00401BFC pop ebp
+00401BFD ret
+00401BFE push 1
+00401C00 push 0
+00401C02 push 0
+00401C04 call 00401A92h
+00401C09 add esp,0Ch
+00401C0C ret
+00401C0D push 1
+00401C0F push 1
+00401C11 push 0
+00401C13 call 00401A92h
+00401C18 add esp,0Ch
+00401C1B ret
+00401C1C mov edi,edi
+00401C1E push ebp
+00401C1F mov ebp,esp
+00401C21 call 00401E0Fh
+00401C26 push dword [ebp+8]
+00401C29 call 00401C60h
+00401C2E pop ecx
+00401C2F push 0FFh
+00401C34 call 00401BE8h
+00401C39 int3
+00401C3A mov edi,edi
+00401C3C push ebp
+00401C3D mov ebp,esp
+00401C3F xor eax,eax
+00401C41 mov ecx,[ebp+8]
+00401C44 cmp ecx,[eax*8+406C68h]
+00401C4B je short 00401C57h
+00401C4D inc eax
+00401C4E cmp eax,16h
+00401C51 jb short 00401C41h
+00401C53 xor eax,eax
+00401C55 pop ebp
+00401C56 ret
+00401C57 mov eax,[eax*8+406C6Ch]
+00401C5E pop ebp
+00401C5F ret
+00401C60 mov edi,edi
+00401C62 push ebp
+00401C63 mov ebp,esp
+00401C65 sub esp,1FCh
+00401C6B mov eax,[409310h]
+00401C70 xor eax,ebp
+00401C72 mov [ebp-4],eax
+00401C75 push ebx
+00401C76 push esi
+00401C77 mov esi,[ebp+8]
+00401C7A push edi
+00401C7B push esi
+00401C7C call 00401C3Ah
+00401C81 mov edi,eax
+00401C83 xor ebx,ebx
+00401C85 pop ecx
+00401C86 mov [ebp-1FCh],edi
+00401C8C cmp edi,ebx
+00401C8E je near 00401E00h
+00401C94 push 3
+00401C96 call 0040395Ch
+00401C9B pop ecx
+00401C9C cmp eax,1
+00401C9F je near 00401DACh
+00401CA5 push 3
+00401CA7 call 0040395Ch
+00401CAC pop ecx
+00401CAD test eax,eax
+00401CAF jne short 00401CBEh
+00401CB1 cmp dword [409000h],1
+00401CB8 je near 00401DACh
+00401CBE cmp esi,0FCh
+00401CC4 je near 00401E00h
+00401CCA push 406DA4h
+00401CCF push 314h
+00401CD4 mov edi,409B78h
+00401CD9 push edi
+00401CDA call 004038F9h
+00401CDF add esp,0Ch
+00401CE2 test eax,eax
+00401CE4 jne near 00401DA2h
+00401CEA push 104h
+00401CEF mov esi,409BAAh
+00401CF4 push esi
+00401CF5 push ebx
+00401CF6 mov [409DB2h],ax
+00401CFC call dword [4060CCh]
+00401D02 mov ebx,2FBh
+00401D07 test eax,eax
+00401D09 jne short 00401D2Ah
+00401D0B push 406D74h
+00401D10 push ebx
+00401D11 push esi
+00401D12 call 004038F9h
+00401D17 add esp,0Ch
+00401D1A test eax,eax
+00401D1C je short 00401D2Ah
+00401D1E xor eax,eax
+00401D20 push eax
+00401D21 push eax
+00401D22 push eax
+00401D23 push eax
+00401D24 push eax
+00401D25 call 0040321Ch
+00401D2A push esi
+00401D2B call 0040167Ah
+00401D30 inc eax
+00401D31 pop ecx
+00401D32 cmp eax,3Ch
+00401D35 jbe short 00401D61h
+00401D37 push esi
+00401D38 call 0040167Ah
+00401D3D lea eax,[eax*2+409B34h]
+00401D44 mov ecx,eax
+00401D46 sub ecx,esi
+00401D48 push 3
+00401D4A sar ecx,1
+00401D4C push 406D6Ch
+00401D51 sub ebx,ecx
+00401D53 push ebx
+00401D54 push eax
+00401D55 call 0040382Ch
+00401D5A add esp,14h
+00401D5D test eax,eax
+00401D5F jne short 00401D1Eh
+00401D61 push 406D64h
+00401D66 mov esi,314h
+00401D6B push esi
+00401D6C push edi
+00401D6D call 004037B7h
+00401D72 add esp,0Ch
+00401D75 test eax,eax
+00401D77 jne short 00401D1Eh
+00401D79 push dword [ebp-1FCh]
+00401D7F push esi
+00401D80 push edi
+00401D81 call 004037B7h
+00401D86 add esp,0Ch
+00401D89 test eax,eax
+00401D8B jne short 00401D1Eh
+00401D8D push 12010h
+00401D92 push 406D18h
+00401D97 push edi
+00401D98 call 0040364Bh
+00401D9D add esp,0Ch
+00401DA0 jmp short 00401E00h
+00401DA2 push ebx
+00401DA3 push ebx
+00401DA4 push ebx
+00401DA5 push ebx
+00401DA6 push ebx
+00401DA7 jmp 00401D25h
+00401DAC push 0FFFFFFF4h
+00401DAE call dword [4060C8h]
+00401DB4 mov esi,eax
+00401DB6 cmp esi,ebx
+00401DB8 je short 00401E00h
+00401DBA cmp esi,0FFFFFFFFh
+00401DBD je short 00401E00h
+00401DBF xor eax,eax
+00401DC1 mov cl,[edi+eax*2]
+00401DC4 mov [ebp+eax-1F8h],cl
+00401DCB cmp [edi+eax*2],bx
+00401DCF je short 00401DD9h
+00401DD1 inc eax
+00401DD2 cmp eax,1F4h
+00401DD7 jb short 00401DC1h
+00401DD9 push ebx
+00401DDA lea eax,[ebp-1FCh]
+00401DE0 push eax
+00401DE1 lea eax,[ebp-1F8h]
+00401DE7 push eax
+00401DE8 mov [ebp-5],bl
+00401DEB call 004035C0h
+00401DF0 pop ecx
+00401DF1 push eax
+00401DF2 lea eax,[ebp-1F8h]
+00401DF8 push eax
+00401DF9 push esi
+00401DFA call dword [406098h]
+00401E00 mov ecx,[ebp-4]
+00401E03 pop edi
+00401E04 pop esi
+00401E05 xor ecx,ebp
+00401E07 pop ebx
+00401E08 call 0040399Bh
+00401E0D leave
+00401E0E ret
+00401E0F push 3
+00401E11 call 0040395Ch
+00401E16 pop ecx
+00401E17 cmp eax,1
+00401E1A je short 00401E31h
+00401E1C push 3
+00401E1E call 0040395Ch
+00401E23 pop ecx
+00401E24 test eax,eax
+00401E26 jne short 00401E47h
+00401E28 cmp dword [409000h],1
+00401E2F jne short 00401E47h
+00401E31 push 0FCh
+00401E36 call 00401C60h
+00401E3B push 0FFh
+00401E40 call 00401C60h
+00401E45 pop ecx
+00401E46 pop ecx
+00401E47 ret
+00401E48 mov edi,edi
+00401E4A push ebp
+00401E4B mov ebp,esp
+00401E4D push esi
+00401E4E call 004026D8h
+00401E53 mov esi,eax
+00401E55 test esi,esi
+00401E57 je near 00401F8Fh
+00401E5D mov ecx,[esi+5Ch]
+00401E60 mov edx,[ebp+8]
+00401E63 mov eax,ecx
+00401E65 push edi
+00401E66 cmp [eax],edx
+00401E68 je short 00401E77h
+00401E6A add eax,0Ch
+00401E6D lea edi,[ecx+90h]
+00401E73 cmp eax,edi
+00401E75 jb short 00401E66h
+00401E77 add ecx,90h
+00401E7D cmp eax,ecx
+00401E7F jae short 00401E85h
+00401E81 cmp [eax],edx
+00401E83 je short 00401E87h
+00401E85 xor eax,eax
+00401E87 test eax,eax
+00401E89 je short 00401E92h
+00401E8B mov edx,[eax+8]
+00401E8E test edx,edx
+00401E90 jne short 00401E99h
+00401E92 xor eax,eax
+00401E94 jmp 00401F8Eh
+00401E99 cmp edx,5
+00401E9C jne short 00401EAAh
+00401E9E and dword [eax+8],0
+00401EA2 xor eax,eax
+00401EA4 inc eax
+00401EA5 jmp 00401F8Eh
+00401EAA cmp edx,1
+00401EAD je near 00401F8Bh
+00401EB3 mov ecx,[ebp+0Ch]
+00401EB6 push ebx
+00401EB7 mov ebx,[esi+60h]
+00401EBA mov [esi+60h],ecx
+00401EBD mov ecx,[eax+4]
+00401EC0 cmp ecx,8
+00401EC3 jne near 00401F7Fh
+00401EC9 push 24h
+00401ECB pop ecx
+00401ECC mov edi,[esi+5Ch]
+00401ECF and dword [ecx+edi+8],0
+00401ED4 add ecx,0Ch
+00401ED7 cmp ecx,90h
+00401EDD jl short 00401ECCh
+00401EDF mov eax,[eax]
+00401EE1 mov edi,[esi+64h]
+00401EE4 cmp eax,0C000008Eh
+00401EE9 jne short 00401EF4h
+00401EEB mov dword [esi+64h],83h
+00401EF2 jmp short 00401F72h
+00401EF4 cmp eax,0C0000090h
+00401EF9 jne short 00401F04h
+00401EFB mov dword [esi+64h],81h
+00401F02 jmp short 00401F72h
+00401F04 cmp eax,0C0000091h
+00401F09 jne short 00401F14h
+00401F0B mov dword [esi+64h],84h
+00401F12 jmp short 00401F72h
+00401F14 cmp eax,0C0000093h
+00401F19 jne short 00401F24h
+00401F1B mov dword [esi+64h],85h
+00401F22 jmp short 00401F72h
+00401F24 cmp eax,0C000008Dh
+00401F29 jne short 00401F34h
+00401F2B mov dword [esi+64h],82h
+00401F32 jmp short 00401F72h
+00401F34 cmp eax,0C000008Fh
+00401F39 jne short 00401F44h
+00401F3B mov dword [esi+64h],86h
+00401F42 jmp short 00401F72h
+00401F44 cmp eax,0C0000092h
+00401F49 jne short 00401F54h
+00401F4B mov dword [esi+64h],8Ah
+00401F52 jmp short 00401F72h
+00401F54 cmp eax,0C00002B5h
+00401F59 jne short 00401F64h
+00401F5B mov dword [esi+64h],8Dh
+00401F62 jmp short 00401F72h
+00401F64 cmp eax,0C00002B4h
+00401F69 jne short 00401F72h
+00401F6B mov dword [esi+64h],8Eh
+00401F72 push dword [esi+64h]
+00401F75 push 8
+00401F77 call edx
+00401F79 pop ecx
+00401F7A mov [esi+64h],edi
+00401F7D jmp short 00401F86h
+00401F7F and dword [eax+8],0
+00401F83 push ecx
+00401F84 call edx
+00401F86 pop ecx
+00401F87 mov [esi+60h],ebx
+00401F8A pop ebx
+00401F8B or eax,0FFFFFFFFh
+00401F8E pop edi
+00401F8F pop esi
+00401F90 pop ebp
+00401F91 ret
+00401F92 mov eax,[40A9DCh]
+00401F97 xor edx,edx
+00401F99 test eax,eax
+00401F9B jne short 00401FA2h
+00401F9D mov eax,406E78h
+00401FA2 movzx ecx,word [eax]
+00401FA5 cmp ecx,20h
+00401FA8 ja short 00401FB3h
+00401FAA test cx,cx
+00401FAD je short 00401FD7h
+00401FAF test edx,edx
+00401FB1 je short 00401FCFh
+00401FB3 cmp ecx,22h
+00401FB6 jne short 00401FC1h
+00401FB8 xor ecx,ecx
+00401FBA test edx,edx
+00401FBC sete cl
+00401FBF mov edx,ecx
+00401FC1 add eax,2
+00401FC4 jmp short 00401FA2h
+00401FC6 cmp cx,20h
+00401FCA ja short 00401FD7h
+00401FCC add eax,2
+00401FCF movzx ecx,word [eax]
+00401FD2 test cx,cx
+00401FD5 jne short 00401FC6h
+00401FD7 ret
+00401FD8 mov edi,edi
+00401FDA push esi
+00401FDB mov esi,[409B38h]
+00401FE1 push edi
+00401FE2 xor edi,edi
+00401FE4 test esi,esi
+00401FE6 jne short 00402002h
+00401FE8 or eax,0FFFFFFFFh
+00401FEB jmp 0040208Dh
+00401FF0 cmp ax,3Dh
+00401FF4 je short 00401FF7h
+00401FF6 inc edi
+00401FF7 push esi
+00401FF8 call 0040167Ah
+00401FFD pop ecx
+00401FFE lea esi,[esi+eax*2+2]
+00402002 movzx eax,word [esi]
+00402005 test ax,ax
+00402008 jne short 00401FF0h
+0040200A push ebx
+0040200B push 4
+0040200D inc edi
+0040200E push edi
+0040200F call 00403A29h
+00402014 mov ebx,eax
+00402016 pop ecx
+00402017 pop ecx
+00402018 mov [409B58h],ebx
+0040201E test ebx,ebx
+00402020 jne short 00402027h
+00402022 or eax,0FFFFFFFFh
+00402025 jmp short 0040208Ch
+00402027 mov esi,[409B38h]
+0040202D jmp short 00402064h
+0040202F push esi
+00402030 call 0040167Ah
+00402035 cmp word [esi],3Dh
+00402039 pop ecx
+0040203A lea edi,[eax+1]
+0040203D je short 00402061h
+0040203F push 2
+00402041 push edi
+00402042 call 00403A29h
+00402047 pop ecx
+00402048 pop ecx
+00402049 mov [ebx],eax
+0040204B test eax,eax
+0040204D je short 00402090h
+0040204F push esi
+00402050 push edi
+00402051 push eax
+00402052 call 004038F9h
+00402057 add esp,0Ch
+0040205A test eax,eax
+0040205C jne short 004020A7h
+0040205E add ebx,4
+00402061 lea esi,[esi+edi*2]
+00402064 cmp word [esi],0
+00402068 jne short 0040202Fh
+0040206A push dword [409B38h]
+00402070 call 004039AAh
+00402075 and dword [409B38h],0
+0040207C and dword [ebx],0
+0040207F mov dword [40A9C0h],1
+00402089 xor eax,eax
+0040208B pop ecx
+0040208C pop ebx
+0040208D pop edi
+0040208E pop esi
+0040208F ret
+00402090 push dword [409B58h]
+00402096 call 004039AAh
+0040209B and dword [409B58h],0
+004020A2 or eax,0FFFFFFFFh
+004020A5 jmp short 0040208Bh
+004020A7 xor eax,eax
+004020A9 push eax
+004020AA push eax
+004020AB push eax
+004020AC push eax
+004020AD push eax
+004020AE call 0040321Ch
+004020B3 int3
+004020B4 mov edi,edi
+004020B6 push ebp
+004020B7 mov ebp,esp
+004020B9 push ecx
+004020BA push esi
+004020BB xor edx,edx
+004020BD push edi
+004020BE mov edi,[ebp+0Ch]
+004020C1 mov [ebx],edx
+004020C3 mov esi,ecx
+004020C5 mov dword [edi],1
+004020CB cmp [ebp+8],edx
+004020CE je short 004020D9h
+004020D0 mov ecx,[ebp+8]
+004020D3 add dword [ebp+8],4
+004020D7 mov [ecx],esi
+004020D9 cmp word [eax],22h
+004020DD jne short 004020F3h
+004020DF mov edi,[ebp+0Ch]
+004020E2 xor ecx,ecx
+004020E4 test edx,edx
+004020E6 sete cl
+004020E9 push 22h
+004020EB add eax,2
+004020EE mov edx,ecx
+004020F0 pop ecx
+004020F1 jmp short 0040210Dh
+004020F3 inc dword [ebx]
+004020F5 test esi,esi
+004020F7 je short 00402102h
+004020F9 mov cx,[eax]
+004020FC mov [esi],cx
+004020FF add esi,2
+00402102 movzx ecx,word [eax]
+00402105 add eax,2
+00402108 test cx,cx
+0040210B je short 00402148h
+0040210D test edx,edx
+0040210F jne short 004020D9h
+00402111 cmp cx,20h
+00402115 je short 0040211Dh
+00402117 cmp cx,9
+0040211B jne short 004020D9h
+0040211D test esi,esi
+0040211F je short 00402127h
+00402121 xor ecx,ecx
+00402123 mov [esi-2],cx
+00402127 and dword [ebp-4],0
+0040212B xor edx,edx
+0040212D cmp [eax],dx
+00402130 je near 004021FBh
+00402136 movzx ecx,word [eax]
+00402139 cmp ecx,20h
+0040213C je short 00402143h
+0040213E cmp ecx,9
+00402141 jne short 0040214Dh
+00402143 add eax,2
+00402146 jmp short 00402136h
+00402148 sub eax,2
+0040214B jmp short 00402127h
+0040214D cmp [eax],dx
+00402150 je near 004021FBh
+00402156 cmp [ebp+8],edx
+00402159 je short 00402164h
+0040215B mov ecx,[ebp+8]
+0040215E add dword [ebp+8],4
+00402162 mov [ecx],esi
+00402164 inc dword [edi]
+00402166 xor edi,edi
+00402168 inc edi
+00402169 xor edx,edx
+0040216B jmp short 00402171h
+0040216D add eax,2
+00402170 inc edx
+00402171 cmp word [eax],5Ch
+00402175 je short 0040216Dh
+00402177 cmp word [eax],22h
+0040217B jne short 004021B5h
+0040217D test dl,1
+00402180 jne short 004021A1h
+00402182 cmp dword [ebp-4],0
+00402186 je short 00402194h
+00402188 cmp word [eax+2],22h
+0040218D jne short 00402194h
+0040218F add eax,2
+00402192 jmp short 004021A1h
+00402194 xor ecx,ecx
+00402196 xor edi,edi
+00402198 cmp [ebp-4],ecx
+0040219B sete cl
+0040219E mov [ebp-4],ecx
+004021A1 shr edx,1
+004021A3 jmp short 004021B5h
+004021A5 dec edx
+004021A6 test esi,esi
+004021A8 je short 004021B3h
+004021AA push 5Ch
+004021AC pop ecx
+004021AD mov [esi],cx
+004021B0 add esi,2
+004021B3 inc dword [ebx]
+004021B5 test edx,edx
+004021B7 jne short 004021A5h
+004021B9 movzx ecx,word [eax]
+004021BC test cx,cx
+004021BF je short 004021E5h
+004021C1 cmp [ebp-4],edx
+004021C4 jne short 004021D0h
+004021C6 cmp ecx,20h
+004021C9 je short 004021E5h
+004021CB cmp ecx,9
+004021CE je short 004021E5h
+004021D0 test edi,edi
+004021D2 je short 004021E0h
+004021D4 test esi,esi
+004021D6 je short 004021DEh
+004021D8 mov [esi],cx
+004021DB add esi,2
+004021DE inc dword [ebx]
+004021E0 add eax,2
+004021E3 jmp short 00402166h
+004021E5 test esi,esi
+004021E7 je short 004021F1h
+004021E9 xor ecx,ecx
+004021EB mov [esi],cx
+004021EE add esi,2
+004021F1 inc dword [ebx]
+004021F3 mov edi,[ebp+0Ch]
+004021F6 jmp 0040212Bh
+004021FB mov eax,[ebp+8]
+004021FE cmp eax,edx
+00402200 je short 00402204h
+00402202 mov [eax],edx
+00402204 inc dword [edi]
+00402206 pop edi
+00402207 pop esi
+00402208 leave
+00402209 ret
+0040220A mov edi,edi
+0040220C push ebp
+0040220D mov ebp,esp
+0040220F push ecx
+00402210 push ecx
+00402211 push ebx
+00402212 push esi
+00402213 push edi
+00402214 push 104h
+00402219 mov esi,40A1A0h
+0040221E push esi
+0040221F xor eax,eax
+00402221 xor ebx,ebx
+00402223 push ebx
+00402224 mov [40A3A8h],ax
+0040222A call dword [4060CCh]
+00402230 mov eax,[40A9DCh]
+00402235 mov [409B64h],esi
+0040223B cmp eax,ebx
+0040223D je short 00402246h
+0040223F mov edi,eax
+00402241 cmp [eax],bx
+00402244 jne short 00402248h
+00402246 mov edi,esi
+00402248 lea eax,[ebp-4]
+0040224B push eax
+0040224C push ebx
+0040224D lea ebx,[ebp-8]
+00402250 xor ecx,ecx
+00402252 mov eax,edi
+00402254 call 004020B4h
+00402259 mov ebx,[ebp-4]
+0040225C pop ecx
+0040225D pop ecx
+0040225E cmp ebx,3FFFFFFFh
+00402264 jae short 004022B0h
+00402266 mov ecx,[ebp-8]
+00402269 cmp ecx,7FFFFFFFh
+0040226F jae short 004022B0h
+00402271 lea eax,[ecx+ebx*2]
+00402274 add eax,eax
+00402276 add ecx,ecx
+00402278 cmp eax,ecx
+0040227A jb short 004022B0h
+0040227C push eax
+0040227D call 004039E4h
+00402282 mov esi,eax
+00402284 pop ecx
+00402285 test esi,esi
+00402287 je short 004022B0h
+00402289 lea eax,[ebp-4]
+0040228C push eax
+0040228D lea ecx,[esi+ebx*4]
+00402290 push esi
+00402291 lea ebx,[ebp-8]
+00402294 mov eax,edi
+00402296 call 004020B4h
+0040229B mov eax,[ebp-4]
+0040229E dec eax
+0040229F pop ecx
+004022A0 mov [409B44h],eax
+004022A5 pop ecx
+004022A6 mov [409B4Ch],esi
+004022AC xor eax,eax
+004022AE jmp short 004022B3h
+004022B0 or eax,0FFFFFFFFh
+004022B3 pop edi
+004022B4 pop esi
+004022B5 pop ebx
+004022B6 leave
+004022B7 ret
+004022B8 mov edi,edi
+004022BA push esi
+004022BB call dword [4060D4h]
+004022C1 mov esi,eax
+004022C3 xor ecx,ecx
+004022C5 cmp esi,ecx
+004022C7 jne short 004022CDh
+004022C9 xor eax,eax
+004022CB pop esi
+004022CC ret
+004022CD cmp [esi],cx
+004022D0 je short 004022E2h
+004022D2 add eax,2
+004022D5 cmp [eax],cx
+004022D8 jne short 004022D2h
+004022DA add eax,2
+004022DD cmp [eax],cx
+004022E0 jne short 004022D2h
+004022E2 push ebx
+004022E3 sub eax,esi
+004022E5 lea ebx,[eax+2]
+004022E8 push edi
+004022E9 push ebx
+004022EA call 004039E4h
+004022EF mov edi,eax
+004022F1 pop ecx
+004022F2 test edi,edi
+004022F4 jne short 00402303h
+004022F6 push esi
+004022F7 call dword [4060D0h]
+004022FD mov eax,edi
+004022FF pop edi
+00402300 pop ebx
+00402301 pop esi
+00402302 ret
+00402303 push ebx
+00402304 push esi
+00402305 push edi
+00402306 call 00403AD0h
+0040230B add esp,0Ch
+0040230E jmp short 004022F6h
+00402310 mov edi,edi
+00402312 push ebp
+00402313 mov ebp,esp
+00402315 sub esp,4Ch
+00402318 push esi
+00402319 lea eax,[ebp-4Ch]
+0040231C push eax
+0040231D call dword [4060ACh]
+00402323 push 40h
+00402325 push 20h
+00402327 pop esi
+00402328 push esi
+00402329 call 00403A29h
+0040232E pop ecx
+0040232F pop ecx
+00402330 xor ecx,ecx
+00402332 cmp eax,ecx
+00402334 jne short 0040233Eh
+00402336 or eax,0FFFFFFFFh
+00402339 jmp 0040254Dh
+0040233E lea edx,[eax+800h]
+00402344 mov [40A8C0h],eax
+00402349 mov [40A8A8h],esi
+0040234F cmp eax,edx
+00402351 jae short 00402389h
+00402353 add eax,5
+00402356 or dword [eax-5],0FFFFFFFFh
+0040235A mov word [eax-1],0A00h
+00402360 mov [eax+3],ecx
+00402363 mov word [eax+1Fh],0A00h
+00402369 mov byte [eax+21h],0Ah
+0040236D mov [eax+33h],ecx
+00402370 mov [eax+2Fh],cl
+00402373 mov esi,[40A8C0h]
+00402379 add eax,40h
+0040237C lea edx,[eax-5]
+0040237F add esi,800h
+00402385 cmp edx,esi
+00402387 jb short 00402356h
+00402389 push ebx
+0040238A push edi
+0040238B cmp [ebp-1Ah],cx
+0040238F je near 004024A3h
+00402395 mov eax,[ebp-18h]
+00402398 cmp eax,ecx
+0040239A je near 004024A3h
+004023A0 mov ebx,[eax]
+004023A2 add eax,4
+004023A5 mov [ebp-4],eax
+004023A8 add eax,ebx
+004023AA mov esi,800h
+004023AF mov [ebp-8],eax
+004023B2 cmp ebx,esi
+004023B4 jl short 004023B8h
+004023B6 mov ebx,esi
+004023B8 cmp [40A8A8h],ebx
+004023BE jge short 0040242Bh
+004023C0 mov edi,40A8C4h
+004023C5 push 40h
+004023C7 push 20h
+004023C9 call 00403A29h
+004023CE pop ecx
+004023CF pop ecx
+004023D0 test eax,eax
+004023D2 je short 00402425h
+004023D4 add dword [40A8A8h],20h
+004023DB lea ecx,[eax+800h]
+004023E1 mov [edi],eax
+004023E3 cmp eax,ecx
+004023E5 jae short 00402418h
+004023E7 add eax,5
+004023EA or dword [eax-5],0FFFFFFFFh
+004023EE and dword [eax+3],0
+004023F2 and byte [eax+1Fh],80h
+004023F6 and dword [eax+33h],0
+004023FA mov word [eax-1],0A00h
+00402400 mov word [eax+20h],0A0Ah
+00402406 mov byte [eax+2Fh],0
+0040240A mov ecx,[edi]
+0040240C add eax,40h
+0040240F add ecx,esi
+00402411 lea edx,[eax-5]
+00402414 cmp edx,ecx
+00402416 jb short 004023EAh
+00402418 add edi,4
+0040241B cmp [40A8A8h],ebx
+00402421 jl short 004023C5h
+00402423 jmp short 0040242Bh
+00402425 mov ebx,[40A8A8h]
+0040242B xor edi,edi
+0040242D test ebx,ebx
+0040242F jle short 004024A3h
+00402431 mov eax,[ebp-8]
+00402434 mov eax,[eax]
+00402436 cmp eax,0FFFFFFFFh
+00402439 je short 00402497h
+0040243B cmp eax,0FFFFFFFEh
+0040243E je short 00402497h
+00402440 mov ecx,[ebp-4]
+00402443 mov cl,[ecx]
+00402445 test cl,1
+00402448 je short 00402497h
+0040244A test cl,8
+0040244D jne short 0040245Ah
+0040244F push eax
+00402450 call dword [4060E0h]
+00402456 test eax,eax
+00402458 je short 00402497h
+0040245A mov esi,edi
+0040245C and esi,1Fh
+0040245F mov eax,edi
+00402461 sar eax,5
+00402464 shl esi,6
+00402467 add esi,[eax*4+40A8C0h]
+0040246E mov eax,[ebp-8]
+00402471 mov eax,[eax]
+00402473 mov [esi],eax
+00402475 mov eax,[ebp-4]
+00402478 mov al,[eax]
+0040247A mov [esi+4],al
+0040247D push 0FA0h
+00402482 lea eax,[esi+0Ch]
+00402485 push eax
+00402486 call dword [4060DCh]
+0040248C test eax,eax
+0040248E je near 00402550h
+00402494 inc dword [esi+8]
+00402497 add dword [ebp-8],4
+0040249B inc edi
+0040249C inc dword [ebp-4]
+0040249F cmp edi,ebx
+004024A1 jl short 00402431h
+004024A3 xor ebx,ebx
+004024A5 mov esi,ebx
+004024A7 shl esi,6
+004024AA add esi,[40A8C0h]
+004024B0 mov eax,[esi]
+004024B2 cmp eax,0FFFFFFFFh
+004024B5 je short 004024C2h
+004024B7 cmp eax,0FFFFFFFEh
+004024BA je short 004024C2h
+004024BC or byte [esi+4],80h
+004024C0 jmp short 00402533h
+004024C2 mov byte [esi+4],81h
+004024C6 test ebx,ebx
+004024C8 jne short 004024CFh
+004024CA push 0FFFFFFF6h
+004024CC pop eax
+004024CD jmp short 004024D9h
+004024CF lea eax,[ebx-1]
+004024D2 neg eax
+004024D4 sbb eax,eax
+004024D6 add eax,0FFFFFFF5h
+004024D9 push eax
+004024DA call dword [4060C8h]
+004024E0 mov edi,eax
+004024E2 cmp edi,0FFFFFFFFh
+004024E5 je short 00402529h
+004024E7 test edi,edi
+004024E9 je short 00402529h
+004024EB push edi
+004024EC call dword [4060E0h]
+004024F2 test eax,eax
+004024F4 je short 00402529h
+004024F6 and eax,0FFh
+004024FB mov [esi],edi
+004024FD cmp eax,2
+00402500 jne short 00402508h
+00402502 or byte [esi+4],40h
+00402506 jmp short 00402511h
+00402508 cmp eax,3
+0040250B jne short 00402511h
+0040250D or byte [esi+4],8
+00402511 push 0FA0h
+00402516 lea eax,[esi+0Ch]
+00402519 push eax
+0040251A call dword [4060DCh]
+00402520 test eax,eax
+00402522 je short 00402550h
+00402524 inc dword [esi+8]
+00402527 jmp short 00402533h
+00402529 or byte [esi+4],40h
+0040252D mov dword [esi],0FFFFFFFEh
+00402533 inc ebx
+00402534 cmp ebx,3
+00402537 jl near 004024A5h
+0040253D push dword [40A8A8h]
+00402543 call dword [4060D8h]
+00402549 xor eax,eax
+0040254B pop edi
+0040254C pop ebx
+0040254D pop esi
+0040254E leave
+0040254F ret
+00402550 or eax,0FFFFFFFFh
+00402553 jmp short 0040254Bh
+00402555 mov edi,edi
+00402557 push esi
+00402558 mov eax,407B00h
+0040255D mov esi,407B00h
+00402562 push edi
+00402563 mov edi,eax
+00402565 cmp eax,esi
+00402567 jae short 00402578h
+00402569 mov eax,[edi]
+0040256B test eax,eax
+0040256D je short 00402571h
+0040256F call eax
+00402571 add edi,4
+00402574 cmp edi,esi
+00402576 jb short 00402569h
+00402578 pop edi
+00402579 pop esi
+0040257A ret
+0040257B mov edi,edi
+0040257D push esi
+0040257E mov eax,407B08h
+00402583 mov esi,407B08h
+00402588 push edi
+00402589 mov edi,eax
+0040258B cmp eax,esi
+0040258D jae short 0040259Eh
+0040258F mov eax,[edi]
+00402591 test eax,eax
+00402593 je short 00402597h
+00402595 call eax
+00402597 add edi,4
+0040259A cmp edi,esi
+0040259C jb short 0040258Fh
+0040259E pop edi
+0040259F pop esi
+004025A0 ret
+004025A1 push 0
+004025A3 call dword [4060E8h]
+004025A9 ret
+004025AA call dword [4060ECh]
+004025B0 ret 4
+004025B3 mov edi,edi
+004025B5 push esi
+004025B6 push dword [40904Ch]
+004025BC call dword [4060F0h]
+004025C2 mov esi,eax
+004025C4 test esi,esi
+004025C6 jne short 004025E3h
+004025C8 push dword [40A3B0h]
+004025CE call dword [4060C4h]
+004025D4 mov esi,eax
+004025D6 push esi
+004025D7 push dword [40904Ch]
+004025DD call dword [4060F4h]
+004025E3 mov eax,esi
+004025E5 pop esi
+004025E6 ret
+004025E7 mov eax,[409048h]
+004025EC cmp eax,0FFFFFFFFh
+004025EF je short 00402607h
+004025F1 push eax
+004025F2 push dword [40A3B8h]
+004025F8 call dword [4060C4h]
+004025FE call eax
+00402600 or dword [409048h],0FFFFFFFFh
+00402607 mov eax,[40904Ch]
+0040260C cmp eax,0FFFFFFFFh
+0040260F je short 0040261Fh
+00402611 push eax
+00402612 call dword [4060F8h]
+00402618 or dword [40904Ch],0FFFFFFFFh
+0040261F jmp 00402D5Eh
+00402624 push 8
+00402626 push 407B50h
+0040262B call 00402A40h
+00402630 push 406E7Ch
+00402635 call dword [4060A0h]
+0040263B mov esi,[ebp+8]
+0040263E mov dword [esi+5Ch],406DD8h
+00402645 and dword [esi+8],0
+00402649 xor edi,edi
+0040264B inc edi
+0040264C mov [esi+14h],edi
+0040264F mov [esi+70h],edi
+00402652 mov byte [esi+0C8h],43h
+00402659 mov byte [esi+14Bh],43h
+00402660 mov dword [esi+68h],409570h
+00402667 push 0Dh
+00402669 call 00402E8Eh
+0040266E pop ecx
+0040266F and dword [ebp-4],0
+00402673 push dword [esi+68h]
+00402676 call dword [4060FCh]
+0040267C mov dword [ebp-4],0FFFFFFFEh
+00402683 call 004026C6h
+00402688 push 0Ch
+0040268A call 00402E8Eh
+0040268F pop ecx
+00402690 mov [ebp-4],edi
+00402693 mov eax,[ebp+0Ch]
+00402696 mov [esi+6Ch],eax
+00402699 test eax,eax
+0040269B jne short 004026A5h
+0040269D mov eax,[409568h]
+004026A2 mov [esi+6Ch],eax
+004026A5 push dword [esi+6Ch]
+004026A8 call 00403E31h
+004026AD pop ecx
+004026AE mov dword [ebp-4],0FFFFFFFEh
+004026B5 call 004026CFh
+004026BA call 00402A85h
+004026BF ret
+004026C0 xor edi,edi
+004026C2 inc edi
+004026C3 mov esi,[ebp+8]
+004026C6 push 0Dh
+004026C8 call 00402DB5h
+004026CD pop ecx
+004026CE ret
+004026CF push 0Ch
+004026D1 call 00402DB5h
+004026D6 pop ecx
+004026D7 ret
+004026D8 mov edi,edi
+004026DA push esi
+004026DB push edi
+004026DC call dword [406108h]
+004026E2 push dword [409048h]
+004026E8 mov edi,eax
+004026EA call 004025B3h
+004026EF call eax
+004026F1 mov esi,eax
+004026F3 test esi,esi
+004026F5 jne short 00402745h
+004026F7 push 214h
+004026FC push 1
+004026FE call 00403A29h
+00402703 mov esi,eax
+00402705 pop ecx
+00402706 pop ecx
+00402707 test esi,esi
+00402709 je short 00402745h
+0040270B push esi
+0040270C push dword [409048h]
+00402712 push dword [40A3B4h]
+00402718 call dword [4060C4h]
+0040271E call eax
+00402720 test eax,eax
+00402722 je short 0040273Ch
+00402724 push 0
+00402726 push esi
+00402727 call 00402624h
+0040272C pop ecx
+0040272D pop ecx
+0040272E call dword [406104h]
+00402734 or dword [esi+4],0FFFFFFFFh
+00402738 mov [esi],eax
+0040273A jmp short 00402745h
+0040273C push esi
+0040273D call 004039AAh
+00402742 pop ecx
+00402743 xor esi,esi
+00402745 push edi
+00402746 call dword [406100h]
+0040274C pop edi
+0040274D mov eax,esi
+0040274F pop esi
+00402750 ret
+00402751 mov edi,edi
+00402753 push esi
+00402754 call 004026D8h
+00402759 mov esi,eax
+0040275B test esi,esi
+0040275D jne short 00402767h
+0040275F push 10h
+00402761 call 00401C1Ch
+00402766 pop ecx
+00402767 mov eax,esi
+00402769 pop esi
+0040276A ret
+0040276B push 8
+0040276D push 407B78h
+00402772 call 00402A40h
+00402777 mov esi,[ebp+8]
+0040277A test esi,esi
+0040277C je near 0040287Ah
+00402782 mov eax,[esi+24h]
+00402785 test eax,eax
+00402787 je short 00402790h
+00402789 push eax
+0040278A call 004039AAh
+0040278F pop ecx
+00402790 mov eax,[esi+2Ch]
+00402793 test eax,eax
+00402795 je short 0040279Eh
+00402797 push eax
+00402798 call 004039AAh
+0040279D pop ecx
+0040279E mov eax,[esi+34h]
+004027A1 test eax,eax
+004027A3 je short 004027ACh
+004027A5 push eax
+004027A6 call 004039AAh
+004027AB pop ecx
+004027AC mov eax,[esi+3Ch]
+004027AF test eax,eax
+004027B1 je short 004027BAh
+004027B3 push eax
+004027B4 call 004039AAh
+004027B9 pop ecx
+004027BA mov eax,[esi+40h]
+004027BD test eax,eax
+004027BF je short 004027C8h
+004027C1 push eax
+004027C2 call 004039AAh
+004027C7 pop ecx
+004027C8 mov eax,[esi+44h]
+004027CB test eax,eax
+004027CD je short 004027D6h
+004027CF push eax
+004027D0 call 004039AAh
+004027D5 pop ecx
+004027D6 mov eax,[esi+48h]
+004027D9 test eax,eax
+004027DB je short 004027E4h
+004027DD push eax
+004027DE call 004039AAh
+004027E3 pop ecx
+004027E4 mov eax,[esi+5Ch]
+004027E7 cmp eax,406DD8h
+004027EC je short 004027F5h
+004027EE push eax
+004027EF call 004039AAh
+004027F4 pop ecx
+004027F5 push 0Dh
+004027F7 call 00402E8Eh
+004027FC pop ecx
+004027FD and dword [ebp-4],0
+00402801 mov edi,[esi+68h]
+00402804 test edi,edi
+00402806 je short 00402822h
+00402808 push edi
+00402809 call dword [40610Ch]
+0040280F test eax,eax
+00402811 jne short 00402822h
+00402813 cmp edi,409570h
+00402819 je short 00402822h
+0040281B push edi
+0040281C call 004039AAh
+00402821 pop ecx
+00402822 mov dword [ebp-4],0FFFFFFFEh
+00402829 call 00402885h
+0040282E push 0Ch
+00402830 call 00402E8Eh
+00402835 pop ecx
+00402836 mov dword [ebp-4],1
+0040283D mov edi,[esi+6Ch]
+00402840 test edi,edi
+00402842 je short 00402867h
+00402844 push edi
+00402845 call 00403EC0h
+0040284A pop ecx
+0040284B cmp edi,[409568h]
+00402851 je short 00402867h
+00402853 cmp edi,409490h
+00402859 je short 00402867h
+0040285B cmp dword [edi],0
+0040285E jne short 00402867h
+00402860 push edi
+00402861 call 00403F59h
+00402866 pop ecx
+00402867 mov dword [ebp-4],0FFFFFFFEh
+0040286E call 00402891h
+00402873 push esi
+00402874 call 004039AAh
+00402879 pop ecx
+0040287A call 00402A85h
+0040287F ret 4
+00402882 mov esi,[ebp+8]
+00402885 push 0Dh
+00402887 call 00402DB5h
+0040288C pop ecx
+0040288D ret
+0040288E mov esi,[ebp+8]
+00402891 push 0Ch
+00402893 call 00402DB5h
+00402898 pop ecx
+00402899 ret
+0040289A mov edi,edi
+0040289C push edi
+0040289D push 406E7Ch
+004028A2 call dword [4060A0h]
+004028A8 mov edi,eax
+004028AA test edi,edi
+004028AC jne short 004028B7h
+004028AE call 004025E7h
+004028B3 xor eax,eax
+004028B5 pop edi
+004028B6 ret
+004028B7 push esi
+004028B8 mov esi,[4060B8h]
+004028BE push 406EB8h
+004028C3 push edi
+004028C4 call esi
+004028C6 push 406EACh
+004028CB push edi
+004028CC mov [40A3ACh],eax
+004028D1 call esi
+004028D3 push 406EA0h
+004028D8 push edi
+004028D9 mov [40A3B0h],eax
+004028DE call esi
+004028E0 push 406E98h
+004028E5 push edi
+004028E6 mov [40A3B4h],eax
+004028EB call esi
+004028ED cmp dword [40A3ACh],0
+004028F4 mov esi,[4060F4h]
+004028FA mov [40A3B8h],eax
+004028FF je short 00402917h
+00402901 cmp dword [40A3B0h],0
+00402908 je short 00402917h
+0040290A cmp dword [40A3B4h],0
+00402911 je short 00402917h
+00402913 test eax,eax
+00402915 jne short 0040293Bh
+00402917 mov eax,[4060F0h]
+0040291C mov [40A3B0h],eax
+00402921 mov eax,[4060F8h]
+00402926 mov dword [40A3ACh],4025AAh
+00402930 mov [40A3B4h],esi
+00402936 mov [40A3B8h],eax
+0040293B call dword [4060ECh]
+00402941 mov [40904Ch],eax
+00402946 cmp eax,0FFFFFFFFh
+00402949 je near 00402A10h
+0040294F push dword [40A3B0h]
+00402955 push eax
+00402956 call esi
+00402958 test eax,eax
+0040295A je near 00402A10h
+00402960 call 004019A4h
+00402965 push dword [40A3ACh]
+0040296B mov esi,[4060E8h]
+00402971 call esi
+00402973 push dword [40A3B0h]
+00402979 mov [40A3ACh],eax
+0040297E call esi
+00402980 push dword [40A3B4h]
+00402986 mov [40A3B0h],eax
+0040298B call esi
+0040298D push dword [40A3B8h]
+00402993 mov [40A3B4h],eax
+00402998 call esi
+0040299A mov [40A3B8h],eax
+0040299F call 00402D14h
+004029A4 test eax,eax
+004029A6 je short 00402A0Bh
+004029A8 mov edi,[4060C4h]
+004029AE push 40276Bh
+004029B3 push dword [40A3ACh]
+004029B9 call edi
+004029BB call eax
+004029BD mov [409048h],eax
+004029C2 cmp eax,0FFFFFFFFh
+004029C5 je short 00402A0Bh
+004029C7 push 214h
+004029CC push 1
+004029CE call 00403A29h
+004029D3 mov esi,eax
+004029D5 pop ecx
+004029D6 pop ecx
+004029D7 test esi,esi
+004029D9 je short 00402A0Bh
+004029DB push esi
+004029DC push dword [409048h]
+004029E2 push dword [40A3B4h]
+004029E8 call edi
+004029EA call eax
+004029EC test eax,eax
+004029EE je short 00402A0Bh
+004029F0 push 0
+004029F2 push esi
+004029F3 call 00402624h
+004029F8 pop ecx
+004029F9 pop ecx
+004029FA call dword [406104h]
+00402A00 or dword [esi+4],0FFFFFFFFh
+00402A04 mov [esi],eax
+00402A06 xor eax,eax
+00402A08 inc eax
+00402A09 jmp short 00402A12h
+00402A0B call 004025E7h
+00402A10 xor eax,eax
+00402A12 pop esi
+00402A13 pop edi
+00402A14 ret
+00402A15 push 0
+00402A17 push 1000h
+00402A1C push 0
+00402A1E call dword [406110h]
+00402A24 xor ecx,ecx
+00402A26 test eax,eax
+00402A28 setne cl
+00402A2B mov [40A3BCh],eax
+00402A30 mov eax,ecx
+00402A32 ret
+00402A33 int3
+00402A34 int3
+00402A35 int3
+00402A36 int3
+00402A37 int3
+00402A38 int3
+00402A39 int3
+00402A3A int3
+00402A3B int3
+00402A3C int3
+00402A3D int3
+00402A3E int3
+00402A3F int3
+00402A40 push 402AA0h
+00402A45 push dword [fs:0]
+00402A4C mov eax,[esp+10h]
+00402A50 mov [esp+10h],ebp
+00402A54 lea ebp,[esp+10h]
+00402A58 sub esp,eax
+00402A5A push ebx
+00402A5B push esi
+00402A5C push edi
+00402A5D mov eax,[409310h]
+00402A62 xor [ebp-4],eax
+00402A65 xor eax,ebp
+00402A67 push eax
+00402A68 mov [ebp-18h],esp
+00402A6B push dword [ebp-8]
+00402A6E mov eax,[ebp-4]
+00402A71 mov dword [ebp-4],0FFFFFFFEh
+00402A78 mov [ebp-8],eax
+00402A7B lea eax,[ebp-10h]
+00402A7E mov [fs:0],eax
+00402A84 ret
+00402A85 mov ecx,[ebp-10h]
+00402A88 mov [fs:0],ecx
+00402A8F pop ecx
+00402A90 pop edi
+00402A91 pop edi
+00402A92 pop esi
+00402A93 pop ebx
+00402A94 mov esp,ebp
+00402A96 pop ebp
+00402A97 push ecx
+00402A98 ret
+00402A99 int3
+00402A9A int3
+00402A9B int3
+00402A9C int3
+00402A9D int3
+00402A9E int3
+00402A9F int3
+00402AA0 mov edi,edi
+00402AA2 push ebp
+00402AA3 mov ebp,esp
+00402AA5 sub esp,18h
+00402AA8 push ebx
+00402AA9 mov ebx,[ebp+0Ch]
+00402AAC push esi
+00402AAD mov esi,[ebx+8]
+00402AB0 xor esi,[409310h]
+00402AB6 push edi
+00402AB7 mov eax,[esi]
+00402AB9 mov byte [ebp-1],0
+00402ABD mov dword [ebp-0Ch],1
+00402AC4 lea edi,[ebx+10h]
+00402AC7 cmp eax,0FFFFFFFEh
+00402ACA je short 00402AD9h
+00402ACC mov ecx,[esi+4]
+00402ACF add ecx,edi
+00402AD1 xor ecx,[eax+edi]
+00402AD4 call 0040399Bh
+00402AD9 mov ecx,[esi+0Ch]
+00402ADC mov eax,[esi+8]
+00402ADF add ecx,edi
+00402AE1 xor ecx,[eax+edi]
+00402AE4 call 0040399Bh
+00402AE9 mov eax,[ebp+8]
+00402AEC test byte [eax+4],66h
+00402AF0 jne near 00402C0Fh
+00402AF6 mov ecx,[ebp+10h]
+00402AF9 lea edx,[ebp-18h]
+00402AFC mov [ebx-4],edx
+00402AFF mov ebx,[ebx+0Ch]
+00402B02 mov [ebp-18h],eax
+00402B05 mov [ebp-14h],ecx
+00402B08 cmp ebx,0FFFFFFFEh
+00402B0B je short 00402B6Ch
+00402B0D lea ecx,[ecx]
+00402B10 lea eax,[ebx+ebx*2]
+00402B13 mov ecx,[esi+eax*4+14h]
+00402B17 lea eax,[esi+eax*4+10h]
+00402B1B mov [ebp-10h],eax
+00402B1E mov eax,[eax]
+00402B20 mov [ebp-8],eax
+00402B23 test ecx,ecx
+00402B25 je short 00402B3Bh
+00402B27 mov edx,edi
+00402B29 call 004049D2h
+00402B2E mov byte [ebp-1],1
+00402B32 test eax,eax
+00402B34 js short 00402B76h
+00402B36 jg short 00402B7Fh
+00402B38 mov eax,[ebp-8]
+00402B3B mov ebx,eax
+00402B3D cmp eax,0FFFFFFFEh
+00402B40 jne short 00402B10h
+00402B42 cmp byte [ebp-1],0
+00402B46 je short 00402B6Ch
+00402B48 mov eax,[esi]
+00402B4A cmp eax,0FFFFFFFEh
+00402B4D je short 00402B5Ch
+00402B4F mov ecx,[esi+4]
+00402B52 add ecx,edi
+00402B54 xor ecx,[eax+edi]
+00402B57 call 0040399Bh
+00402B5C mov ecx,[esi+0Ch]
+00402B5F mov edx,[esi+8]
+00402B62 add ecx,edi
+00402B64 xor ecx,[edx+edi]
+00402B67 call 0040399Bh
+00402B6C mov eax,[ebp-0Ch]
+00402B6F pop edi
+00402B70 pop esi
+00402B71 pop ebx
+00402B72 mov esp,ebp
+00402B74 pop ebp
+00402B75 ret
+00402B76 mov dword [ebp-0Ch],0
+00402B7D jmp short 00402B48h
+00402B7F mov ecx,[ebp+8]
+00402B82 cmp dword [ecx],0E06D7363h
+00402B88 jne short 00402BB3h
+00402B8A cmp dword [40A8A4h],0
+00402B91 je short 00402BB3h
+00402B93 push 40A8A4h
+00402B98 call 00403500h
+00402B9D add esp,4
+00402BA0 test eax,eax
+00402BA2 je short 00402BB3h
+00402BA4 mov edx,[ebp+8]
+00402BA7 push 1
+00402BA9 push edx
+00402BAA call dword [40A8A4h]
+00402BB0 add esp,8
+00402BB3 mov ecx,[ebp+0Ch]
+00402BB6 mov edx,[ebp+8]
+00402BB9 call 00404A02h
+00402BBE mov eax,[ebp+0Ch]
+00402BC1 cmp [eax+0Ch],ebx
+00402BC4 je short 00402BD8h
+00402BC6 push 409310h
+00402BCB push edi
+00402BCC mov edx,ebx
+00402BCE mov ecx,eax
+00402BD0 call 00404A1Bh
+00402BD5 mov eax,[ebp+0Ch]
+00402BD8 mov ecx,[ebp-8]
+00402BDB mov [eax+0Ch],ecx
+00402BDE mov eax,[esi]
+00402BE0 cmp eax,0FFFFFFFEh
+00402BE3 je short 00402BF2h
+00402BE5 mov ecx,[esi+4]
+00402BE8 add ecx,edi
+00402BEA xor ecx,[eax+edi]
+00402BED call 0040399Bh
+00402BF2 mov ecx,[esi+0Ch]
+00402BF5 mov edx,[esi+8]
+00402BF8 add ecx,edi
+00402BFA xor ecx,[edx+edi]
+00402BFD call 0040399Bh
+00402C02 mov eax,[ebp-10h]
+00402C05 mov ecx,[eax+8]
+00402C08 mov edx,edi
+00402C0A call 004049E9h
+00402C0F mov edx,0FFFFFFFEh
+00402C14 cmp [ebx+0Ch],edx
+00402C17 je near 00402B6Ch
+00402C1D push 409310h
+00402C22 push edi
+00402C23 mov ecx,ebx
+00402C25 call 00404A1Bh
+00402C2A jmp 00402B48h
+00402C2F mov edi,edi
+00402C31 push ebp
+00402C32 mov ebp,esp
+00402C34 sub esp,10h
+00402C37 mov eax,[409310h]
+00402C3C and dword [ebp-8],0
+00402C40 and dword [ebp-4],0
+00402C44 push ebx
+00402C45 push edi
+00402C46 mov edi,0BB40E64Eh
+00402C4B mov ebx,0FFFF0000h
+00402C50 cmp eax,edi
+00402C52 je short 00402C61h
+00402C54 test ebx,eax
+00402C56 je short 00402C61h
+00402C58 not eax
+00402C5A mov [409314h],eax
+00402C5F jmp short 00402CC6h
+00402C61 push esi
+00402C62 lea eax,[ebp-8]
+00402C65 push eax
+00402C66 call dword [406120h]
+00402C6C mov esi,[ebp-4]
+00402C6F xor esi,[ebp-8]
+00402C72 call dword [40611Ch]
+00402C78 xor esi,eax
+00402C7A call dword [406104h]
+00402C80 xor esi,eax
+00402C82 call dword [406118h]
+00402C88 xor esi,eax
+00402C8A lea eax,[ebp-10h]
+00402C8D push eax
+00402C8E call dword [406114h]
+00402C94 mov eax,[ebp-0Ch]
+00402C97 xor eax,[ebp-10h]
+00402C9A xor esi,eax
+00402C9C cmp esi,edi
+00402C9E jne short 00402CA7h
+00402CA0 mov esi,0BB40E64Fh
+00402CA5 jmp short 00402CB7h
+00402CA7 test ebx,esi
+00402CA9 jne short 00402CB7h
+00402CAB mov eax,esi
+00402CAD or eax,4711h
+00402CB2 shl eax,10h
+00402CB5 or esi,eax
+00402CB7 mov [409310h],esi
+00402CBD not esi
+00402CBF mov [409314h],esi
+00402CC5 pop esi
+00402CC6 pop edi
+00402CC7 pop ebx
+00402CC8 leave
+00402CC9 ret
+00402CCA push 8
+00402CCC push 407BA0h
+00402CD1 call 00402A40h
+00402CD6 call 00402751h
+00402CDB mov eax,[eax+78h]
+00402CDE test eax,eax
+00402CE0 je short 00402CF8h
+00402CE2 and dword [ebp-4],0
+00402CE6 call eax
+00402CE8 jmp short 00402CF1h
+00402CEA xor eax,eax
+00402CEC inc eax
+00402CED ret
+00402CEE mov esp,[ebp-18h]
+00402CF1 mov dword [ebp-4],0FFFFFFFEh
+00402CF8 call 00404A32h
+00402CFD call 00402A85h
+00402D02 ret
+00402D03 push 402CCAh
+00402D08 call dword [4060E8h]
+00402D0E mov [40A3C0h],eax
+00402D13 ret
+00402D14 mov edi,edi
+00402D16 push esi
+00402D17 push edi
+00402D18 xor esi,esi
+00402D1A mov edi,40A3C8h
+00402D1F cmp dword [esi*8+409054h],1
+00402D27 jne short 00402D46h
+00402D29 lea eax,[esi*8+409050h]
+00402D30 mov [eax],edi
+00402D32 push 0FA0h
+00402D37 push dword [eax]
+00402D39 add edi,18h
+00402D3C call dword [4060DCh]
+00402D42 test eax,eax
+00402D44 je short 00402D52h
+00402D46 inc esi
+00402D47 cmp esi,24h
+00402D4A jl short 00402D1Fh
+00402D4C xor eax,eax
+00402D4E inc eax
+00402D4F pop edi
+00402D50 pop esi
+00402D51 ret
+00402D52 and dword [esi*8+409050h],0
+00402D5A xor eax,eax
+00402D5C jmp short 00402D4Fh
+00402D5E mov edi,edi
+00402D60 push ebx
+00402D61 mov ebx,[4060E4h]
+00402D67 push esi
+00402D68 mov esi,409050h
+00402D6D push edi
+00402D6E mov edi,[esi]
+00402D70 test edi,edi
+00402D72 je short 00402D87h
+00402D74 cmp dword [esi+4],1
+00402D78 je short 00402D87h
+00402D7A push edi
+00402D7B call ebx
+00402D7D push edi
+00402D7E call 004039AAh
+00402D83 and dword [esi],0
+00402D86 pop ecx
+00402D87 add esi,8
+00402D8A cmp esi,409170h
+00402D90 jl short 00402D6Eh
+00402D92 mov esi,409050h
+00402D97 pop edi
+00402D98 mov eax,[esi]
+00402D9A test eax,eax
+00402D9C je short 00402DA7h
+00402D9E cmp dword [esi+4],1
+00402DA2 jne short 00402DA7h
+00402DA4 push eax
+00402DA5 call ebx
+00402DA7 add esi,8
+00402DAA cmp esi,409170h
+00402DB0 jl short 00402D98h
+00402DB2 pop esi
+00402DB3 pop ebx
+00402DB4 ret
+00402DB5 mov edi,edi
+00402DB7 push ebp
+00402DB8 mov ebp,esp
+00402DBA mov eax,[ebp+8]
+00402DBD push dword [eax*8+409050h]
+00402DC4 call dword [4060A4h]
+00402DCA pop ebp
+00402DCB ret
+00402DCC push 0Ch
+00402DCE push 407BC0h
+00402DD3 call 00402A40h
+00402DD8 xor edi,edi
+00402DDA inc edi
+00402DDB mov [ebp-1Ch],edi
+00402DDE xor ebx,ebx
+00402DE0 cmp [40A3BCh],ebx
+00402DE6 jne short 00402E00h
+00402DE8 call 00401E0Fh
+00402DED push 1Eh
+00402DEF call 00401C60h
+00402DF4 push 0FFh
+00402DF9 call 0040197Ah
+00402DFE pop ecx
+00402DFF pop ecx
+00402E00 mov esi,[ebp+8]
+00402E03 lea esi,[esi*8+409050h]
+00402E0A cmp [esi],ebx
+00402E0C je short 00402E12h
+00402E0E mov eax,edi
+00402E10 jmp short 00402E7Fh
+00402E12 push 18h
+00402E14 call 004039E4h
+00402E19 pop ecx
+00402E1A mov edi,eax
+00402E1C cmp edi,ebx
+00402E1E jne short 00402E2Fh
+00402E20 call 004032F7h
+00402E25 mov dword [eax],0Ch
+00402E2B xor eax,eax
+00402E2D jmp short 00402E7Fh
+00402E2F push 0Ah
+00402E31 call 00402E8Eh
+00402E36 pop ecx
+00402E37 mov [ebp-4],ebx
+00402E3A cmp [esi],ebx
+00402E3C jne short 00402E69h
+00402E3E push 0FA0h
+00402E43 push edi
+00402E44 call dword [4060DCh]
+00402E4A test eax,eax
+00402E4C jne short 00402E65h
+00402E4E push edi
+00402E4F call 004039AAh
+00402E54 pop ecx
+00402E55 call 004032F7h
+00402E5A mov dword [eax],0Ch
+00402E60 mov [ebp-1Ch],ebx
+00402E63 jmp short 00402E70h
+00402E65 mov [esi],edi
+00402E67 jmp short 00402E70h
+00402E69 push edi
+00402E6A call 004039AAh
+00402E6F pop ecx
+00402E70 mov dword [ebp-4],0FFFFFFFEh
+00402E77 call 00402E85h
+00402E7C mov eax,[ebp-1Ch]
+00402E7F call 00402A85h
+00402E84 ret
+00402E85 push 0Ah
+00402E87 call 00402DB5h
+00402E8C pop ecx
+00402E8D ret
+00402E8E mov edi,edi
+00402E90 push ebp
+00402E91 mov ebp,esp
+00402E93 mov eax,[ebp+8]
+00402E96 push esi
+00402E97 lea esi,[eax*8+409050h]
+00402E9E cmp dword [esi],0
+00402EA1 jne short 00402EB6h
+00402EA3 push eax
+00402EA4 call 00402DCCh
+00402EA9 pop ecx
+00402EAA test eax,eax
+00402EAC jne short 00402EB6h
+00402EAE push 11h
+00402EB0 call 00401C1Ch
+00402EB5 pop ecx
+00402EB6 push dword [esi]
+00402EB8 call dword [406074h]
+00402EBE pop esi
+00402EBF pop ebp
+00402EC0 ret
+00402EC1 mov edi,edi
+00402EC3 push ebp
+00402EC4 mov ebp,esp
+00402EC6 mov eax,[ebp+8]
+00402EC9 mov [40A518h],eax
+00402ECE mov [40A51Ch],eax
+00402ED3 mov [40A520h],eax
+00402ED8 mov [40A524h],eax
+00402EDD pop ebp
+00402EDE ret
+00402EDF mov edi,edi
+00402EE1 push ebp
+00402EE2 mov ebp,esp
+00402EE4 mov eax,[ebp+8]
+00402EE7 mov ecx,[406E74h]
+00402EED push esi
+00402EEE cmp [eax+4],edx
+00402EF1 je short 00402F02h
+00402EF3 mov esi,ecx
+00402EF5 imul esi,0Ch
+00402EF8 add esi,[ebp+8]
+00402EFB add eax,0Ch
+00402EFE cmp eax,esi
+00402F00 jb short 00402EEEh
+00402F02 imul ecx,0Ch
+00402F05 add ecx,[ebp+8]
+00402F08 pop esi
+00402F09 cmp eax,ecx
+00402F0B jae short 00402F12h
+00402F0D cmp [eax+4],edx
+00402F10 je short 00402F14h
+00402F12 xor eax,eax
+00402F14 pop ebp
+00402F15 ret
+00402F16 push dword [40A520h]
+00402F1C call dword [4060C4h]
+00402F22 ret
+00402F23 push 20h
+00402F25 push 407BE0h
+00402F2A call 00402A40h
+00402F2F xor edi,edi
+00402F31 mov [ebp-1Ch],edi
+00402F34 mov [ebp-28h],edi
+00402F37 mov ebx,[ebp+8]
+00402F3A cmp ebx,0Bh
+00402F3D jg short 00402F8Ah
+00402F3F je short 00402F56h
+00402F41 mov eax,ebx
+00402F43 push 2
+00402F45 pop ecx
+00402F46 sub eax,ecx
+00402F48 je short 00402F6Ch
+00402F4A sub eax,ecx
+00402F4C je short 00402F56h
+00402F4E sub eax,ecx
+00402F50 je short 00402FABh
+00402F52 sub eax,ecx
+00402F54 jne short 00402F99h
+00402F56 call 004026D8h
+00402F5B mov edi,eax
+00402F5D mov [ebp-28h],edi
+00402F60 test edi,edi
+00402F62 jne short 00402F78h
+00402F64 or eax,0FFFFFFFFh
+00402F67 jmp 004030C0h
+00402F6C mov esi,40A518h
+00402F71 mov eax,[40A518h]
+00402F76 jmp short 00402FCDh
+00402F78 push dword [edi+5Ch]
+00402F7B mov edx,ebx
+00402F7D call 00402EDFh
+00402F82 pop ecx
+00402F83 lea esi,[eax+8]
+00402F86 mov eax,[esi]
+00402F88 jmp short 00402FDBh
+00402F8A mov eax,ebx
+00402F8C sub eax,0Fh
+00402F8F je short 00402FC3h
+00402F91 sub eax,6
+00402F94 je short 00402FB7h
+00402F96 dec eax
+00402F97 je short 00402FABh
+00402F99 call 004032F7h
+00402F9E mov dword [eax],16h
+00402FA4 call 0040326Eh
+00402FA9 jmp short 00402F64h
+00402FAB mov esi,40A520h
+00402FB0 mov eax,[40A520h]
+00402FB5 jmp short 00402FCDh
+00402FB7 mov esi,40A51Ch
+00402FBC mov eax,[40A51Ch]
+00402FC1 jmp short 00402FCDh
+00402FC3 mov esi,40A524h
+00402FC8 mov eax,[40A524h]
+00402FCD mov dword [ebp-1Ch],1
+00402FD4 push eax
+00402FD5 call dword [4060C4h]
+00402FDB mov [ebp-20h],eax
+00402FDE xor eax,eax
+00402FE0 cmp dword [ebp-20h],1
+00402FE4 je near 004030C0h
+00402FEA cmp [ebp-20h],eax
+00402FED jne short 00402FF6h
+00402FEF push 3
+00402FF1 call 00401BE8h
+00402FF6 cmp [ebp-1Ch],eax
+00402FF9 je short 00403002h
+00402FFB push eax
+00402FFC call 00402E8Eh
+00403001 pop ecx
+00403002 xor eax,eax
+00403004 mov [ebp-4],eax
+00403007 cmp ebx,8
+0040300A je short 00403016h
+0040300C cmp ebx,0Bh
+0040300F je short 00403016h
+00403011 cmp ebx,4
+00403014 jne short 00403031h
+00403016 mov ecx,[edi+60h]
+00403019 mov [ebp-2Ch],ecx
+0040301C mov [edi+60h],eax
+0040301F cmp ebx,8
+00403022 jne short 00403062h
+00403024 mov ecx,[edi+64h]
+00403027 mov [ebp-30h],ecx
+0040302A mov dword [edi+64h],8Ch
+00403031 cmp ebx,8
+00403034 jne short 00403062h
+00403036 mov ecx,[406E68h]
+0040303C mov [ebp-24h],ecx
+0040303F mov ecx,[406E6Ch]
+00403045 add ecx,[406E68h]
+0040304B cmp [ebp-24h],ecx
+0040304E jge short 00403069h
+00403050 mov ecx,[ebp-24h]
+00403053 imul ecx,0Ch
+00403056 mov edx,[edi+5Ch]
+00403059 mov [ecx+edx+8],eax
+0040305D inc dword [ebp-24h]
+00403060 jmp short 0040303Fh
+00403062 call 004025A1h
+00403067 mov [esi],eax
+00403069 mov dword [ebp-4],0FFFFFFFEh
+00403070 call 0040308Ah
+00403075 cmp ebx,8
+00403078 jne short 00403099h
+0040307A push dword [edi+64h]
+0040307D push ebx
+0040307E call dword [ebp-20h]
+00403081 pop ecx
+00403082 jmp short 0040309Dh
+00403084 mov ebx,[ebp+8]
+00403087 mov edi,[ebp-28h]
+0040308A cmp dword [ebp-1Ch],0
+0040308E je short 00403098h
+00403090 push 0
+00403092 call 00402DB5h
+00403097 pop ecx
+00403098 ret
+00403099 push ebx
+0040309A call dword [ebp-20h]
+0040309D pop ecx
+0040309E cmp ebx,8
+004030A1 je short 004030ADh
+004030A3 cmp ebx,0Bh
+004030A6 je short 004030ADh
+004030A8 cmp ebx,4
+004030AB jne short 004030BEh
+004030AD mov eax,[ebp-2Ch]
+004030B0 mov [edi+60h],eax
+004030B3 cmp ebx,8
+004030B6 jne short 004030BEh
+004030B8 mov eax,[ebp-30h]
+004030BB mov [edi+64h],eax
+004030BE xor eax,eax
+004030C0 call 00402A85h
+004030C5 ret
+004030C6 mov edi,edi
+004030C8 push ebp
+004030C9 mov ebp,esp
+004030CB mov eax,[ebp+8]
+004030CE mov [40A52Ch],eax
+004030D3 pop ebp
+004030D4 ret
+004030D5 mov edi,edi
+004030D7 push ebp
+004030D8 mov ebp,esp
+004030DA mov eax,[ebp+8]
+004030DD mov [40A530h],eax
+004030E2 pop ebp
+004030E3 ret
+004030E4 mov edi,edi
+004030E6 push ebp
+004030E7 mov ebp,esp
+004030E9 mov eax,[ebp+8]
+004030EC mov [40A534h],eax
+004030F1 pop ebp
+004030F2 ret
+004030F3 mov edi,edi
+004030F5 push ebp
+004030F6 mov ebp,esp
+004030F8 sub esp,328h
+004030FE mov eax,[409310h]
+00403103 xor eax,ebp
+00403105 mov [ebp-4],eax
+00403108 push ebx
+00403109 mov ebx,[ebp+8]
+0040310C push edi
+0040310D cmp ebx,0FFFFFFFFh
+00403110 je short 00403119h
+00403112 push ebx
+00403113 call 00404A85h
+00403118 pop ecx
+00403119 and dword [ebp-320h],0
+00403120 push 4Ch
+00403122 lea eax,[ebp-31Ch]
+00403128 push 0
+0040312A push eax
+0040312B call 00401600h
+00403130 lea eax,[ebp-320h]
+00403136 mov [ebp-328h],eax
+0040313C lea eax,[ebp-2D0h]
+00403142 add esp,0Ch
+00403145 mov [ebp-324h],eax
+0040314B mov [ebp-220h],eax
+00403151 mov [ebp-224h],ecx
+00403157 mov [ebp-228h],edx
+0040315D mov [ebp-22Ch],ebx
+00403163 mov [ebp-230h],esi
+00403169 mov [ebp-234h],edi
+0040316F o16 mov [ebp-208h],ss
+00403176 o16 mov [ebp-214h],cs
+0040317D o16 mov [ebp-238h],ds
+00403184 o16 mov [ebp-23Ch],es
+0040318B o16 mov [ebp-240h],fs
+00403192 o16 mov [ebp-244h],gs
+00403199 pushf
+0040319A pop dword [ebp-210h]
+004031A0 mov eax,[ebp+4]
+004031A3 lea ecx,[ebp+4]
+004031A6 mov [ebp-20Ch],ecx
+004031AC mov dword [ebp-2D0h],10001h
+004031B6 mov [ebp-218h],eax
+004031BC mov ecx,[ecx-4]
+004031BF mov [ebp-21Ch],ecx
+004031C5 mov ecx,[ebp+0Ch]
+004031C8 mov [ebp-320h],ecx
+004031CE mov ecx,[ebp+10h]
+004031D1 mov [ebp-31Ch],ecx
+004031D7 mov [ebp-314h],eax
+004031DD call dword [406068h]
+004031E3 push 0
+004031E5 mov edi,eax
+004031E7 call dword [4060B4h]
+004031ED lea eax,[ebp-328h]
+004031F3 push eax
+004031F4 call dword [40606Ch]
+004031FA test eax,eax
+004031FC jne short 0040320Eh
+004031FE test edi,edi
+00403200 jne short 0040320Eh
+00403202 cmp ebx,0FFFFFFFFh
+00403205 je short 0040320Eh
+00403207 push ebx
+00403208 call 00404A85h
+0040320D pop ecx
+0040320E mov ecx,[ebp-4]
+00403211 pop edi
+00403212 xor ecx,ebp
+00403214 pop ebx
+00403215 call 0040399Bh
+0040321A leave
+0040321B ret
+0040321C mov edi,edi
+0040321E push esi
+0040321F push 1
+00403221 mov esi,0C0000417h
+00403226 push esi
+00403227 push 2
+00403229 call 004030F3h
+0040322E add esp,0Ch
+00403231 push esi
+00403232 call dword [406060h]
+00403238 push eax
+00403239 call dword [406064h]
+0040323F pop esi
+00403240 ret
+00403241 mov edi,edi
+00403243 push ebp
+00403244 mov ebp,esp
+00403246 push dword [40A534h]
+0040324C call dword [4060C4h]
+00403252 test eax,eax
+00403254 je short 00403259h
+00403256 pop ebp
+00403257 jmp eax
+00403259 push dword [ebp+18h]
+0040325C push dword [ebp+14h]
+0040325F push dword [ebp+10h]
+00403262 push dword [ebp+0Ch]
+00403265 push dword [ebp+8]
+00403268 call 0040321Ch
+0040326D int3
+0040326E xor eax,eax
+00403270 push eax
+00403271 push eax
+00403272 push eax
+00403273 push eax
+00403274 push eax
+00403275 call 00403241h
+0040327A add esp,14h
+0040327D ret
+0040327E mov edi,edi
+00403280 push ebp
+00403281 mov ebp,esp
+00403283 mov eax,[ebp+8]
+00403286 mov [40A538h],eax
+0040328B pop ebp
+0040328C ret
+0040328D mov edi,edi
+0040328F push ebp
+00403290 mov ebp,esp
+00403292 push dword [40A538h]
+00403298 call dword [4060C4h]
+0040329E test eax,eax
+004032A0 je short 004032B1h
+004032A2 push dword [ebp+8]
+004032A5 call eax
+004032A7 pop ecx
+004032A8 test eax,eax
+004032AA je short 004032B1h
+004032AC xor eax,eax
+004032AE inc eax
+004032AF pop ebp
+004032B0 ret
+004032B1 xor eax,eax
+004032B3 pop ebp
+004032B4 ret
+004032B5 mov edi,edi
+004032B7 push ebp
+004032B8 mov ebp,esp
+004032BA mov eax,[ebp+8]
+004032BD xor ecx,ecx
+004032BF cmp eax,[ecx*8+409170h]
+004032C6 je short 004032DBh
+004032C8 inc ecx
+004032C9 cmp ecx,2Dh
+004032CC jb short 004032BFh
+004032CE lea ecx,[eax-13h]
+004032D1 cmp ecx,11h
+004032D4 ja short 004032E4h
+004032D6 push 0Dh
+004032D8 pop eax
+004032D9 pop ebp
+004032DA ret
+004032DB mov eax,[ecx*8+409174h]
+004032E2 pop ebp
+004032E3 ret
+004032E4 add eax,0FFFFFF44h
+004032E9 push 0Eh
+004032EB pop ecx
+004032EC cmp ecx,eax
+004032EE sbb eax,eax
+004032F0 and eax,ecx
+004032F2 add eax,8
+004032F5 pop ebp
+004032F6 ret
+004032F7 call 004026D8h
+004032FC test eax,eax
+004032FE jne short 00403306h
+00403300 mov eax,4092D8h
+00403305 ret
+00403306 add eax,8
+00403309 ret
+0040330A mov edi,edi
+0040330C push ebp
+0040330D mov ebp,esp
+0040330F push ecx
+00403310 push ebx
+00403311 push esi
+00403312 mov esi,[4060C4h]
+00403318 push edi
+00403319 push dword [40A9C8h]
+0040331F call esi
+00403321 push dword [40A9C4h]
+00403327 mov ebx,eax
+00403329 mov [ebp-4],ebx
+0040332C call esi
+0040332E mov esi,eax
+00403330 cmp esi,ebx
+00403332 jb near 004033B9h
+00403338 mov edi,esi
+0040333A sub edi,ebx
+0040333C lea eax,[edi+4]
+0040333F cmp eax,4
+00403342 jb short 004033B9h
+00403344 push ebx
+00403345 call 00404A8Dh
+0040334A mov ebx,eax
+0040334C lea eax,[edi+4]
+0040334F pop ecx
+00403350 cmp ebx,eax
+00403352 jae short 0040339Ch
+00403354 mov eax,800h
+00403359 cmp ebx,eax
+0040335B jae short 0040335Fh
+0040335D mov eax,ebx
+0040335F add eax,ebx
+00403361 cmp eax,ebx
+00403363 jb short 00403374h
+00403365 push eax
+00403366 push dword [ebp-4]
+00403369 call 00403A75h
+0040336E pop ecx
+0040336F pop ecx
+00403370 test eax,eax
+00403372 jne short 0040338Ah
+00403374 lea eax,[ebx+10h]
+00403377 cmp eax,ebx
+00403379 jb short 004033B9h
+0040337B push eax
+0040337C push dword [ebp-4]
+0040337F call 00403A75h
+00403384 pop ecx
+00403385 pop ecx
+00403386 test eax,eax
+00403388 je short 004033B9h
+0040338A sar edi,2
+0040338D push eax
+0040338E lea esi,[eax+edi*4]
+00403391 call dword [4060E8h]
+00403397 mov [40A9C8h],eax
+0040339C push dword [ebp+8]
+0040339F mov edi,[4060E8h]
+004033A5 call edi
+004033A7 mov [esi],eax
+004033A9 add esi,4
+004033AC push esi
+004033AD call edi
+004033AF mov [40A9C4h],eax
+004033B4 mov eax,[ebp+8]
+004033B7 jmp short 004033BBh
+004033B9 xor eax,eax
+004033BB pop edi
+004033BC pop esi
+004033BD pop ebx
+004033BE leave
+004033BF ret
+004033C0 mov edi,edi
+004033C2 push esi
+004033C3 push 4
+004033C5 push 20h
+004033C7 call 00403A29h
+004033CC pop ecx
+004033CD pop ecx
+004033CE mov esi,eax
+004033D0 push esi
+004033D1 call dword [4060E8h]
+004033D7 mov [40A9C8h],eax
+004033DC mov [40A9C4h],eax
+004033E1 test esi,esi
+004033E3 jne short 004033EAh
+004033E5 push 18h
+004033E7 pop eax
+004033E8 pop esi
+004033E9 ret
+004033EA and dword [esi],0
+004033ED xor eax,eax
+004033EF pop esi
+004033F0 ret
+004033F1 push 0Ch
+004033F3 push 407C00h
+004033F8 call 00402A40h
+004033FD call 00401992h
+00403402 and dword [ebp-4],0
+00403406 push dword [ebp+8]
+00403409 call 0040330Ah
+0040340E pop ecx
+0040340F mov [ebp-1Ch],eax
+00403412 mov dword [ebp-4],0FFFFFFFEh
+00403419 call 00403427h
+0040341E mov eax,[ebp-1Ch]
+00403421 call 00402A85h
+00403426 ret
+00403427 call 0040199Bh
+0040342C ret
+0040342D mov edi,edi
+0040342F push ebp
+00403430 mov ebp,esp
+00403432 push dword [ebp+8]
+00403435 call 004033F1h
+0040343A neg eax
+0040343C sbb eax,eax
+0040343E neg eax
+00403440 pop ecx
+00403441 dec eax
+00403442 pop ebp
+00403443 ret
+00403444 mov edi,edi
+00403446 push esi
+00403447 push edi
+00403448 xor edi,edi
+0040344A push dword [edi+4092E0h]
+00403450 call dword [4060E8h]
+00403456 mov [edi+4092E0h],eax
+0040345C add edi,4
+0040345F cmp edi,28h
+00403462 jb short 0040344Ah
+00403464 pop edi
+00403465 pop esi
+00403466 ret
+00403467 int3
+00403468 int3
+00403469 int3
+0040346A int3
+0040346B int3
+0040346C int3
+0040346D int3
+0040346E int3
+0040346F int3
+00403470 mov edi,edi
+00403472 push ebp
+00403473 mov ebp,esp
+00403475 mov ecx,[ebp+8]
+00403478 mov eax,5A4Dh
+0040347D cmp [ecx],ax
+00403480 je short 00403486h
+00403482 xor eax,eax
+00403484 pop ebp
+00403485 ret
+00403486 mov eax,[ecx+3Ch]
+00403489 add eax,ecx
+0040348B cmp dword [eax],4550h
+00403491 jne short 00403482h
+00403493 xor edx,edx
+00403495 mov ecx,10Bh
+0040349A cmp [eax+18h],cx
+0040349E sete dl
+004034A1 mov eax,edx
+004034A3 pop ebp
+004034A4 ret
+004034A5 int3
+004034A6 int3
+004034A7 int3
+004034A8 int3
+004034A9 int3
+004034AA int3
+004034AB int3
+004034AC int3
+004034AD int3
+004034AE int3
+004034AF int3
+004034B0 mov edi,edi
+004034B2 push ebp
+004034B3 mov ebp,esp
+004034B5 mov eax,[ebp+8]
+004034B8 mov ecx,[eax+3Ch]
+004034BB add ecx,eax
+004034BD movzx eax,word [ecx+14h]
+004034C1 push ebx
+004034C2 push esi
+004034C3 movzx esi,word [ecx+6]
+004034C7 xor edx,edx
+004034C9 push edi
+004034CA lea eax,[eax+ecx+18h]
+004034CE test esi,esi
+004034D0 je short 004034EDh
+004034D2 mov edi,[ebp+0Ch]
+004034D5 mov ecx,[eax+0Ch]
+004034D8 cmp edi,ecx
+004034DA jb short 004034E5h
+004034DC mov ebx,[eax+8]
+004034DF add ebx,ecx
+004034E1 cmp edi,ebx
+004034E3 jb short 004034EFh
+004034E5 inc edx
+004034E6 add eax,28h
+004034E9 cmp edx,esi
+004034EB jb short 004034D5h
+004034ED xor eax,eax
+004034EF pop edi
+004034F0 pop esi
+004034F1 pop ebx
+004034F2 pop ebp
+004034F3 ret
+004034F4 int3
+004034F5 int3
+004034F6 int3
+004034F7 int3
+004034F8 int3
+004034F9 int3
+004034FA int3
+004034FB int3
+004034FC int3
+004034FD int3
+004034FE int3
+004034FF int3
+00403500 mov edi,edi
+00403502 push ebp
+00403503 mov ebp,esp
+00403505 push 0FFFFFFFEh
+00403507 push 407C20h
+0040350C push 402AA0h
+00403511 mov eax,[fs:0]
+00403517 push eax
+00403518 sub esp,8
+0040351B push ebx
+0040351C push esi
+0040351D push edi
+0040351E mov eax,[409310h]
+00403523 xor [ebp-8],eax
+00403526 xor eax,ebp
+00403528 push eax
+00403529 lea eax,[ebp-10h]
+0040352C mov [fs:0],eax
+00403532 mov [ebp-18h],esp
+00403535 mov dword [ebp-4],0
+0040353C push 400000h
+00403541 call 00403470h
+00403546 add esp,4
+00403549 test eax,eax
+0040354B je short 004035A1h
+0040354D mov eax,[ebp+8]
+00403550 sub eax,400000h
+00403555 push eax
+00403556 push 400000h
+0040355B call 004034B0h
+00403560 add esp,8
+00403563 test eax,eax
+00403565 je short 004035A1h
+00403567 mov eax,[eax+24h]
+0040356A shr eax,1Fh
+0040356D not eax
+0040356F and eax,1
+00403572 mov dword [ebp-4],0FFFFFFFEh
+00403579 mov ecx,[ebp-10h]
+0040357C mov [fs:0],ecx
+00403583 pop ecx
+00403584 pop edi
+00403585 pop esi
+00403586 pop ebx
+00403587 mov esp,ebp
+00403589 pop ebp
+0040358A ret
+0040358B mov eax,[ebp-14h]
+0040358E mov ecx,[eax]
+00403590 xor edx,edx
+00403592 cmp dword [ecx],0C0000005h
+00403598 sete dl
+0040359B mov eax,edx
+0040359D ret
+0040359E mov esp,[ebp-18h]
+004035A1 mov dword [ebp-4],0FFFFFFFEh
+004035A8 xor eax,eax
+004035AA mov ecx,[ebp-10h]
+004035AD mov [fs:0],ecx
+004035B4 pop ecx
+004035B5 pop edi
+004035B6 pop esi
+004035B7 pop ebx
+004035B8 mov esp,ebp
+004035BA pop ebp
+004035BB ret
+004035BC int3
+004035BD int3
+004035BE int3
+004035BF int3
+004035C0 mov ecx,[esp+4]
+004035C4 test ecx,3
+004035CA je short 004035F0h
+004035CC mov al,[ecx]
+004035CE add ecx,1
+004035D1 test al,al
+004035D3 je short 00403623h
+004035D5 test ecx,3
+004035DB jne short 004035CCh
+004035DD add eax,0
+004035E2 lea esp,[esp]
+004035E9 lea esp,[esp]
+004035F0 mov eax,[ecx]
+004035F2 mov edx,7EFEFEFFh
+004035F7 add edx,eax
+004035F9 xor eax,0FFFFFFFFh
+004035FC xor eax,edx
+004035FE add ecx,4
+00403601 test eax,81010100h
+00403606 je short 004035F0h
+00403608 mov eax,[ecx-4]
+0040360B test al,al
+0040360D je short 00403641h
+0040360F test ah,ah
+00403611 je short 00403637h
+00403613 test eax,0FF0000h
+00403618 je short 0040362Dh
+0040361A test eax,0FF000000h
+0040361F je short 00403623h
+00403621 jmp short 004035F0h
+00403623 lea eax,[ecx-1]
+00403626 mov ecx,[esp+4]
+0040362A sub eax,ecx
+0040362C ret
+0040362D lea eax,[ecx-2]
+00403630 mov ecx,[esp+4]
+00403634 sub eax,ecx
+00403636 ret
+00403637 lea eax,[ecx-3]
+0040363A mov ecx,[esp+4]
+0040363E sub eax,ecx
+00403640 ret
+00403641 lea eax,[ecx-4]
+00403644 mov ecx,[esp+4]
+00403648 sub eax,ecx
+0040364A ret
+0040364B mov edi,edi
+0040364D push ebp
+0040364E mov ebp,esp
+00403650 sub esp,24h
+00403653 mov eax,[409310h]
+00403658 xor eax,ebp
+0040365A mov [ebp-4],eax
+0040365D mov eax,[ebp+8]
+00403660 push ebx
+00403661 mov [ebp-20h],eax
+00403664 mov eax,[ebp+0Ch]
+00403667 push esi
+00403668 push edi
+00403669 mov [ebp-1Ch],eax
+0040366C call 004025A1h
+00403671 and dword [ebp-14h],0
+00403675 cmp dword [40A53Ch],0
+0040367C mov [ebp-18h],eax
+0040367F jne short 004036FEh
+00403681 push 406F28h
+00403686 call dword [406070h]
+0040368C mov ebx,eax
+0040368E test ebx,ebx
+00403690 je near 004037A6h
+00403696 mov edi,[4060B8h]
+0040369C push 406F1Ch
+004036A1 push ebx
+004036A2 call edi
+004036A4 test eax,eax
+004036A6 je near 004037A6h
+004036AC mov esi,[4060E8h]
+004036B2 push eax
+004036B3 call esi
+004036B5 push 406F0Ch
+004036BA push ebx
+004036BB mov [40A53Ch],eax
+004036C0 call edi
+004036C2 push eax
+004036C3 call esi
+004036C5 push 406EF8h
+004036CA push ebx
+004036CB mov [40A540h],eax
+004036D0 call edi
+004036D2 push eax
+004036D3 call esi
+004036D5 push 406EDCh
+004036DA push ebx
+004036DB mov [40A544h],eax
+004036E0 call edi
+004036E2 push eax
+004036E3 call esi
+004036E5 mov [40A54Ch],eax
+004036EA test eax,eax
+004036EC je short 004036FEh
+004036EE push 406EC4h
+004036F3 push ebx
+004036F4 call edi
+004036F6 push eax
+004036F7 call esi
+004036F9 mov [40A548h],eax
+004036FE mov eax,[40A548h]
+00403703 mov ecx,[ebp-18h]
+00403706 mov esi,[4060C4h]
+0040370C cmp eax,ecx
+0040370E je short 00403757h
+00403710 cmp [40A54Ch],ecx
+00403716 je short 00403757h
+00403718 push eax
+00403719 call esi
+0040371B push dword [40A54Ch]
+00403721 mov edi,eax
+00403723 call esi
+00403725 mov ebx,eax
+00403727 test edi,edi
+00403729 je short 00403757h
+0040372B test ebx,ebx
+0040372D je short 00403757h
+0040372F call edi
+00403731 test eax,eax
+00403733 je short 0040374Eh
+00403735 lea ecx,[ebp-24h]
+00403738 push ecx
+00403739 push 0Ch
+0040373B lea ecx,[ebp-10h]
+0040373E push ecx
+0040373F push 1
+00403741 push eax
+00403742 call ebx
+00403744 test eax,eax
+00403746 je short 0040374Eh
+00403748 test byte [ebp-8],1
+0040374C jne short 00403757h
+0040374E or dword [ebp+10h],200000h
+00403755 jmp short 0040378Ah
+00403757 mov eax,[40A540h]
+0040375C cmp eax,[ebp-18h]
+0040375F je short 0040378Ah
+00403761 push eax
+00403762 call esi
+00403764 test eax,eax
+00403766 je short 0040378Ah
+00403768 call eax
+0040376A mov [ebp-14h],eax
+0040376D test eax,eax
+0040376F je short 0040378Ah
+00403771 mov eax,[40A544h]
+00403776 cmp eax,[ebp-18h]
+00403779 je short 0040378Ah
+0040377B push eax
+0040377C call esi
+0040377E test eax,eax
+00403780 je short 0040378Ah
+00403782 push dword [ebp-14h]
+00403785 call eax
+00403787 mov [ebp-14h],eax
+0040378A push dword [40A53Ch]
+00403790 call esi
+00403792 test eax,eax
+00403794 je short 004037A6h
+00403796 push dword [ebp+10h]
+00403799 push dword [ebp-1Ch]
+0040379C push dword [ebp-20h]
+0040379F push dword [ebp-14h]
+004037A2 call eax
+004037A4 jmp short 004037A8h
+004037A6 xor eax,eax
+004037A8 mov ecx,[ebp-4]
+004037AB pop edi
+004037AC pop esi
+004037AD xor ecx,ebp
+004037AF pop ebx
+004037B0 call 0040399Bh
+004037B5 leave
+004037B6 ret
+004037B7 mov edi,edi
+004037B9 push ebp
+004037BA mov ebp,esp
+004037BC push esi
+004037BD mov esi,[ebp+8]
+004037C0 push edi
+004037C1 test esi,esi
+004037C3 je short 004037CCh
+004037C5 mov edi,[ebp+0Ch]
+004037C8 test edi,edi
+004037CA jne short 004037E1h
+004037CC call 004032F7h
+004037D1 push 16h
+004037D3 pop esi
+004037D4 mov [eax],esi
+004037D6 call 0040326Eh
+004037DB mov eax,esi
+004037DD pop edi
+004037DE pop esi
+004037DF pop ebp
+004037E0 ret
+004037E1 mov ecx,[ebp+10h]
+004037E4 test ecx,ecx
+004037E6 jne short 004037EFh
+004037E8 xor eax,eax
+004037EA mov [esi],ax
+004037ED jmp short 004037CCh
+004037EF mov edx,esi
+004037F1 cmp word [edx],0
+004037F5 je short 004037FDh
+004037F7 add edx,2
+004037FA dec edi
+004037FB jne short 004037F1h
+004037FD test edi,edi
+004037FF je short 004037E8h
+00403801 sub edx,ecx
+00403803 movzx eax,word [ecx]
+00403806 mov [edx+ecx],ax
+0040380A add ecx,2
+0040380D test ax,ax
+00403810 je short 00403815h
+00403812 dec edi
+00403813 jne short 00403803h
+00403815 xor eax,eax
+00403817 test edi,edi
+00403819 jne short 004037DDh
+0040381B mov [esi],ax
+0040381E call 004032F7h
+00403823 push 22h
+00403825 pop ecx
+00403826 mov [eax],ecx
+00403828 mov esi,ecx
+0040382A jmp short 004037D6h
+0040382C mov edi,edi
+0040382E push ebp
+0040382F mov ebp,esp
+00403831 mov edx,[ebp+8]
+00403834 push ebx
+00403835 mov ebx,[ebp+14h]
+00403838 push esi
+00403839 push edi
+0040383A test ebx,ebx
+0040383C jne short 0040384Eh
+0040383E test edx,edx
+00403840 jne short 00403852h
+00403842 cmp [ebp+0Ch],edx
+00403845 jne short 00403859h
+00403847 xor eax,eax
+00403849 pop edi
+0040384A pop esi
+0040384B pop ebx
+0040384C pop ebp
+0040384D ret
+0040384E test edx,edx
+00403850 je short 00403859h
+00403852 mov edi,[ebp+0Ch]
+00403855 test edi,edi
+00403857 jne short 0040386Ch
+00403859 call 004032F7h
+0040385E push 16h
+00403860 pop esi
+00403861 mov [eax],esi
+00403863 call 0040326Eh
+00403868 mov eax,esi
+0040386A jmp short 00403849h
+0040386C test ebx,ebx
+0040386E jne short 00403877h
+00403870 xor eax,eax
+00403872 mov [edx],ax
+00403875 jmp short 00403847h
+00403877 mov ecx,[ebp+10h]
+0040387A test ecx,ecx
+0040387C jne short 00403885h
+0040387E xor eax,eax
+00403880 mov [edx],ax
+00403883 jmp short 00403859h
+00403885 mov eax,edx
+00403887 cmp ebx,0FFFFFFFFh
+0040388A jne short 004038A4h
+0040388C mov esi,edx
+0040388E sub esi,ecx
+00403890 movzx eax,word [ecx]
+00403893 mov [esi+ecx],ax
+00403897 add ecx,2
+0040389A test ax,ax
+0040389D je short 004038C6h
+0040389F dec edi
+004038A0 jne short 00403890h
+004038A2 jmp short 004038C6h
+004038A4 mov esi,ecx
+004038A6 sub esi,edx
+004038A8 movzx ecx,word [esi+eax]
+004038AC mov [eax],cx
+004038AF add eax,2
+004038B2 test cx,cx
+004038B5 je short 004038BDh
+004038B7 dec edi
+004038B8 je short 004038BDh
+004038BA dec ebx
+004038BB jne short 004038A8h
+004038BD test ebx,ebx
+004038BF jne short 004038C6h
+004038C1 xor ecx,ecx
+004038C3 mov [eax],cx
+004038C6 test edi,edi
+004038C8 jne near 00403847h
+004038CE xor eax,eax
+004038D0 cmp ebx,0FFFFFFFFh
+004038D3 jne short 004038E5h
+004038D5 mov ecx,[ebp+0Ch]
+004038D8 push 50h
+004038DA mov [edx+ecx*2-2],ax
+004038DF pop eax
+004038E0 jmp 00403849h
+004038E5 mov [edx],ax
+004038E8 call 004032F7h
+004038ED push 22h
+004038EF pop ecx
+004038F0 mov [eax],ecx
+004038F2 mov esi,ecx
+004038F4 jmp 00403863h
+004038F9 mov edi,edi
+004038FB push ebp
+004038FC mov ebp,esp
+004038FE push esi
+004038FF mov esi,[ebp+8]
+00403902 push edi
+00403903 test esi,esi
+00403905 je short 0040390Eh
+00403907 mov edi,[ebp+0Ch]
+0040390A test edi,edi
+0040390C jne short 00403923h
+0040390E call 004032F7h
+00403913 push 16h
+00403915 pop esi
+00403916 mov [eax],esi
+00403918 call 0040326Eh
+0040391D mov eax,esi
+0040391F pop edi
+00403920 pop esi
+00403921 pop ebp
+00403922 ret
+00403923 mov eax,[ebp+10h]
+00403926 test eax,eax
+00403928 jne short 0040392Fh
+0040392A mov [esi],ax
+0040392D jmp short 0040390Eh
+0040392F mov edx,esi
+00403931 sub edx,eax
+00403933 movzx ecx,word [eax]
+00403936 mov [edx+eax],cx
+0040393A add eax,2
+0040393D test cx,cx
+00403940 je short 00403945h
+00403942 dec edi
+00403943 jne short 00403933h
+00403945 xor eax,eax
+00403947 test edi,edi
+00403949 jne short 0040391Fh
+0040394B mov [esi],ax
+0040394E call 004032F7h
+00403953 push 22h
+00403955 pop ecx
+00403956 mov [eax],ecx
+00403958 mov esi,ecx
+0040395A jmp short 00403918h
+0040395C mov edi,edi
+0040395E push ebp
+0040395F mov ebp,esp
+00403961 mov ecx,[ebp+8]
+00403964 test ecx,ecx
+00403966 js short 00403986h
+00403968 cmp ecx,2
+0040396B jle short 00403979h
+0040396D cmp ecx,3
+00403970 jne short 00403986h
+00403972 mov eax,[409B3Ch]
+00403977 pop ebp
+00403978 ret
+00403979 mov eax,[409B3Ch]
+0040397E mov [409B3Ch],ecx
+00403984 pop ebp
+00403985 ret
+00403986 call 004032F7h
+0040398B mov dword [eax],16h
+00403991 call 0040326Eh
+00403996 or eax,0FFFFFFFFh
+00403999 pop ebp
+0040399A ret
+0040399B cmp ecx,[409310h]
+004039A1 jne short 004039A5h
+004039A3 rep ret
+004039A5 jmp 00404AC9h
+004039AA mov edi,edi
+004039AC push ebp
+004039AD mov ebp,esp
+004039AF cmp dword [ebp+8],0
+004039B3 je short 004039E2h
+004039B5 push dword [ebp+8]
+004039B8 push 0
+004039BA push dword [40A3BCh]
+004039C0 call dword [40605Ch]
+004039C6 test eax,eax
+004039C8 jne short 004039E2h
+004039CA push esi
+004039CB call 004032F7h
+004039D0 mov esi,eax
+004039D2 call dword [406108h]
+004039D8 push eax
+004039D9 call 004032B5h
+004039DE pop ecx
+004039DF mov [esi],eax
+004039E1 pop esi
+004039E2 pop ebp
+004039E3 ret
+004039E4 mov edi,edi
+004039E6 push ebp
+004039E7 mov ebp,esp
+004039E9 push esi
+004039EA push edi
+004039EB xor esi,esi
+004039ED push dword [ebp+8]
+004039F0 call 00404BCFh
+004039F5 mov edi,eax
+004039F7 pop ecx
+004039F8 test edi,edi
+004039FA jne short 00403A23h
+004039FC cmp [40A550h],eax
+00403A02 jbe short 00403A23h
+00403A04 push esi
+00403A05 call dword [406058h]
+00403A0B lea eax,[esi+3E8h]
+00403A11 cmp eax,[40A550h]
+00403A17 jbe short 00403A1Ch
+00403A19 or eax,0FFFFFFFFh
+00403A1C mov esi,eax
+00403A1E cmp eax,0FFFFFFFFh
+00403A21 jne short 004039EDh
+00403A23 mov eax,edi
+00403A25 pop edi
+00403A26 pop esi
+00403A27 pop ebp
+00403A28 ret
+00403A29 mov edi,edi
+00403A2B push ebp
+00403A2C mov ebp,esp
+00403A2E push esi
+00403A2F push edi
+00403A30 xor esi,esi
+00403A32 push 0
+00403A34 push dword [ebp+0Ch]
+00403A37 push dword [ebp+8]
+00403A3A call 00404C63h
+00403A3F mov edi,eax
+00403A41 add esp,0Ch
+00403A44 test edi,edi
+00403A46 jne short 00403A6Fh
+00403A48 cmp [40A550h],eax
+00403A4E jbe short 00403A6Fh
+00403A50 push esi
+00403A51 call dword [406058h]
+00403A57 lea eax,[esi+3E8h]
+00403A5D cmp eax,[40A550h]
+00403A63 jbe short 00403A68h
+00403A65 or eax,0FFFFFFFFh
+00403A68 mov esi,eax
+00403A6A cmp eax,0FFFFFFFFh
+00403A6D jne short 00403A32h
+00403A6F mov eax,edi
+00403A71 pop edi
+00403A72 pop esi
+00403A73 pop ebp
+00403A74 ret
+00403A75 mov edi,edi
+00403A77 push ebp
+00403A78 mov ebp,esp
+00403A7A push esi
+00403A7B push edi
+00403A7C xor esi,esi
+00403A7E push dword [ebp+0Ch]
+00403A81 push dword [ebp+8]
+00403A84 call 00404CE5h
+00403A89 mov edi,eax
+00403A8B pop ecx
+00403A8C pop ecx
+00403A8D test edi,edi
+00403A8F jne short 00403ABDh
+00403A91 cmp [ebp+0Ch],eax
+00403A94 je short 00403ABDh
+00403A96 cmp [40A550h],eax
+00403A9C jbe short 00403ABDh
+00403A9E push esi
+00403A9F call dword [406058h]
+00403AA5 lea eax,[esi+3E8h]
+00403AAB cmp eax,[40A550h]
+00403AB1 jbe short 00403AB6h
+00403AB3 or eax,0FFFFFFFFh
+00403AB6 mov esi,eax
+00403AB8 cmp eax,0FFFFFFFFh
+00403ABB jne short 00403A7Eh
+00403ABD mov eax,edi
+00403ABF pop edi
+00403AC0 pop esi
+00403AC1 pop ebp
+00403AC2 ret
+00403AC3 int3
+00403AC4 int3
+00403AC5 int3
+00403AC6 int3
+00403AC7 int3
+00403AC8 int3
+00403AC9 int3
+00403ACA int3
+00403ACB int3
+00403ACC int3
+00403ACD int3
+00403ACE int3
+00403ACF int3
+00403AD0 push ebp
+00403AD1 mov ebp,esp
+00403AD3 push edi
+00403AD4 push esi
+00403AD5 mov esi,[ebp+0Ch]
+00403AD8 mov ecx,[ebp+10h]
+00403ADB mov edi,[ebp+8]
+00403ADE mov eax,ecx
+00403AE0 mov edx,ecx
+00403AE2 add eax,esi
+00403AE4 cmp edi,esi
+00403AE6 jbe short 00403AF0h
+00403AE8 cmp edi,eax
+00403AEA jb near 00403C90h
+00403AF0 cmp ecx,80h
+00403AF6 jb short 00403B14h
+00403AF8 cmp dword [40A9D8h],0
+00403AFF je short 00403B14h
+00403B01 push edi
+00403B02 push esi
+00403B03 and edi,0Fh
+00403B06 and esi,0Fh
+00403B09 cmp edi,esi
+00403B0B pop esi
+00403B0C pop edi
+00403B0D jne short 00403B14h
+00403B0F jmp 00404D92h
+00403B14 test edi,3
+00403B1A jne short 00403B30h
+00403B1C shr ecx,2
+00403B1F and edx,3
+00403B22 cmp ecx,8
+00403B25 jb short 00403B50h
+00403B27 rep movsd
+00403B29 jmp dword [edx*4+403C40h]
+00403B30 mov eax,edi
+00403B32 mov edx,3
+00403B37 sub ecx,4
+00403B3A jb short 00403B48h
+00403B3C and eax,3
+00403B3F add ecx,eax
+00403B41 jmp dword [eax*4+403B54h]
+00403B48 jmp dword [ecx*4+403C50h]
+00403B4F nop
+00403B50 jmp dword [ecx*4+403BD4h]
+00403B57 nop
+00403B58 cmp eax,[fs:eax]
+00403B5C nop
+00403B5D cmp eax,[eax]
+00403B60 mov ah,3Bh
+00403B62 inc eax
+00403B63 add [ebx],ah
+00403B65 ror dword [edx-75F877FAh],1
+00403B6B inc esi
+00403B6C add [eax+468A0147h],ecx
+00403B72 add al,cl
+00403B74 jmp 0287C37Bh
+00403B79 add esi,3
+00403B7C add edi,3
+00403B7F cmp ecx,8
+00403B82 jb short 00403B50h
+00403B84 rep movsd
+00403B86 jmp dword [edx*4+403C40h]
+00403B8D lea ecx,[ecx]
+00403B90 and edx,ecx
+00403B92 mov al,[esi]
+00403B94 mov [edi],al
+00403B96 mov al,[esi+1]
+00403B99 shr ecx,2
+00403B9C mov [edi+1],al
+00403B9F add esi,2
+00403BA2 add edi,2
+00403BA5 cmp ecx,8
+00403BA8 jb short 00403B50h
+00403BAA rep movsd
+00403BAC jmp dword [edx*4+403C40h]
+00403BB3 nop
+00403BB4 and edx,ecx
+00403BB6 mov al,[esi]
+00403BB8 mov [edi],al
+00403BBA add esi,1
+00403BBD shr ecx,2
+00403BC0 add edi,1
+00403BC3 cmp ecx,8
+00403BC6 jb short 00403B50h
+00403BC8 rep movsd
+00403BCA jmp dword [edx*4+403C40h]
+00403BD1 lea ecx,[ecx]
+00403BD4 aaa
+00403BD5 cmp al,40h
+00403BD7 add [esp+edi],ah
+00403BDA inc eax
+00403BDB add [esp+edi],bl
+00403BDE inc eax
+00403BDF add [esp+edi],dl
+00403BE2 inc eax
+00403BE3 add [esp+edi],cl
+00403BE6 inc eax
+00403BE7 add [esp+edi],al
+00403BEA inc eax
+00403BEB add ah,bh
+00403BED cmp eax,[eax]
+00403BF0 hlt
+00403BF1 cmp eax,[eax]
+00403BF4 mov eax,[esi+ecx*4-1Ch]
+00403BF8 mov [edi+ecx*4-1Ch],eax
+00403BFC mov eax,[esi+ecx*4-18h]
+00403C00 mov [edi+ecx*4-18h],eax
+00403C04 mov eax,[esi+ecx*4-14h]
+00403C08 mov [edi+ecx*4-14h],eax
+00403C0C mov eax,[esi+ecx*4-10h]
+00403C10 mov [edi+ecx*4-10h],eax
+00403C14 mov eax,[esi+ecx*4-0Ch]
+00403C18 mov [edi+ecx*4-0Ch],eax
+00403C1C mov eax,[esi+ecx*4-8]
+00403C20 mov [edi+ecx*4-8],eax
+00403C24 mov eax,[esi+ecx*4-4]
+00403C28 mov [edi+ecx*4-4],eax
+00403C2C lea eax,[ecx*4]
+00403C33 add esi,eax
+00403C35 add edi,eax
+00403C37 jmp dword [edx*4+403C40h]
+00403C3E mov edi,edi
+00403C40 push eax
+00403C41 cmp al,40h
+00403C43 add [eax+3Ch],bl
+00403C46 inc eax
+00403C47 add [esp+edi+40h],ah
+00403C4B add [eax+3Ch],bh
+00403C4E inc eax
+00403C4F add [ebx+5F5E0845h],cl
+00403C55 leave
+00403C56 ret
+00403C57 nop
+00403C58 mov al,[esi]
+00403C5A mov [edi],al
+00403C5C mov eax,[ebp+8]
+00403C5F pop esi
+00403C60 pop edi
+00403C61 leave
+00403C62 ret
+00403C63 nop
+00403C64 mov al,[esi]
+00403C66 mov [edi],al
+00403C68 mov al,[esi+1]
+00403C6B mov [edi+1],al
+00403C6E mov eax,[ebp+8]
+00403C71 pop esi
+00403C72 pop edi
+00403C73 leave
+00403C74 ret
+00403C75 lea ecx,[ecx]
+00403C78 mov al,[esi]
+00403C7A mov [edi],al
+00403C7C mov al,[esi+1]
+00403C7F mov [edi+1],al
+00403C82 mov al,[esi+2]
+00403C85 mov [edi+2],al
+00403C88 mov eax,[ebp+8]
+00403C8B pop esi
+00403C8C pop edi
+00403C8D leave
+00403C8E ret
+00403C8F nop
+00403C90 lea esi,[ecx+esi-4]
+00403C94 lea edi,[ecx+edi-4]
+00403C98 test edi,3
+00403C9E jne short 00403CC4h
+00403CA0 shr ecx,2
+00403CA3 and edx,3
+00403CA6 cmp ecx,8
+00403CA9 jb short 00403CB8h
+00403CAB std
+00403CAC rep movsd
+00403CAE cld
+00403CAF jmp dword [edx*4+403DDCh]
+00403CB6 mov edi,edi
+00403CB8 neg ecx
+00403CBA jmp dword [ecx*4+403D8Ch]
+00403CC1 lea ecx,[ecx]
+00403CC4 mov eax,edi
+00403CC6 mov edx,3
+00403CCB cmp ecx,4
+00403CCE jb short 00403CDCh
+00403CD0 and eax,3
+00403CD3 sub ecx,eax
+00403CD5 jmp dword [eax*4+403CE0h]
+00403CDC jmp dword [ecx*4+403DDCh]
+00403CE3 nop
+00403CE4 (bad)
+00403CE7 add [edi*1+3D3C0040h],dl
+00403CEE inc eax
+00403CEF add [edx-2EDCFCBAh],cl
+00403CF5 mov [edi+3],al
+00403CF8 sub esi,1
+00403CFB shr ecx,2
+00403CFE sub edi,1
+00403D01 cmp ecx,8
+00403D04 jb short 00403CB8h
+00403D06 std
+00403D07 rep movsd
+00403D09 cld
+00403D0A jmp dword [edx*4+403DDCh]
+00403D11 lea ecx,[ecx]
+00403D14 mov al,[esi+3]
+00403D17 and edx,ecx
+00403D19 mov [edi+3],al
+00403D1C mov al,[esi+2]
+00403D1F shr ecx,2
+00403D22 mov [edi+2],al
+00403D25 sub esi,2
+00403D28 sub edi,2
+00403D2B cmp ecx,8
+00403D2E jb short 00403CB8h
+00403D30 std
+00403D31 rep movsd
+00403D33 cld
+00403D34 jmp dword [edx*4+403DDCh]
+00403D3B nop
+00403D3C mov al,[esi+3]
+00403D3F and edx,ecx
+00403D41 mov [edi+3],al
+00403D44 mov al,[esi+2]
+00403D47 mov [edi+2],al
+00403D4A mov al,[esi+1]
+00403D4D shr ecx,2
+00403D50 mov [edi+1],al
+00403D53 sub esi,3
+00403D56 sub edi,3
+00403D59 cmp ecx,8
+00403D5C jb near 00403CB8h
+00403D62 std
+00403D63 rep movsd
+00403D65 cld
+00403D66 jmp dword [edx*4+403DDCh]
+00403D6D lea ecx,[ecx]
+00403D70 nop
+00403D71 cmp eax,3D980040h
+00403D76 inc eax
+00403D77 add [eax-57FFBFC3h],ah
+00403D7D cmp eax,3DB00040h
+00403D82 inc eax
+00403D83 add [eax-3FFFBFC3h],bh
+00403D89 cmp eax,3DD30040h
+00403D8E inc eax
+00403D8F add [ebx-76E371BCh],cl
+00403D95 inc esp
+00403D96 (bad)
+00403D9A mov ds,[eax]
+00403D9C mov [edi+ecx*4+18h],eax
+00403DA0 mov eax,[esi+ecx*4+14h]
+00403DA4 mov [edi+ecx*4+14h],eax
+00403DA8 mov eax,[esi+ecx*4+10h]
+00403DAC mov [edi+ecx*4+10h],eax
+00403DB0 mov eax,[esi+ecx*4+0Ch]
+00403DB4 mov [edi+ecx*4+0Ch],eax
+00403DB8 mov eax,[esi+ecx*4+8]
+00403DBC mov [edi+ecx*4+8],eax
+00403DC0 mov eax,[esi+ecx*4+4]
+00403DC4 mov [edi+ecx*4+4],eax
+00403DC8 lea eax,[ecx*4]
+00403DCF add esi,eax
+00403DD1 add edi,eax
+00403DD3 jmp dword [edx*4+403DDCh]
+00403DDA mov edi,edi
+00403DDC in al,dx
+00403DDD cmp eax,3DF40040h
+00403DE2 inc eax
+00403DE3 add [esi+edi],al
+00403DE6 inc eax
+00403DE7 add [eax],bl
+00403DE9 inc eax
+00403DEB add [ebx+5F5E0845h],cl
+00403DF1 leave
+00403DF2 ret
+00403DF3 nop
+00403DF4 mov al,[esi+3]
+00403DF7 mov [edi+3],al
+00403DFA mov eax,[ebp+8]
+00403DFD pop esi
+00403DFE pop edi
+00403DFF leave
+00403E00 ret
+00403E01 lea ecx,[ecx]
+00403E04 mov al,[esi+3]
+00403E07 mov [edi+3],al
+00403E0A mov al,[esi+2]
+00403E0D mov [edi+2],al
+00403E10 mov eax,[ebp+8]
+00403E13 pop esi
+00403E14 pop edi
+00403E15 leave
+00403E16 ret
+00403E17 nop
+00403E18 mov al,[esi+3]
+00403E1B mov [edi+3],al
+00403E1E mov al,[esi+2]
+00403E21 mov [edi+2],al
+00403E24 mov al,[esi+1]
+00403E27 mov [edi+1],al
+00403E2A mov eax,[ebp+8]
+00403E2D pop esi
+00403E2E pop edi
+00403E2F leave
+00403E30 ret
+00403E31 mov edi,edi
+00403E33 push ebp
+00403E34 mov ebp,esp
+00403E36 push ebx
+00403E37 push esi
+00403E38 mov esi,[4060FCh]
+00403E3E push edi
+00403E3F mov edi,[ebp+8]
+00403E42 push edi
+00403E43 call esi
+00403E45 mov eax,[edi+0B0h]
+00403E4B test eax,eax
+00403E4D je short 00403E52h
+00403E4F push eax
+00403E50 call esi
+00403E52 mov eax,[edi+0B8h]
+00403E58 test eax,eax
+00403E5A je short 00403E5Fh
+00403E5C push eax
+00403E5D call esi
+00403E5F mov eax,[edi+0B4h]
+00403E65 test eax,eax
+00403E67 je short 00403E6Ch
+00403E69 push eax
+00403E6A call esi
+00403E6C mov eax,[edi+0C0h]
+00403E72 test eax,eax
+00403E74 je short 00403E79h
+00403E76 push eax
+00403E77 call esi
+00403E79 lea ebx,[edi+50h]
+00403E7C mov dword [ebp+8],6
+00403E83 cmp dword [ebx-8],409320h
+00403E8A je short 00403E95h
+00403E8C mov eax,[ebx]
+00403E8E test eax,eax
+00403E90 je short 00403E95h
+00403E92 push eax
+00403E93 call esi
+00403E95 cmp dword [ebx-4],0
+00403E99 je short 00403EA5h
+00403E9B mov eax,[ebx+4]
+00403E9E test eax,eax
+00403EA0 je short 00403EA5h
+00403EA2 push eax
+00403EA3 call esi
+00403EA5 add ebx,10h
+00403EA8 dec dword [ebp+8]
+00403EAB jne short 00403E83h
+00403EAD mov eax,[edi+0D4h]
+00403EB3 add eax,0B4h
+00403EB8 push eax
+00403EB9 call esi
+00403EBB pop edi
+00403EBC pop esi
+00403EBD pop ebx
+00403EBE pop ebp
+00403EBF ret
+00403EC0 mov edi,edi
+00403EC2 push ebp
+00403EC3 mov ebp,esp
+00403EC5 push edi
+00403EC6 mov edi,[ebp+8]
+00403EC9 test edi,edi
+00403ECB je near 00403F54h
+00403ED1 push ebx
+00403ED2 push esi
+00403ED3 mov esi,[40610Ch]
+00403ED9 push edi
+00403EDA call esi
+00403EDC mov eax,[edi+0B0h]
+00403EE2 test eax,eax
+00403EE4 je short 00403EE9h
+00403EE6 push eax
+00403EE7 call esi
+00403EE9 mov eax,[edi+0B8h]
+00403EEF test eax,eax
+00403EF1 je short 00403EF6h
+00403EF3 push eax
+00403EF4 call esi
+00403EF6 mov eax,[edi+0B4h]
+00403EFC test eax,eax
+00403EFE je short 00403F03h
+00403F00 push eax
+00403F01 call esi
+00403F03 mov eax,[edi+0C0h]
+00403F09 test eax,eax
+00403F0B je short 00403F10h
+00403F0D push eax
+00403F0E call esi
+00403F10 lea ebx,[edi+50h]
+00403F13 mov dword [ebp+8],6
+00403F1A cmp dword [ebx-8],409320h
+00403F21 je short 00403F2Ch
+00403F23 mov eax,[ebx]
+00403F25 test eax,eax
+00403F27 je short 00403F2Ch
+00403F29 push eax
+00403F2A call esi
+00403F2C cmp dword [ebx-4],0
+00403F30 je short 00403F3Ch
+00403F32 mov eax,[ebx+4]
+00403F35 test eax,eax
+00403F37 je short 00403F3Ch
+00403F39 push eax
+00403F3A call esi
+00403F3C add ebx,10h
+00403F3F dec dword [ebp+8]
+00403F42 jne short 00403F1Ah
+00403F44 mov eax,[edi+0D4h]
+00403F4A add eax,0B4h
+00403F4F push eax
+00403F50 call esi
+00403F52 pop esi
+00403F53 pop ebx
+00403F54 mov eax,edi
+00403F56 pop edi
+00403F57 pop ebp
+00403F58 ret
+00403F59 mov edi,edi
+00403F5B push ebp
+00403F5C mov ebp,esp
+00403F5E push ebx
+00403F5F push esi
+00403F60 mov esi,[ebp+8]
+00403F63 mov eax,[esi+0BCh]
+00403F69 xor ebx,ebx
+00403F6B push edi
+00403F6C cmp eax,ebx
+00403F6E je short 00403FDFh
+00403F70 cmp eax,409AA0h
+00403F75 je short 00403FDFh
+00403F77 mov eax,[esi+0B0h]
+00403F7D cmp eax,ebx
+00403F7F je short 00403FDFh
+00403F81 cmp [eax],ebx
+00403F83 jne short 00403FDFh
+00403F85 mov eax,[esi+0B8h]
+00403F8B cmp eax,ebx
+00403F8D je short 00403FA6h
+00403F8F cmp [eax],ebx
+00403F91 jne short 00403FA6h
+00403F93 push eax
+00403F94 call 004039AAh
+00403F99 push dword [esi+0BCh]
+00403F9F call 00405275h
+00403FA4 pop ecx
+00403FA5 pop ecx
+00403FA6 mov eax,[esi+0B4h]
+00403FAC cmp eax,ebx
+00403FAE je short 00403FC7h
+00403FB0 cmp [eax],ebx
+00403FB2 jne short 00403FC7h
+00403FB4 push eax
+00403FB5 call 004039AAh
+00403FBA push dword [esi+0BCh]
+00403FC0 call 0040520Ch
+00403FC5 pop ecx
+00403FC6 pop ecx
+00403FC7 push dword [esi+0B0h]
+00403FCD call 004039AAh
+00403FD2 push dword [esi+0BCh]
+00403FD8 call 004039AAh
+00403FDD pop ecx
+00403FDE pop ecx
+00403FDF mov eax,[esi+0C0h]
+00403FE5 cmp eax,ebx
+00403FE7 je short 0040402Dh
+00403FE9 cmp [eax],ebx
+00403FEB jne short 0040402Dh
+00403FED mov eax,[esi+0C4h]
+00403FF3 sub eax,0FEh
+00403FF8 push eax
+00403FF9 call 004039AAh
+00403FFE mov eax,[esi+0CCh]
+00404004 mov edi,80h
+00404009 sub eax,edi
+0040400B push eax
+0040400C call 004039AAh
+00404011 mov eax,[esi+0D0h]
+00404017 sub eax,edi
+00404019 push eax
+0040401A call 004039AAh
+0040401F push dword [esi+0C0h]
+00404025 call 004039AAh
+0040402A add esp,10h
+0040402D mov eax,[esi+0D4h]
+00404033 cmp eax,409328h
+00404038 je short 00404055h
+0040403A cmp [eax+0B4h],ebx
+00404040 jne short 00404055h
+00404042 push eax
+00404043 call 00404E95h
+00404048 push dword [esi+0D4h]
+0040404E call 004039AAh
+00404053 pop ecx
+00404054 pop ecx
+00404055 lea edi,[esi+50h]
+00404058 mov dword [ebp+8],6
+0040405F cmp dword [edi-8],409320h
+00404066 je short 00404079h
+00404068 mov eax,[edi]
+0040406A cmp eax,ebx
+0040406C je short 00404079h
+0040406E cmp [eax],ebx
+00404070 jne short 00404079h
+00404072 push eax
+00404073 call 004039AAh
+00404078 pop ecx
+00404079 cmp [edi-4],ebx
+0040407C je short 00404090h
+0040407E mov eax,[edi+4]
+00404081 cmp eax,ebx
+00404083 je short 00404090h
+00404085 cmp [eax],ebx
+00404087 jne short 00404090h
+00404089 push eax
+0040408A call 004039AAh
+0040408F pop ecx
+00404090 add edi,10h
+00404093 dec dword [ebp+8]
+00404096 jne short 0040405Fh
+00404098 push esi
+00404099 call 004039AAh
+0040409E pop ecx
+0040409F pop edi
+004040A0 pop esi
+004040A1 pop ebx
+004040A2 pop ebp
+004040A3 ret
+004040A4 mov edi,edi
+004040A6 push ebp
+004040A7 mov ebp,esp
+004040A9 push edi
+004040AA mov edi,[ebp+0Ch]
+004040AD test edi,edi
+004040AF je short 004040ECh
+004040B1 mov eax,[ebp+8]
+004040B4 test eax,eax
+004040B6 je short 004040ECh
+004040B8 push esi
+004040B9 mov esi,[eax]
+004040BB cmp esi,edi
+004040BD je short 004040E7h
+004040BF push edi
+004040C0 mov [eax],edi
+004040C2 call 00403E31h
+004040C7 pop ecx
+004040C8 test esi,esi
+004040CA je short 004040E7h
+004040CC push esi
+004040CD call 00403EC0h
+004040D2 cmp dword [esi],0
+004040D5 pop ecx
+004040D6 jne short 004040E7h
+004040D8 cmp esi,409490h
+004040DE je short 004040E7h
+004040E0 push esi
+004040E1 call 00403F59h
+004040E6 pop ecx
+004040E7 mov eax,edi
+004040E9 pop esi
+004040EA jmp short 004040EEh
+004040EC xor eax,eax
+004040EE pop edi
+004040EF pop ebp
+004040F0 ret
+004040F1 push 0Ch
+004040F3 push 407C40h
+004040F8 call 00402A40h
+004040FD call 00402751h
+00404102 mov esi,eax
+00404104 mov eax,[409AF4h]
+00404109 test [esi+70h],eax
+0040410C je short 00404130h
+0040410E cmp dword [esi+6Ch],0
+00404112 je short 00404130h
+00404114 call 00402751h
+00404119 mov esi,[eax+6Ch]
+0040411C test esi,esi
+0040411E jne short 00404128h
+00404120 push 20h
+00404122 call 00401C1Ch
+00404127 pop ecx
+00404128 mov eax,esi
+0040412A call 00402A85h
+0040412F ret
+00404130 push 0Ch
+00404132 call 00402E8Eh
+00404137 pop ecx
+00404138 and dword [ebp-4],0
+0040413C push dword [409568h]
+00404142 add esi,6Ch
+00404145 push esi
+00404146 call 004040A4h
+0040414B pop ecx
+0040414C pop ecx
+0040414D mov [ebp-1Ch],eax
+00404150 mov dword [ebp-4],0FFFFFFFEh
+00404157 call 0040415Eh
+0040415C jmp short 0040411Ch
+0040415E push 0Ch
+00404160 call 00402DB5h
+00404165 pop ecx
+00404166 mov esi,[ebp-1Ch]
+00404169 ret
+0040416A sub eax,3A4h
+0040416F je short 00404193h
+00404171 sub eax,4
+00404174 je short 0040418Dh
+00404176 sub eax,0Dh
+00404179 je short 00404187h
+0040417B dec eax
+0040417C je short 00404181h
+0040417E xor eax,eax
+00404180 ret
+00404181 mov eax,404h
+00404186 ret
+00404187 mov eax,412h
+0040418C ret
+0040418D mov eax,804h
+00404192 ret
+00404193 mov eax,411h
+00404198 ret
+00404199 mov edi,edi
+0040419B push esi
+0040419C push edi
+0040419D mov esi,eax
+0040419F push 101h
+004041A4 xor edi,edi
+004041A6 lea eax,[esi+1Ch]
+004041A9 push edi
+004041AA push eax
+004041AB call 00401600h
+004041B0 xor eax,eax
+004041B2 movzx ecx,ax
+004041B5 mov eax,ecx
+004041B7 mov [esi+4],edi
+004041BA mov [esi+8],edi
+004041BD mov [esi+0Ch],edi
+004041C0 shl ecx,10h
+004041C3 or eax,ecx
+004041C5 lea edi,[esi+10h]
+004041C8 stosd
+004041C9 stosd
+004041CA stosd
+004041CB mov ecx,409570h
+004041D0 add esp,0Ch
+004041D3 lea eax,[esi+1Ch]
+004041D6 sub ecx,esi
+004041D8 mov edi,101h
+004041DD mov dl,[ecx+eax]
+004041E0 mov [eax],dl
+004041E2 inc eax
+004041E3 dec edi
+004041E4 jne short 004041DDh
+004041E6 lea eax,[esi+11Dh]
+004041EC mov esi,100h
+004041F1 mov dl,[eax+ecx]
+004041F4 mov [eax],dl
+004041F6 inc eax
+004041F7 dec esi
+004041F8 jne short 004041F1h
+004041FA pop edi
+004041FB pop esi
+004041FC ret
+004041FD mov edi,edi
+004041FF push ebp
+00404200 mov ebp,esp
+00404202 sub esp,51Ch
+00404208 mov eax,[409310h]
+0040420D xor eax,ebp
+0040420F mov [ebp-4],eax
+00404212 push ebx
+00404213 push edi
+00404214 lea eax,[ebp-518h]
+0040421A push eax
+0040421B push dword [esi+4]
+0040421E call dword [40609Ch]
+00404224 mov edi,100h
+00404229 test eax,eax
+0040422B je near 0040432Dh
+00404231 xor eax,eax
+00404233 mov [ebp+eax-104h],al
+0040423A inc eax
+0040423B cmp eax,edi
+0040423D jb short 00404233h
+0040423F mov al,[ebp-512h]
+00404245 mov byte [ebp-104h],20h
+0040424C test al,al
+0040424E je short 00404280h
+00404250 lea ebx,[ebp-511h]
+00404256 movzx ecx,al
+00404259 movzx eax,byte [ebx]
+0040425C cmp ecx,eax
+0040425E ja short 00404276h
+00404260 sub eax,ecx
+00404262 inc eax
+00404263 push eax
+00404264 lea edx,[ebp+ecx-104h]
+0040426B push 20h
+0040426D push edx
+0040426E call 00401600h
+00404273 add esp,0Ch
+00404276 mov al,[ebx+1]
+00404279 add ebx,2
+0040427C test al,al
+0040427E jne short 00404256h
+00404280 push 0
+00404282 push dword [esi+0Ch]
+00404285 lea eax,[ebp-504h]
+0040428B push dword [esi+4]
+0040428E push eax
+0040428F push edi
+00404290 lea eax,[ebp-104h]
+00404296 push eax
+00404297 push 1
+00404299 push 0
+0040429B call 00405687h
+004042A0 xor ebx,ebx
+004042A2 push ebx
+004042A3 push dword [esi+4]
+004042A6 lea eax,[ebp-204h]
+004042AC push edi
+004042AD push eax
+004042AE push edi
+004042AF lea eax,[ebp-104h]
+004042B5 push eax
+004042B6 push edi
+004042B7 push dword [esi+0Ch]
+004042BA push ebx
+004042BB call 0040555Ah
+004042C0 add esp,44h
+004042C3 push ebx
+004042C4 push dword [esi+4]
+004042C7 lea eax,[ebp-304h]
+004042CD push edi
+004042CE push eax
+004042CF push edi
+004042D0 lea eax,[ebp-104h]
+004042D6 push eax
+004042D7 push 200h
+004042DC push dword [esi+0Ch]
+004042DF push ebx
+004042E0 call 0040555Ah
+004042E5 add esp,24h
+004042E8 xor eax,eax
+004042EA movzx ecx,word [ebp+eax*2-504h]
+004042F2 test cl,1
+004042F5 je short 00404305h
+004042F7 or byte [esi+eax+1Dh],10h
+004042FC mov cl,[ebp+eax-204h]
+00404303 jmp short 00404316h
+00404305 test cl,2
+00404308 je short 0040431Fh
+0040430A or byte [esi+eax+1Dh],20h
+0040430F mov cl,[ebp+eax-304h]
+00404316 mov [esi+eax+11Dh],cl
+0040431D jmp short 00404326h
+0040431F mov [esi+eax+11Dh],bl
+00404326 inc eax
+00404327 cmp eax,edi
+00404329 jb short 004042EAh
+0040432B jmp short 0040437Fh
+0040432D lea eax,[esi+11Dh]
+00404333 mov dword [ebp-51Ch],0FFFFFF9Fh
+0040433D xor ecx,ecx
+0040433F sub [ebp-51Ch],eax
+00404345 mov edx,[ebp-51Ch]
+0040434B lea eax,[esi+ecx+11Dh]
+00404352 add edx,eax
+00404354 lea ebx,[edx+20h]
+00404357 cmp ebx,19h
+0040435A ja short 00404366h
+0040435C or byte [esi+ecx+1Dh],10h
+00404361 lea edx,[ecx+20h]
+00404364 jmp short 00404373h
+00404366 cmp edx,19h
+00404369 ja short 00404377h
+0040436B or byte [esi+ecx+1Dh],20h
+00404370 lea edx,[ecx-20h]
+00404373 mov [eax],dl
+00404375 jmp short 0040437Ah
+00404377 mov byte [eax],0
+0040437A inc ecx
+0040437B cmp ecx,edi
+0040437D jb short 00404345h
+0040437F mov ecx,[ebp-4]
+00404382 pop edi
+00404383 xor ecx,ebp
+00404385 pop ebx
+00404386 call 0040399Bh
+0040438B leave
+0040438C ret
+0040438D push 0Ch
+0040438F push 407C60h
+00404394 call 00402A40h
+00404399 call 00402751h
+0040439E mov edi,eax
+004043A0 mov eax,[409AF4h]
+004043A5 test [edi+70h],eax
+004043A8 je short 004043C7h
+004043AA cmp dword [edi+6Ch],0
+004043AE je short 004043C7h
+004043B0 mov esi,[edi+68h]
+004043B3 test esi,esi
+004043B5 jne short 004043BFh
+004043B7 push 20h
+004043B9 call 00401C1Ch
+004043BE pop ecx
+004043BF mov eax,esi
+004043C1 call 00402A85h
+004043C6 ret
+004043C7 push 0Dh
+004043C9 call 00402E8Eh
+004043CE pop ecx
+004043CF and dword [ebp-4],0
+004043D3 mov esi,[edi+68h]
+004043D6 mov [ebp-1Ch],esi
+004043D9 cmp esi,[409998h]
+004043DF je short 00404417h
+004043E1 test esi,esi
+004043E3 je short 004043FFh
+004043E5 push esi
+004043E6 call dword [40610Ch]
+004043EC test eax,eax
+004043EE jne short 004043FFh
+004043F0 cmp esi,409570h
+004043F6 je short 004043FFh
+004043F8 push esi
+004043F9 call 004039AAh
+004043FE pop ecx
+004043FF mov eax,[409998h]
+00404404 mov [edi+68h],eax
+00404407 mov esi,[409998h]
+0040440D mov [ebp-1Ch],esi
+00404410 push esi
+00404411 call dword [4060FCh]
+00404417 mov dword [ebp-4],0FFFFFFFEh
+0040441E call 00404428h
+00404423 jmp short 004043B3h
+00404425 mov esi,[ebp-1Ch]
+00404428 push 0Dh
+0040442A call 00402DB5h
+0040442F pop ecx
+00404430 ret
+00404431 mov edi,edi
+00404433 push ebp
+00404434 mov ebp,esp
+00404436 mov eax,[ebp+8]
+00404439 push esi
+0040443A mov esi,ecx
+0040443C mov byte [esi+0Ch],0
+00404440 test eax,eax
+00404442 jne short 004044A7h
+00404444 call 00402751h
+00404449 mov [esi+8],eax
+0040444C mov ecx,[eax+6Ch]
+0040444F mov [esi],ecx
+00404451 mov ecx,[eax+68h]
+00404454 mov [esi+4],ecx
+00404457 mov ecx,[esi]
+00404459 cmp ecx,[409568h]
+0040445F je short 00404473h
+00404461 mov ecx,[409AF4h]
+00404467 test [eax+70h],ecx
+0040446A jne short 00404473h
+0040446C call 004040F1h
+00404471 mov [esi],eax
+00404473 mov eax,[esi+4]
+00404476 cmp eax,[409998h]
+0040447C je short 00404494h
+0040447E mov eax,[esi+8]
+00404481 mov ecx,[409AF4h]
+00404487 test [eax+70h],ecx
+0040448A jne short 00404494h
+0040448C call 0040438Dh
+00404491 mov [esi+4],eax
+00404494 mov eax,[esi+8]
+00404497 test byte [eax+70h],2
+0040449B jne short 004044B1h
+0040449D or dword [eax+70h],2
+004044A1 mov byte [esi+0Ch],1
+004044A5 jmp short 004044B1h
+004044A7 mov ecx,[eax]
+004044A9 mov [esi],ecx
+004044AB mov eax,[eax+4]
+004044AE mov [esi+4],eax
+004044B1 mov eax,esi
+004044B3 pop esi
+004044B4 pop ebp
+004044B5 ret 4
+004044B8 mov edi,edi
+004044BA push ebp
+004044BB mov ebp,esp
+004044BD sub esp,10h
+004044C0 push ebx
+004044C1 xor ebx,ebx
+004044C3 push ebx
+004044C4 lea ecx,[ebp-10h]
+004044C7 call 00404431h
+004044CC mov [40A554h],ebx
+004044D2 cmp esi,0FFFFFFFEh
+004044D5 jne short 004044F5h
+004044D7 mov dword [40A554h],1
+004044E1 call dword [40604Ch]
+004044E7 cmp [ebp-4],bl
+004044EA je short 00404531h
+004044EC mov ecx,[ebp-8]
+004044EF and dword [ecx+70h],0FFFFFFFDh
+004044F3 jmp short 00404531h
+004044F5 cmp esi,0FFFFFFFDh
+004044F8 jne short 0040450Ch
+004044FA mov dword [40A554h],1
+00404504 call dword [406050h]
+0040450A jmp short 004044E7h
+0040450C cmp esi,0FFFFFFFCh
+0040450F jne short 00404523h
+00404511 mov eax,[ebp-10h]
+00404514 mov eax,[eax+4]
+00404517 mov dword [40A554h],1
+00404521 jmp short 004044E7h
+00404523 cmp [ebp-4],bl
+00404526 je short 0040452Fh
+00404528 mov eax,[ebp-8]
+0040452B and dword [eax+70h],0FFFFFFFDh
+0040452F mov eax,esi
+00404531 pop ebx
+00404532 leave
+00404533 ret
+00404534 mov edi,edi
+00404536 push ebp
+00404537 mov ebp,esp
+00404539 sub esp,20h
+0040453C mov eax,[409310h]
+00404541 xor eax,ebp
+00404543 mov [ebp-4],eax
+00404546 push ebx
+00404547 mov ebx,[ebp+0Ch]
+0040454A push esi
+0040454B mov esi,[ebp+8]
+0040454E push edi
+0040454F call 004044B8h
+00404554 mov edi,eax
+00404556 xor esi,esi
+00404558 mov [ebp+8],edi
+0040455B cmp edi,esi
+0040455D jne short 0040456Dh
+0040455F mov eax,ebx
+00404561 call 00404199h
+00404566 xor eax,eax
+00404568 jmp 0040470Eh
+0040456D mov [ebp-1Ch],esi
+00404570 xor eax,eax
+00404572 cmp [eax+4099A0h],edi
+00404578 je near 0040460Fh
+0040457E inc dword [ebp-1Ch]
+00404581 add eax,30h
+00404584 cmp eax,0F0h
+00404589 jb short 00404572h
+0040458B cmp edi,0FDE8h
+00404591 je near 0040470Bh
+00404597 cmp edi,0FDE9h
+0040459D je near 0040470Bh
+004045A3 movzx eax,di
+004045A6 push eax
+004045A7 call dword [406048h]
+004045AD test eax,eax
+004045AF je near 0040470Bh
+004045B5 lea eax,[ebp-18h]
+004045B8 push eax
+004045B9 push edi
+004045BA call dword [40609Ch]
+004045C0 test eax,eax
+004045C2 je near 004046FFh
+004045C8 push 101h
+004045CD lea eax,[ebx+1Ch]
+004045D0 push esi
+004045D1 push eax
+004045D2 call 00401600h
+004045D7 xor edx,edx
+004045D9 inc edx
+004045DA add esp,0Ch
+004045DD mov [ebx+4],edi
+004045E0 mov [ebx+0Ch],esi
+004045E3 cmp [ebp-18h],edx
+004045E6 jbe near 004046E8h
+004045EC cmp byte [ebp-12h],0
+004045F0 je near 004046C9h
+004045F6 lea esi,[ebp-11h]
+004045F9 mov cl,[esi]
+004045FB test cl,cl
+004045FD je near 004046C9h
+00404603 movzx eax,byte [esi-1]
+00404607 movzx ecx,cl
+0040460A jmp 004046B8h
+0040460F push 101h
+00404614 lea eax,[ebx+1Ch]
+00404617 push esi
+00404618 push eax
+00404619 call 00401600h
+0040461E mov ecx,[ebp-1Ch]
+00404621 add esp,0Ch
+00404624 imul ecx,30h
+00404627 mov [ebp-20h],esi
+0040462A lea esi,[ecx+4099B0h]
+00404630 mov [ebp-1Ch],esi
+00404633 jmp short 00404660h
+00404635 mov al,[esi+1]
+00404638 test al,al
+0040463A je short 00404665h
+0040463C movzx edi,byte [esi]
+0040463F movzx eax,al
+00404642 jmp short 00404656h
+00404644 mov eax,[ebp-20h]
+00404647 mov al,[eax+40999Ch]
+0040464D or [ebx+edi+1Dh],al
+00404651 movzx eax,byte [esi+1]
+00404655 inc edi
+00404656 cmp edi,eax
+00404658 jbe short 00404644h
+0040465A mov edi,[ebp+8]
+0040465D add esi,2
+00404660 cmp byte [esi],0
+00404663 jne short 00404635h
+00404665 mov esi,[ebp-1Ch]
+00404668 inc dword [ebp-20h]
+0040466B add esi,8
+0040466E cmp dword [ebp-20h],4
+00404672 mov [ebp-1Ch],esi
+00404675 jb short 00404660h
+00404677 mov eax,edi
+00404679 mov [ebx+4],edi
+0040467C mov dword [ebx+8],1
+00404683 call 0040416Ah
+00404688 push 6
+0040468A mov [ebx+0Ch],eax
+0040468D lea eax,[ebx+10h]
+00404690 lea ecx,[ecx+4099A4h]
+00404696 pop edx
+00404697 mov si,[ecx]
+0040469A mov [eax],si
+0040469D add ecx,2
+004046A0 add eax,2
+004046A3 dec edx
+004046A4 jne short 00404697h
+004046A6 mov esi,ebx
+004046A8 call 004041FDh
+004046AD jmp 00404566h
+004046B2 or byte [ebx+eax+1Dh],4
+004046B7 inc eax
+004046B8 cmp eax,ecx
+004046BA jbe short 004046B2h
+004046BC add esi,2
+004046BF cmp byte [esi-1],0
+004046C3 jne near 004045F9h
+004046C9 lea eax,[ebx+1Eh]
+004046CC mov ecx,0FEh
+004046D1 or byte [eax],8
+004046D4 inc eax
+004046D5 dec ecx
+004046D6 jne short 004046D1h
+004046D8 mov eax,[ebx+4]
+004046DB call 0040416Ah
+004046E0 mov [ebx+0Ch],eax
+004046E3 mov [ebx+8],edx
+004046E6 jmp short 004046EBh
+004046E8 mov [ebx+8],esi
+004046EB xor eax,eax
+004046ED movzx ecx,ax
+004046F0 mov eax,ecx
+004046F2 shl ecx,10h
+004046F5 or eax,ecx
+004046F7 lea edi,[ebx+10h]
+004046FA stosd
+004046FB stosd
+004046FC stosd
+004046FD jmp short 004046A6h
+004046FF cmp [40A554h],esi
+00404705 jne near 0040455Fh
+0040470B or eax,0FFFFFFFFh
+0040470E mov ecx,[ebp-4]
+00404711 pop edi
+00404712 pop esi
+00404713 xor ecx,ebp
+00404715 pop ebx
+00404716 call 0040399Bh
+0040471B leave
+0040471C ret
+0040471D push 14h
+0040471F push 407C80h
+00404724 call 00402A40h
+00404729 or dword [ebp-20h],0FFFFFFFFh
+0040472D call 00402751h
+00404732 mov edi,eax
+00404734 mov [ebp-24h],edi
+00404737 call 0040438Dh
+0040473C mov ebx,[edi+68h]
+0040473F mov esi,[ebp+8]
+00404742 call 004044B8h
+00404747 mov [ebp+8],eax
+0040474A cmp eax,[ebx+4]
+0040474D je near 004048AAh
+00404753 push 220h
+00404758 call 004039E4h
+0040475D pop ecx
+0040475E mov ebx,eax
+00404760 test ebx,ebx
+00404762 je near 004048AEh
+00404768 mov ecx,88h
+0040476D mov esi,[edi+68h]
+00404770 mov edi,ebx
+00404772 rep movsd
+00404774 and dword [ebx],0
+00404777 push ebx
+00404778 push dword [ebp+8]
+0040477B call 00404534h
+00404780 pop ecx
+00404781 pop ecx
+00404782 mov [ebp-20h],eax
+00404785 test eax,eax
+00404787 jne near 00404889h
+0040478D mov esi,[ebp-24h]
+00404790 push dword [esi+68h]
+00404793 call dword [40610Ch]
+00404799 test eax,eax
+0040479B jne short 004047AEh
+0040479D mov eax,[esi+68h]
+004047A0 cmp eax,409570h
+004047A5 je short 004047AEh
+004047A7 push eax
+004047A8 call 004039AAh
+004047AD pop ecx
+004047AE mov [esi+68h],ebx
+004047B1 push ebx
+004047B2 mov edi,[4060FCh]
+004047B8 call edi
+004047BA test byte [esi+70h],2
+004047BE jne near 004048AEh
+004047C4 test byte [409AF4h],1
+004047CB jne near 004048AEh
+004047D1 push 0Dh
+004047D3 call 00402E8Eh
+004047D8 pop ecx
+004047D9 and dword [ebp-4],0
+004047DD mov eax,[ebx+4]
+004047E0 mov [40A564h],eax
+004047E5 mov eax,[ebx+8]
+004047E8 mov [40A568h],eax
+004047ED mov eax,[ebx+0Ch]
+004047F0 mov [40A56Ch],eax
+004047F5 xor eax,eax
+004047F7 mov [ebp-1Ch],eax
+004047FA cmp eax,5
+004047FD jge short 0040480Fh
+004047FF mov cx,[ebx+eax*2+10h]
+00404804 mov [eax*2+40A558h],cx
+0040480C inc eax
+0040480D jmp short 004047F7h
+0040480F xor eax,eax
+00404811 mov [ebp-1Ch],eax
+00404814 cmp eax,101h
+00404819 jge short 00404828h
+0040481B mov cl,[eax+ebx+1Ch]
+0040481F mov [eax+409790h],cl
+00404825 inc eax
+00404826 jmp short 00404811h
+00404828 xor eax,eax
+0040482A mov [ebp-1Ch],eax
+0040482D cmp eax,100h
+00404832 jge short 00404844h
+00404834 mov cl,[eax+ebx+11Dh]
+0040483B mov [eax+409898h],cl
+00404841 inc eax
+00404842 jmp short 0040482Ah
+00404844 push dword [409998h]
+0040484A call dword [40610Ch]
+00404850 test eax,eax
+00404852 jne short 00404867h
+00404854 mov eax,[409998h]
+00404859 cmp eax,409570h
+0040485E je short 00404867h
+00404860 push eax
+00404861 call 004039AAh
+00404866 pop ecx
+00404867 mov [409998h],ebx
+0040486D push ebx
+0040486E call edi
+00404870 mov dword [ebp-4],0FFFFFFFEh
+00404877 call 0040487Eh
+0040487C jmp short 004048AEh
+0040487E push 0Dh
+00404880 call 00402DB5h
+00404885 pop ecx
+00404886 ret
+00404887 jmp short 004048AEh
+00404889 cmp eax,0FFFFFFFFh
+0040488C jne short 004048AEh
+0040488E cmp ebx,409570h
+00404894 je short 0040489Dh
+00404896 push ebx
+00404897 call 004039AAh
+0040489C pop ecx
+0040489D call 004032F7h
+004048A2 mov dword [eax],16h
+004048A8 jmp short 004048AEh
+004048AA and dword [ebp-20h],0
+004048AE mov eax,[ebp-20h]
+004048B1 call 00402A85h
+004048B6 ret
+004048B7 cmp dword [40A9CCh],0
+004048BE jne short 004048D2h
+004048C0 push 0FFFFFFFDh
+004048C2 call 0040471Dh
+004048C7 pop ecx
+004048C8 mov dword [40A9CCh],1
+004048D2 xor eax,eax
+004048D4 ret
+004048D5 int3
+004048D6 int3
+004048D7 int3
+004048D8 int3
+004048D9 int3
+004048DA int3
+004048DB int3
+004048DC int3
+004048DD int3
+004048DE int3
+004048DF int3
+004048E0 push ebx
+004048E1 push esi
+004048E2 push edi
+004048E3 mov edx,[esp+10h]
+004048E7 mov eax,[esp+14h]
+004048EB mov ecx,[esp+18h]
+004048EF push ebp
+004048F0 push edx
+004048F1 push eax
+004048F2 push ecx
+004048F3 push ecx
+004048F4 push 404970h
+004048F9 push dword [fs:0]
+00404900 mov eax,[409310h]
+00404905 xor eax,esp
+00404907 mov [esp+8],eax
+0040490B mov [fs:0],esp
+00404912 mov eax,[esp+30h]
+00404916 mov ebx,[eax+8]
+00404919 mov ecx,[esp+2Ch]
+0040491D xor ebx,[ecx]
+0040491F mov esi,[eax+0Ch]
+00404922 cmp esi,0FFFFFFFEh
+00404925 je short 00404962h
+00404927 mov edx,[esp+34h]
+0040492B cmp edx,0FFFFFFFEh
+0040492E je short 00404934h
+00404930 cmp esi,edx
+00404932 jbe short 00404962h
+00404934 lea esi,[esi+esi*2]
+00404937 lea ebx,[ebx+esi*4+10h]
+0040493B mov ecx,[ebx]
+0040493D mov [eax+0Ch],ecx
+00404940 cmp dword [ebx+4],0
+00404944 jne short 00404912h
+00404946 push 101h
+0040494B mov eax,[ebx+8]
+0040494E call 004057E5h
+00404953 mov ecx,1
+00404958 mov eax,[ebx+8]
+0040495B call 00405804h
+00404960 jmp short 00404912h
+00404962 pop dword [fs:0]
+00404969 add esp,18h
+0040496C pop edi
+0040496D pop esi
+0040496E pop ebx
+0040496F ret
+00404970 mov ecx,[esp+4]
+00404974 test dword [ecx+4],6
+0040497B mov eax,1
+00404980 je short 004049B5h
+00404982 mov eax,[esp+8]
+00404986 mov ecx,[eax+8]
+00404989 xor ecx,eax
+0040498B call 0040399Bh
+00404990 push ebp
+00404991 mov ebp,[eax+18h]
+00404994 push dword [eax+0Ch]
+00404997 push dword [eax+10h]
+0040499A push dword [eax+14h]
+0040499D call 004048E0h
+004049A2 add esp,0Ch
+004049A5 pop ebp
+004049A6 mov eax,[esp+8]
+004049AA mov edx,[esp+10h]
+004049AE mov [edx],eax
+004049B0 mov eax,3
+004049B5 ret
+004049B6 push ebp
+004049B7 mov ecx,[esp+8]
+004049BB mov ebp,[ecx]
+004049BD push dword [ecx+1Ch]
+004049C0 push dword [ecx+18h]
+004049C3 push dword [ecx+28h]
+004049C6 call 004048E0h
+004049CB add esp,0Ch
+004049CE pop ebp
+004049CF ret 4
+004049D2 push ebp
+004049D3 push esi
+004049D4 push edi
+004049D5 push ebx
+004049D6 mov ebp,edx
+004049D8 xor eax,eax
+004049DA xor ebx,ebx
+004049DC xor edx,edx
+004049DE xor esi,esi
+004049E0 xor edi,edi
+004049E2 call ecx
+004049E4 pop ebx
+004049E5 pop edi
+004049E6 pop esi
+004049E7 pop ebp
+004049E8 ret
+004049E9 mov ebp,edx
+004049EB mov esi,ecx
+004049ED mov eax,ecx
+004049EF push 1
+004049F1 call 004057E5h
+004049F6 xor eax,eax
+004049F8 xor ebx,ebx
+004049FA xor ecx,ecx
+004049FC xor edx,edx
+004049FE xor edi,edi
+00404A00 jmp esi
+00404A02 push ebp
+00404A03 mov ebp,esp
+00404A05 push ebx
+00404A06 push esi
+00404A07 push edi
+00404A08 push 0
+00404A0A push edx
+00404A0B push 404A16h
+00404A10 push ecx
+00404A11 call 0040586Ch
+00404A16 pop edi
+00404A17 pop esi
+00404A18 pop ebx
+00404A19 pop ebp
+00404A1A ret
+00404A1B push ebp
+00404A1C mov ebp,[esp+8]
+00404A20 push edx
+00404A21 push ecx
+00404A22 push dword [esp+14h]
+00404A26 call 004048E0h
+00404A2B add esp,0Ch
+00404A2E pop ebp
+00404A2F ret 8
+00404A32 call 00402F16h
+00404A37 test eax,eax
+00404A39 je short 00404A43h
+00404A3B push 16h
+00404A3D call 00402F23h
+00404A42 pop ecx
+00404A43 test byte [409A90h],2
+00404A4A je short 00404A5Dh
+00404A4C push 1
+00404A4E push 40000015h
+00404A53 push 3
+00404A55 call 004030F3h
+00404A5A add esp,0Ch
+00404A5D push 3
+00404A5F call 00401BE8h
+00404A64 int3
+00404A65 mov edi,edi
+00404A67 push ebp
+00404A68 mov ebp,esp
+00404A6A mov eax,[ebp+8]
+00404A6D test eax,eax
+00404A6F je short 00404A83h
+00404A71 sub eax,8
+00404A74 cmp dword [eax],0DDDDh
+00404A7A jne short 00404A83h
+00404A7C push eax
+00404A7D call 004039AAh
+00404A82 pop ecx
+00404A83 pop ebp
+00404A84 ret
+00404A85 and dword [40A8A0h],0
+00404A8C ret
+00404A8D mov edi,edi
+00404A8F push ebp
+00404A90 mov ebp,esp
+00404A92 cmp dword [ebp+8],0
+00404A96 jne short 00404AADh
+00404A98 call 004032F7h
+00404A9D mov dword [eax],16h
+00404AA3 call 0040326Eh
+00404AA8 or eax,0FFFFFFFFh
+00404AAB pop ebp
+00404AAC ret
+00404AAD push dword [ebp+8]
+00404AB0 push 0
+00404AB2 push dword [40A3BCh]
+00404AB8 call dword [40603Ch]
+00404ABE pop ebp
+00404ABF ret
+00404AC0 push 2
+00404AC2 call 00401C1Ch
+00404AC7 pop ecx
+00404AC8 ret
+00404AC9 mov edi,edi
+00404ACB push ebp
+00404ACC mov ebp,esp
+00404ACE sub esp,328h
+00404AD4 mov [40A678h],eax
+00404AD9 mov [40A674h],ecx
+00404ADF mov [40A670h],edx
+00404AE5 mov [40A66Ch],ebx
+00404AEB mov [40A668h],esi
+00404AF1 mov [40A664h],edi
+00404AF7 o16 mov [40A690h],ss
+00404AFE o16 mov [40A684h],cs
+00404B05 o16 mov [40A660h],ds
+00404B0C o16 mov [40A65Ch],es
+00404B13 o16 mov [40A658h],fs
+00404B1A o16 mov [40A654h],gs
+00404B21 pushf
+00404B22 pop dword [40A688h]
+00404B28 mov eax,[ebp]
+00404B2B mov [40A67Ch],eax
+00404B30 mov eax,[ebp+4]
+00404B33 mov [40A680h],eax
+00404B38 lea eax,[ebp+8]
+00404B3B mov [40A68Ch],eax
+00404B40 mov eax,[ebp-320h]
+00404B46 mov dword [40A5C8h],10001h
+00404B50 mov eax,[40A680h]
+00404B55 mov [40A57Ch],eax
+00404B5A mov dword [40A570h],0C0000409h
+00404B64 mov dword [40A574h],1
+00404B6E mov eax,[409310h]
+00404B73 mov [ebp-328h],eax
+00404B79 mov eax,[409314h]
+00404B7E mov [ebp-324h],eax
+00404B84 call dword [406068h]
+00404B8A mov [40A5C0h],eax
+00404B8F push 1
+00404B91 call 00404A85h
+00404B96 pop ecx
+00404B97 push 0
+00404B99 call dword [4060B4h]
+00404B9F push 407290h
+00404BA4 call dword [40606Ch]
+00404BAA cmp dword [40A5C0h],0
+00404BB1 jne short 00404BBBh
+00404BB3 push 1
+00404BB5 call 00404A85h
+00404BBA pop ecx
+00404BBB push 0C0000409h
+00404BC0 call dword [406060h]
+00404BC6 push eax
+00404BC7 call dword [406064h]
+00404BCD leave
+00404BCE ret
+00404BCF mov edi,edi
+00404BD1 push ebp
+00404BD2 mov ebp,esp
+00404BD4 push ebx
+00404BD5 mov ebx,[ebp+8]
+00404BD8 cmp ebx,0FFFFFFE0h
+00404BDB ja short 00404C4Ch
+00404BDD push esi
+00404BDE push edi
+00404BDF cmp dword [40A3BCh],0
+00404BE6 jne short 00404C00h
+00404BE8 call 00401E0Fh
+00404BED push 1Eh
+00404BEF call 00401C60h
+00404BF4 push 0FFh
+00404BF9 call 0040197Ah
+00404BFE pop ecx
+00404BFF pop ecx
+00404C00 test ebx,ebx
+00404C02 je short 00404C08h
+00404C04 mov eax,ebx
+00404C06 jmp short 00404C0Bh
+00404C08 xor eax,eax
+00404C0A inc eax
+00404C0B push eax
+00404C0C push 0
+00404C0E push dword [40A3BCh]
+00404C14 call dword [406038h]
+00404C1A mov edi,eax
+00404C1C test edi,edi
+00404C1E jne short 00404C46h
+00404C20 push 0Ch
+00404C22 pop esi
+00404C23 cmp [40A89Ch],eax
+00404C29 je short 00404C38h
+00404C2B push ebx
+00404C2C call 0040328Dh
+00404C31 pop ecx
+00404C32 test eax,eax
+00404C34 jne short 00404BDFh
+00404C36 jmp short 00404C3Fh
+00404C38 call 004032F7h
+00404C3D mov [eax],esi
+00404C3F call 004032F7h
+00404C44 mov [eax],esi
+00404C46 mov eax,edi
+00404C48 pop edi
+00404C49 pop esi
+00404C4A jmp short 00404C60h
+00404C4C push ebx
+00404C4D call 0040328Dh
+00404C52 pop ecx
+00404C53 call 004032F7h
+00404C58 mov dword [eax],0Ch
+00404C5E xor eax,eax
+00404C60 pop ebx
+00404C61 pop ebp
+00404C62 ret
+00404C63 mov edi,edi
+00404C65 push ebp
+00404C66 mov ebp,esp
+00404C68 mov ecx,[ebp+8]
+00404C6B test ecx,ecx
+00404C6D je short 00404C8Ah
+00404C6F push 0FFFFFFE0h
+00404C71 xor edx,edx
+00404C73 pop eax
+00404C74 div ecx
+00404C76 cmp eax,[ebp+0Ch]
+00404C79 jae short 00404C8Ah
+00404C7B call 004032F7h
+00404C80 mov dword [eax],0Ch
+00404C86 xor eax,eax
+00404C88 pop ebp
+00404C89 ret
+00404C8A imul ecx,[ebp+0Ch]
+00404C8E push esi
+00404C8F mov esi,ecx
+00404C91 test esi,esi
+00404C93 jne short 00404C96h
+00404C95 inc esi
+00404C96 xor eax,eax
+00404C98 cmp esi,0FFFFFFE0h
+00404C9B ja short 00404CB0h
+00404C9D push esi
+00404C9E push 8
+00404CA0 push dword [40A3BCh]
+00404CA6 call dword [406038h]
+00404CAC test eax,eax
+00404CAE jne short 00404CE2h
+00404CB0 cmp dword [40A89Ch],0
+00404CB7 je short 00404CD5h
+00404CB9 push esi
+00404CBA call 0040328Dh
+00404CBF pop ecx
+00404CC0 test eax,eax
+00404CC2 jne short 00404C96h
+00404CC4 mov eax,[ebp+10h]
+00404CC7 test eax,eax
+00404CC9 je short 00404CD1h
+00404CCB mov dword [eax],0Ch
+00404CD1 xor eax,eax
+00404CD3 jmp short 00404CE2h
+00404CD5 mov ecx,[ebp+10h]
+00404CD8 test ecx,ecx
+00404CDA je short 00404CE2h
+00404CDC mov dword [ecx],0Ch
+00404CE2 pop esi
+00404CE3 pop ebp
+00404CE4 ret
+00404CE5 mov edi,edi
+00404CE7 push ebp
+00404CE8 mov ebp,esp
+00404CEA cmp dword [ebp+8],0
+00404CEE jne short 00404CFBh
+00404CF0 push dword [ebp+0Ch]
+00404CF3 call 00404BCFh
+00404CF8 pop ecx
+00404CF9 pop ebp
+00404CFA ret
+00404CFB push esi
+00404CFC mov esi,[ebp+0Ch]
+00404CFF test esi,esi
+00404D01 jne short 00404D10h
+00404D03 push dword [ebp+8]
+00404D06 call 004039AAh
+00404D0B pop ecx
+00404D0C xor eax,eax
+00404D0E jmp short 00404D5Dh
+00404D10 push edi
+00404D11 jmp short 00404D43h
+00404D13 test esi,esi
+00404D15 jne short 00404D18h
+00404D17 inc esi
+00404D18 push esi
+00404D19 push dword [ebp+8]
+00404D1C push 0
+00404D1E push dword [40A3BCh]
+00404D24 call dword [406034h]
+00404D2A mov edi,eax
+00404D2C test edi,edi
+00404D2E jne short 00404D8Eh
+00404D30 cmp [40A89Ch],eax
+00404D36 je short 00404D78h
+00404D38 push esi
+00404D39 call 0040328Dh
+00404D3E pop ecx
+00404D3F test eax,eax
+00404D41 je short 00404D60h
+00404D43 cmp esi,0FFFFFFE0h
+00404D46 jbe short 00404D13h
+00404D48 push esi
+00404D49 call 0040328Dh
+00404D4E pop ecx
+00404D4F call 004032F7h
+00404D54 mov dword [eax],0Ch
+00404D5A xor eax,eax
+00404D5C pop edi
+00404D5D pop esi
+00404D5E pop ebp
+00404D5F ret
+00404D60 call 004032F7h
+00404D65 mov esi,eax
+00404D67 call dword [406108h]
+00404D6D push eax
+00404D6E call 004032B5h
+00404D73 pop ecx
+00404D74 mov [esi],eax
+00404D76 jmp short 00404D5Ah
+00404D78 call 004032F7h
+00404D7D mov esi,eax
+00404D7F call dword [406108h]
+00404D85 push eax
+00404D86 call 004032B5h
+00404D8B pop ecx
+00404D8C mov [esi],eax
+00404D8E mov eax,edi
+00404D90 jmp short 00404D5Ch
+00404D92 push edi
+00404D93 mov eax,esi
+00404D95 and eax,0Fh
+00404D98 test eax,eax
+00404D9A jne near 00404E61h
+00404DA0 mov edx,ecx
+00404DA2 and ecx,7Fh
+00404DA5 shr edx,7
+00404DA8 je short 00404E0Fh
+00404DAA jmp short 00404DB2h
+00404DAC lea ebx,[ebx]
+00404DB2 movdqa xmm0,[esi]
+00404DB6 movdqa xmm1,[esi+10h]
+00404DBB movdqa xmm2,[esi+20h]
+00404DC0 movdqa xmm3,[esi+30h]
+00404DC5 movdqa [edi],xmm0
+00404DC9 movdqa [edi+10h],xmm1
+00404DCE movdqa [edi+20h],xmm2
+00404DD3 movdqa [edi+30h],xmm3
+00404DD8 movdqa xmm4,[esi+40h]
+00404DDD movdqa xmm5,[esi+50h]
+00404DE2 movdqa xmm6,[esi+60h]
+00404DE7 movdqa xmm7,[esi+70h]
+00404DEC movdqa [edi+40h],xmm4
+00404DF1 movdqa [edi+50h],xmm5
+00404DF6 movdqa [edi+60h],xmm6
+00404DFB movdqa [edi+70h],xmm7
+00404E00 lea esi,[esi+80h]
+00404E06 lea edi,[edi+80h]
+00404E0C dec edx
+00404E0D jne short 00404DB2h
+00404E0F test ecx,ecx
+00404E11 je short 00404E5Ch
+00404E13 mov edx,ecx
+00404E15 shr edx,4
+00404E18 test edx,edx
+00404E1A je short 00404E33h
+00404E1C lea ebx,[ebx]
+00404E22 movdqa xmm0,[esi]
+00404E26 movdqa [edi],xmm0
+00404E2A lea esi,[esi+10h]
+00404E2D lea edi,[edi+10h]
+00404E30 dec edx
+00404E31 jne short 00404E22h
+00404E33 and ecx,0Fh
+00404E36 je short 00404E5Ch
+00404E38 mov eax,ecx
+00404E3A shr ecx,2
+00404E3D je short 00404E4Ch
+00404E3F mov edx,[esi]
+00404E41 mov [edi],edx
+00404E43 lea esi,[esi+4]
+00404E46 lea edi,[edi+4]
+00404E49 dec ecx
+00404E4A jne short 00404E3Fh
+00404E4C mov ecx,eax
+00404E4E and ecx,3
+00404E51 je short 00404E5Ch
+00404E53 mov al,[esi]
+00404E55 mov [edi],al
+00404E57 inc esi
+00404E58 inc edi
+00404E59 dec ecx
+00404E5A jne short 00404E53h
+00404E5C pop eax
+00404E5D pop esi
+00404E5E pop edi
+00404E5F pop ebp
+00404E60 ret
+00404E61 mov edx,10h
+00404E66 sub edx,eax
+00404E68 sub ecx,edx
+00404E6A push ecx
+00404E6B mov eax,edx
+00404E6D mov ecx,eax
+00404E6F and ecx,3
+00404E72 je short 00404E7Dh
+00404E74 mov dl,[esi]
+00404E76 mov [edi],dl
+00404E78 inc esi
+00404E79 inc edi
+00404E7A dec ecx
+00404E7B jne short 00404E74h
+00404E7D shr eax,2
+00404E80 je short 00404E8Fh
+00404E82 mov edx,[esi]
+00404E84 mov [edi],edx
+00404E86 lea esi,[esi+4]
+00404E89 lea edi,[edi+4]
+00404E8C dec eax
+00404E8D jne short 00404E82h
+00404E8F pop ecx
+00404E90 jmp 00404DA0h
+00404E95 mov edi,edi
+00404E97 push ebp
+00404E98 mov ebp,esp
+00404E9A push esi
+00404E9B mov esi,[ebp+8]
+00404E9E test esi,esi
+00404EA0 je near 00405209h
+00404EA6 push dword [esi+4]
+00404EA9 call 004039AAh
+00404EAE push dword [esi+8]
+00404EB1 call 004039AAh
+00404EB6 push dword [esi+0Ch]
+00404EB9 call 004039AAh
+00404EBE push dword [esi+10h]
+00404EC1 call 004039AAh
+00404EC6 push dword [esi+14h]
+00404EC9 call 004039AAh
+00404ECE push dword [esi+18h]
+00404ED1 call 004039AAh
+00404ED6 push dword [esi]
+00404ED8 call 004039AAh
+00404EDD push dword [esi+20h]
+00404EE0 call 004039AAh
+00404EE5 push dword [esi+24h]
+00404EE8 call 004039AAh
+00404EED push dword [esi+28h]
+00404EF0 call 004039AAh
+00404EF5 push dword [esi+2Ch]
+00404EF8 call 004039AAh
+00404EFD push dword [esi+30h]
+00404F00 call 004039AAh
+00404F05 push dword [esi+34h]
+00404F08 call 004039AAh
+00404F0D push dword [esi+1Ch]
+00404F10 call 004039AAh
+00404F15 push dword [esi+38h]
+00404F18 call 004039AAh
+00404F1D push dword [esi+3Ch]
+00404F20 call 004039AAh
+00404F25 add esp,40h
+00404F28 push dword [esi+40h]
+00404F2B call 004039AAh
+00404F30 push dword [esi+44h]
+00404F33 call 004039AAh
+00404F38 push dword [esi+48h]
+00404F3B call 004039AAh
+00404F40 push dword [esi+4Ch]
+00404F43 call 004039AAh
+00404F48 push dword [esi+50h]
+00404F4B call 004039AAh
+00404F50 push dword [esi+54h]
+00404F53 call 004039AAh
+00404F58 push dword [esi+58h]
+00404F5B call 004039AAh
+00404F60 push dword [esi+5Ch]
+00404F63 call 004039AAh
+00404F68 push dword [esi+60h]
+00404F6B call 004039AAh
+00404F70 push dword [esi+64h]
+00404F73 call 004039AAh
+00404F78 push dword [esi+68h]
+00404F7B call 004039AAh
+00404F80 push dword [esi+6Ch]
+00404F83 call 004039AAh
+00404F88 push dword [esi+70h]
+00404F8B call 004039AAh
+00404F90 push dword [esi+74h]
+00404F93 call 004039AAh
+00404F98 push dword [esi+78h]
+00404F9B call 004039AAh
+00404FA0 push dword [esi+7Ch]
+00404FA3 call 004039AAh
+00404FA8 add esp,40h
+00404FAB push dword [esi+80h]
+00404FB1 call 004039AAh
+00404FB6 push dword [esi+84h]
+00404FBC call 004039AAh
+00404FC1 push dword [esi+88h]
+00404FC7 call 004039AAh
+00404FCC push dword [esi+8Ch]
+00404FD2 call 004039AAh
+00404FD7 push dword [esi+90h]
+00404FDD call 004039AAh
+00404FE2 push dword [esi+94h]
+00404FE8 call 004039AAh
+00404FED push dword [esi+98h]
+00404FF3 call 004039AAh
+00404FF8 push dword [esi+9Ch]
+00404FFE call 004039AAh
+00405003 push dword [esi+0A0h]
+00405009 call 004039AAh
+0040500E push dword [esi+0A4h]
+00405014 call 004039AAh
+00405019 push dword [esi+0A8h]
+0040501F call 004039AAh
+00405024 push dword [esi+0BCh]
+0040502A call 004039AAh
+0040502F push dword [esi+0C0h]
+00405035 call 004039AAh
+0040503A push dword [esi+0C4h]
+00405040 call 004039AAh
+00405045 push dword [esi+0C8h]
+0040504B call 004039AAh
+00405050 push dword [esi+0CCh]
+00405056 call 004039AAh
+0040505B add esp,40h
+0040505E push dword [esi+0D0h]
+00405064 call 004039AAh
+00405069 push dword [esi+0B8h]
+0040506F call 004039AAh
+00405074 push dword [esi+0D8h]
+0040507A call 004039AAh
+0040507F push dword [esi+0DCh]
+00405085 call 004039AAh
+0040508A push dword [esi+0E0h]
+00405090 call 004039AAh
+00405095 push dword [esi+0E4h]
+0040509B call 004039AAh
+004050A0 push dword [esi+0E8h]
+004050A6 call 004039AAh
+004050AB push dword [esi+0ECh]
+004050B1 call 004039AAh
+004050B6 push dword [esi+0D4h]
+004050BC call 004039AAh
+004050C1 push dword [esi+0F0h]
+004050C7 call 004039AAh
+004050CC push dword [esi+0F4h]
+004050D2 call 004039AAh
+004050D7 push dword [esi+0F8h]
+004050DD call 004039AAh
+004050E2 push dword [esi+0FCh]
+004050E8 call 004039AAh
+004050ED push dword [esi+100h]
+004050F3 call 004039AAh
+004050F8 push dword [esi+104h]
+004050FE call 004039AAh
+00405103 push dword [esi+108h]
+00405109 call 004039AAh
+0040510E add esp,40h
+00405111 push dword [esi+10Ch]
+00405117 call 004039AAh
+0040511C push dword [esi+110h]
+00405122 call 004039AAh
+00405127 push dword [esi+114h]
+0040512D call 004039AAh
+00405132 push dword [esi+118h]
+00405138 call 004039AAh
+0040513D push dword [esi+11Ch]
+00405143 call 004039AAh
+00405148 push dword [esi+120h]
+0040514E call 004039AAh
+00405153 push dword [esi+124h]
+00405159 call 004039AAh
+0040515E push dword [esi+128h]
+00405164 call 004039AAh
+00405169 push dword [esi+12Ch]
+0040516F call 004039AAh
+00405174 push dword [esi+130h]
+0040517A call 004039AAh
+0040517F push dword [esi+134h]
+00405185 call 004039AAh
+0040518A push dword [esi+138h]
+00405190 call 004039AAh
+00405195 push dword [esi+13Ch]
+0040519B call 004039AAh
+004051A0 push dword [esi+140h]
+004051A6 call 004039AAh
+004051AB push dword [esi+144h]
+004051B1 call 004039AAh
+004051B6 push dword [esi+148h]
+004051BC call 004039AAh
+004051C1 add esp,40h
+004051C4 push dword [esi+14Ch]
+004051CA call 004039AAh
+004051CF push dword [esi+150h]
+004051D5 call 004039AAh
+004051DA push dword [esi+154h]
+004051E0 call 004039AAh
+004051E5 push dword [esi+158h]
+004051EB call 004039AAh
+004051F0 push dword [esi+15Ch]
+004051F6 call 004039AAh
+004051FB push dword [esi+160h]
+00405201 call 004039AAh
+00405206 add esp,18h
+00405209 pop esi
+0040520A pop ebp
+0040520B ret
+0040520C mov edi,edi
+0040520E push ebp
+0040520F mov ebp,esp
+00405211 push esi
+00405212 mov esi,[ebp+8]
+00405215 test esi,esi
+00405217 je short 00405272h
+00405219 mov eax,[esi]
+0040521B cmp eax,[409AA0h]
+00405221 je short 0040522Ah
+00405223 push eax
+00405224 call 004039AAh
+00405229 pop ecx
+0040522A mov eax,[esi+4]
+0040522D cmp eax,[409AA4h]
+00405233 je short 0040523Ch
+00405235 push eax
+00405236 call 004039AAh
+0040523B pop ecx
+0040523C mov eax,[esi+8]
+0040523F cmp eax,[409AA8h]
+00405245 je short 0040524Eh
+00405247 push eax
+00405248 call 004039AAh
+0040524D pop ecx
+0040524E mov eax,[esi+30h]
+00405251 cmp eax,[409AD0h]
+00405257 je short 00405260h
+00405259 push eax
+0040525A call 004039AAh
+0040525F pop ecx
+00405260 mov esi,[esi+34h]
+00405263 cmp esi,[409AD4h]
+00405269 je short 00405272h
+0040526B push esi
+0040526C call 004039AAh
+00405271 pop ecx
+00405272 pop esi
+00405273 pop ebp
+00405274 ret
+00405275 mov edi,edi
+00405277 push ebp
+00405278 mov ebp,esp
+0040527A push esi
+0040527B mov esi,[ebp+8]
+0040527E test esi,esi
+00405280 je near 00405370h
+00405286 mov eax,[esi+0Ch]
+00405289 cmp eax,[409AACh]
+0040528F je short 00405298h
+00405291 push eax
+00405292 call 004039AAh
+00405297 pop ecx
+00405298 mov eax,[esi+10h]
+0040529B cmp eax,[409AB0h]
+004052A1 je short 004052AAh
+004052A3 push eax
+004052A4 call 004039AAh
+004052A9 pop ecx
+004052AA mov eax,[esi+14h]
+004052AD cmp eax,[409AB4h]
+004052B3 je short 004052BCh
+004052B5 push eax
+004052B6 call 004039AAh
+004052BB pop ecx
+004052BC mov eax,[esi+18h]
+004052BF cmp eax,[409AB8h]
+004052C5 je short 004052CEh
+004052C7 push eax
+004052C8 call 004039AAh
+004052CD pop ecx
+004052CE mov eax,[esi+1Ch]
+004052D1 cmp eax,[409ABCh]
+004052D7 je short 004052E0h
+004052D9 push eax
+004052DA call 004039AAh
+004052DF pop ecx
+004052E0 mov eax,[esi+20h]
+004052E3 cmp eax,[409AC0h]
+004052E9 je short 004052F2h
+004052EB push eax
+004052EC call 004039AAh
+004052F1 pop ecx
+004052F2 mov eax,[esi+24h]
+004052F5 cmp eax,[409AC4h]
+004052FB je short 00405304h
+004052FD push eax
+004052FE call 004039AAh
+00405303 pop ecx
+00405304 mov eax,[esi+38h]
+00405307 cmp eax,[409AD8h]
+0040530D je short 00405316h
+0040530F push eax
+00405310 call 004039AAh
+00405315 pop ecx
+00405316 mov eax,[esi+3Ch]
+00405319 cmp eax,[409ADCh]
+0040531F je short 00405328h
+00405321 push eax
+00405322 call 004039AAh
+00405327 pop ecx
+00405328 mov eax,[esi+40h]
+0040532B cmp eax,[409AE0h]
+00405331 je short 0040533Ah
+00405333 push eax
+00405334 call 004039AAh
+00405339 pop ecx
+0040533A mov eax,[esi+44h]
+0040533D cmp eax,[409AE4h]
+00405343 je short 0040534Ch
+00405345 push eax
+00405346 call 004039AAh
+0040534B pop ecx
+0040534C mov eax,[esi+48h]
+0040534F cmp eax,[409AE8h]
+00405355 je short 0040535Eh
+00405357 push eax
+00405358 call 004039AAh
+0040535D pop ecx
+0040535E mov esi,[esi+4Ch]
+00405361 cmp esi,[409AECh]
+00405367 je short 00405370h
+00405369 push esi
+0040536A call 004039AAh
+0040536F pop ecx
+00405370 pop esi
+00405371 pop ebp
+00405372 ret
+00405373 mov edi,edi
+00405375 push ebp
+00405376 mov ebp,esp
+00405378 sub esp,10h
+0040537B mov eax,[409310h]
+00405380 xor eax,ebp
+00405382 mov [ebp-4],eax
+00405385 mov edx,[ebp+18h]
+00405388 push ebx
+00405389 xor ebx,ebx
+0040538B push esi
+0040538C push edi
+0040538D cmp edx,ebx
+0040538F jle short 004053B0h
+00405391 mov eax,[ebp+14h]
+00405394 mov ecx,edx
+00405396 dec ecx
+00405397 cmp [eax],bl
+00405399 je short 004053A3h
+0040539B inc eax
+0040539C cmp ecx,ebx
+0040539E jne short 00405396h
+004053A0 or ecx,0FFFFFFFFh
+004053A3 mov eax,edx
+004053A5 sub eax,ecx
+004053A7 dec eax
+004053A8 cmp eax,edx
+004053AA jge short 004053ADh
+004053AC inc eax
+004053AD mov [ebp+18h],eax
+004053B0 mov [ebp-8],ebx
+004053B3 cmp [ebp+24h],ebx
+004053B6 jne short 004053C3h
+004053B8 mov eax,[ebp+8]
+004053BB mov eax,[eax]
+004053BD mov eax,[eax+4]
+004053C0 mov [ebp+24h],eax
+004053C3 mov esi,[406094h]
+004053C9 xor eax,eax
+004053CB cmp [ebp+28h],ebx
+004053CE push ebx
+004053CF push ebx
+004053D0 push dword [ebp+18h]
+004053D3 setne al
+004053D6 push dword [ebp+14h]
+004053D9 lea eax,[eax*8+1]
+004053E0 push eax
+004053E1 push dword [ebp+24h]
+004053E4 call esi
+004053E6 mov edi,eax
+004053E8 mov [ebp-10h],edi
+004053EB cmp edi,ebx
+004053ED jne short 004053F6h
+004053EF xor eax,eax
+004053F1 jmp 00405548h
+004053F6 jle short 0040543Bh
+004053F8 push 0FFFFFFE0h
+004053FA xor edx,edx
+004053FC pop eax
+004053FD div edi
+004053FF cmp eax,2
+00405402 jb short 0040543Bh
+00405404 lea eax,[edi+edi+8]
+00405408 cmp eax,400h
+0040540D ja short 00405422h
+0040540F call 00405810h
+00405414 mov eax,esp
+00405416 cmp eax,ebx
+00405418 je short 00405436h
+0040541A mov dword [eax],0CCCCh
+00405420 jmp short 00405433h
+00405422 push eax
+00405423 call 00404BCFh
+00405428 pop ecx
+00405429 cmp eax,ebx
+0040542B je short 00405436h
+0040542D mov dword [eax],0DDDDh
+00405433 add eax,8
+00405436 mov [ebp-0Ch],eax
+00405439 jmp short 0040543Eh
+0040543B mov [ebp-0Ch],ebx
+0040543E cmp [ebp-0Ch],ebx
+00405441 je short 004053EFh
+00405443 push edi
+00405444 push dword [ebp-0Ch]
+00405447 push dword [ebp+18h]
+0040544A push dword [ebp+14h]
+0040544D push 1
+0040544F push dword [ebp+24h]
+00405452 call esi
+00405454 test eax,eax
+00405456 je near 0040553Ch
+0040545C mov esi,[406030h]
+00405462 push ebx
+00405463 push ebx
+00405464 push edi
+00405465 push dword [ebp-0Ch]
+00405468 push dword [ebp+10h]
+0040546B push dword [ebp+0Ch]
+0040546E call esi
+00405470 mov [ebp-8],eax
+00405473 cmp eax,ebx
+00405475 je near 0040553Ch
+0040547B mov ecx,400h
+00405480 test [ebp+10h],ecx
+00405483 je short 004054AEh
+00405485 mov eax,[ebp+20h]
+00405488 cmp eax,ebx
+0040548A je near 0040553Ch
+00405490 cmp [ebp-8],eax
+00405493 jg near 0040553Ch
+00405499 push eax
+0040549A push dword [ebp+1Ch]
+0040549D push edi
+0040549E push dword [ebp-0Ch]
+004054A1 push dword [ebp+10h]
+004054A4 push dword [ebp+0Ch]
+004054A7 call esi
+004054A9 jmp 0040553Ch
+004054AE mov edi,[ebp-8]
+004054B1 cmp edi,ebx
+004054B3 jle short 004054F7h
+004054B5 push 0FFFFFFE0h
+004054B7 xor edx,edx
+004054B9 pop eax
+004054BA div edi
+004054BC cmp eax,2
+004054BF jb short 004054F7h
+004054C1 lea eax,[edi+edi+8]
+004054C5 cmp eax,ecx
+004054C7 ja short 004054DFh
+004054C9 call 00405810h
+004054CE mov edi,esp
+004054D0 cmp edi,ebx
+004054D2 je short 0040553Ch
+004054D4 mov dword [edi],0CCCCh
+004054DA add edi,8
+004054DD jmp short 004054F9h
+004054DF push eax
+004054E0 call 00404BCFh
+004054E5 pop ecx
+004054E6 cmp eax,ebx
+004054E8 je short 004054F3h
+004054EA mov dword [eax],0DDDDh
+004054F0 add eax,8
+004054F3 mov edi,eax
+004054F5 jmp short 004054F9h
+004054F7 xor edi,edi
+004054F9 cmp edi,ebx
+004054FB je short 0040553Ch
+004054FD push dword [ebp-8]
+00405500 push edi
+00405501 push dword [ebp-10h]
+00405504 push dword [ebp-0Ch]
+00405507 push dword [ebp+10h]
+0040550A push dword [ebp+0Ch]
+0040550D call esi
+0040550F test eax,eax
+00405511 je short 00405535h
+00405513 push ebx
+00405514 push ebx
+00405515 cmp [ebp+20h],ebx
+00405518 jne short 0040551Eh
+0040551A push ebx
+0040551B push ebx
+0040551C jmp short 00405524h
+0040551E push dword [ebp+20h]
+00405521 push dword [ebp+1Ch]
+00405524 push dword [ebp-8]
+00405527 push edi
+00405528 push ebx
+00405529 push dword [ebp+24h]
+0040552C call dword [406040h]
+00405532 mov [ebp-8],eax
+00405535 push edi
+00405536 call 00404A65h
+0040553B pop ecx
+0040553C push dword [ebp-0Ch]
+0040553F call 00404A65h
+00405544 mov eax,[ebp-8]
+00405547 pop ecx
+00405548 lea esp,[ebp-1Ch]
+0040554B pop edi
+0040554C pop esi
+0040554D pop ebx
+0040554E mov ecx,[ebp-4]
+00405551 xor ecx,ebp
+00405553 call 0040399Bh
+00405558 leave
+00405559 ret
+0040555A mov edi,edi
+0040555C push ebp
+0040555D mov ebp,esp
+0040555F sub esp,10h
+00405562 push dword [ebp+8]
+00405565 lea ecx,[ebp-10h]
+00405568 call 00404431h
+0040556D push dword [ebp+28h]
+00405570 lea eax,[ebp-10h]
+00405573 push dword [ebp+24h]
+00405576 push dword [ebp+20h]
+00405579 push dword [ebp+1Ch]
+0040557C push dword [ebp+18h]
+0040557F push dword [ebp+14h]
+00405582 push dword [ebp+10h]
+00405585 push dword [ebp+0Ch]
+00405588 push eax
+00405589 call 00405373h
+0040558E add esp,24h
+00405591 cmp byte [ebp-4],0
+00405595 je short 0040559Eh
+00405597 mov ecx,[ebp-8]
+0040559A and dword [ecx+70h],0FFFFFFFDh
+0040559E leave
+0040559F ret
+004055A0 mov edi,edi
+004055A2 push ebp
+004055A3 mov ebp,esp
+004055A5 push ecx
+004055A6 push ecx
+004055A7 mov eax,[409310h]
+004055AC xor eax,ebp
+004055AE mov [ebp-4],eax
+004055B1 push ebx
+004055B2 xor ebx,ebx
+004055B4 push esi
+004055B5 push edi
+004055B6 mov [ebp-8],ebx
+004055B9 cmp [ebp+1Ch],ebx
+004055BC jne short 004055C9h
+004055BE mov eax,[ebp+8]
+004055C1 mov eax,[eax]
+004055C3 mov eax,[eax+4]
+004055C6 mov [ebp+1Ch],eax
+004055C9 mov esi,[406094h]
+004055CF xor eax,eax
+004055D1 cmp [ebp+20h],ebx
+004055D4 push ebx
+004055D5 push ebx
+004055D6 push dword [ebp+14h]
+004055D9 setne al
+004055DC push dword [ebp+10h]
+004055DF lea eax,[eax*8+1]
+004055E6 push eax
+004055E7 push dword [ebp+1Ch]
+004055EA call esi
+004055EC mov edi,eax
+004055EE cmp edi,ebx
+004055F0 jne short 004055F6h
+004055F2 xor eax,eax
+004055F4 jmp short 00405675h
+004055F6 jle short 00405634h
+004055F8 cmp edi,7FFFFFF0h
+004055FE ja short 00405634h
+00405600 lea eax,[edi+edi+8]
+00405604 cmp eax,400h
+00405609 ja short 0040561Eh
+0040560B call 00405810h
+00405610 mov eax,esp
+00405612 cmp eax,ebx
+00405614 je short 00405632h
+00405616 mov dword [eax],0CCCCh
+0040561C jmp short 0040562Fh
+0040561E push eax
+0040561F call 00404BCFh
+00405624 pop ecx
+00405625 cmp eax,ebx
+00405627 je short 00405632h
+00405629 mov dword [eax],0DDDDh
+0040562F add eax,8
+00405632 mov ebx,eax
+00405634 test ebx,ebx
+00405636 je short 004055F2h
+00405638 lea eax,[edi+edi]
+0040563B push eax
+0040563C push 0
+0040563E push ebx
+0040563F call 00401600h
+00405644 add esp,0Ch
+00405647 push edi
+00405648 push ebx
+00405649 push dword [ebp+14h]
+0040564C push dword [ebp+10h]
+0040564F push 1
+00405651 push dword [ebp+1Ch]
+00405654 call esi
+00405656 test eax,eax
+00405658 je short 0040566Bh
+0040565A push dword [ebp+18h]
+0040565D push eax
+0040565E push ebx
+0040565F push dword [ebp+0Ch]
+00405662 call dword [4060BCh]
+00405668 mov [ebp-8],eax
+0040566B push ebx
+0040566C call 00404A65h
+00405671 mov eax,[ebp-8]
+00405674 pop ecx
+00405675 lea esp,[ebp-14h]
+00405678 pop edi
+00405679 pop esi
+0040567A pop ebx
+0040567B mov ecx,[ebp-4]
+0040567E xor ecx,ebp
+00405680 call 0040399Bh
+00405685 leave
+00405686 ret
+00405687 mov edi,edi
+00405689 push ebp
+0040568A mov ebp,esp
+0040568C sub esp,10h
+0040568F push dword [ebp+8]
+00405692 lea ecx,[ebp-10h]
+00405695 call 00404431h
+0040569A push dword [ebp+24h]
+0040569D lea eax,[ebp-10h]
+004056A0 push dword [ebp+1Ch]
+004056A3 push dword [ebp+18h]
+004056A6 push dword [ebp+14h]
+004056A9 push dword [ebp+10h]
+004056AC push dword [ebp+0Ch]
+004056AF push eax
+004056B0 call 004055A0h
+004056B5 add esp,1Ch
+004056B8 cmp byte [ebp-4],0
+004056BC je short 004056C5h
+004056BE mov ecx,[ebp-8]
+004056C1 and dword [ecx+70h],0FFFFFFFDh
+004056C5 leave
+004056C6 ret
+004056C7 int3
+004056C8 int3
+004056C9 int3
+004056CA int3
+004056CB int3
+004056CC int3
+004056CD int3
+004056CE int3
+004056CF int3
+004056D0 push ebp
+004056D1 mov ebp,esp
+004056D3 push ebx
+004056D4 push esi
+004056D5 push edi
+004056D6 push ebp
+004056D7 push 0
+004056D9 push 0
+004056DB push 4056E8h
+004056E0 push dword [ebp+8]
+004056E3 call 0040586Ch
+004056E8 pop ebp
+004056E9 pop edi
+004056EA pop esi
+004056EB pop ebx
+004056EC mov esp,ebp
+004056EE pop ebp
+004056EF ret
+004056F0 mov ecx,[esp+4]
+004056F4 test dword [ecx+4],6
+004056FB mov eax,1
+00405700 je short 00405734h
+00405702 mov eax,[esp+14h]
+00405706 mov ecx,[eax-4]
+00405709 xor ecx,eax
+0040570B call 0040399Bh
+00405710 push ebp
+00405711 mov ebp,[eax+10h]
+00405714 mov edx,[eax+28h]
+00405717 push edx
+00405718 mov edx,[eax+24h]
+0040571B push edx
+0040571C call 00405735h
+00405721 add esp,8
+00405724 pop ebp
+00405725 mov eax,[esp+8]
+00405729 mov edx,[esp+10h]
+0040572D mov [edx],eax
+0040572F mov eax,3
+00405734 ret
+00405735 push ebx
+00405736 push esi
+00405737 push edi
+00405738 mov eax,[esp+10h]
+0040573C push ebp
+0040573D push eax
+0040573E push 0FFFFFFFEh
+00405740 push 4056F0h
+00405745 push dword [fs:0]
+0040574C mov eax,[409310h]
+00405751 xor eax,esp
+00405753 push eax
+00405754 lea eax,[esp+4]
+00405758 mov [fs:0],eax
+0040575E mov eax,[esp+28h]
+00405762 mov ebx,[eax+8]
+00405765 mov esi,[eax+0Ch]
+00405768 cmp esi,0FFFFFFFFh
+0040576B je short 004057A7h
+0040576D cmp dword [esp+2Ch],0FFFFFFFFh
+00405772 je short 0040577Ah
+00405774 cmp esi,[esp+2Ch]
+00405778 jbe short 004057A7h
+0040577A lea esi,[esi+esi*2]
+0040577D mov ecx,[ebx+esi*4]
+00405780 mov [esp+0Ch],ecx
+00405784 mov [eax+0Ch],ecx
+00405787 cmp dword [ebx+esi*4+4],0
+0040578C jne short 004057A5h
+0040578E push 101h
+00405793 mov eax,[ebx+esi*4+8]
+00405797 call 004057E5h
+0040579C mov eax,[ebx+esi*4+8]
+004057A0 call 00405804h
+004057A5 jmp short 0040575Eh
+004057A7 mov ecx,[esp+4]
+004057AB mov [fs:0],ecx
+004057B2 add esp,18h
+004057B5 pop edi
+004057B6 pop esi
+004057B7 pop ebx
+004057B8 ret
+004057B9 xor eax,eax
+004057BB mov ecx,[fs:0]
+004057C2 cmp dword [ecx+4],4056F0h
+004057C9 jne short 004057DBh
+004057CB mov edx,[ecx+0Ch]
+004057CE mov edx,[edx+0Ch]
+004057D1 cmp [ecx+8],edx
+004057D4 jne short 004057DBh
+004057D6 mov eax,1
+004057DB ret
+004057DC push ebx
+004057DD push ecx
+004057DE mov ebx,409B00h
+004057E3 jmp short 004057F0h
+004057E5 push ebx
+004057E6 push ecx
+004057E7 mov ebx,409B00h
+004057EC mov ecx,[esp+0Ch]
+004057F0 mov [ebx+8],ecx
+004057F3 mov [ebx+4],eax
+004057F6 mov [ebx+0Ch],ebp
+004057F9 push ebp
+004057FA push ecx
+004057FB push eax
+004057FC pop eax
+004057FD pop ecx
+004057FE pop ebp
+004057FF pop ecx
+00405800 pop ebx
+00405801 ret 4
+00405804 call eax
+00405806 ret
+00405807 int3
+00405808 int3
+00405809 int3
+0040580A int3
+0040580B int3
+0040580C int3
+0040580D int3
+0040580E int3
+0040580F int3
+00405810 push ecx
+00405811 lea ecx,[esp+8]
+00405815 sub ecx,eax
+00405817 and ecx,0Fh
+0040581A add eax,ecx
+0040581C sbb ecx,ecx
+0040581E or eax,ecx
+00405820 pop ecx
+00405821 jmp 00405840h
+00405826 push ecx
+00405827 lea ecx,[esp+8]
+0040582B sub ecx,eax
+0040582D and ecx,7
+00405830 add eax,ecx
+00405832 sbb ecx,ecx
+00405834 or eax,ecx
+00405836 pop ecx
+00405837 jmp 00405840h
+0040583C int3
+0040583D int3
+0040583E int3
+0040583F int3
+00405840 push ecx
+00405841 lea ecx,[esp+4]
+00405845 sub ecx,eax
+00405847 sbb eax,eax
+00405849 not eax
+0040584B and ecx,eax
+0040584D mov eax,esp
+0040584F and eax,0FFFFF000h
+00405854 cmp ecx,eax
+00405856 jb short 00405862h
+00405858 mov eax,ecx
+0040585A pop ecx
+0040585B xchg esp,eax
+0040585C mov eax,[eax]
+0040585E mov [esp],eax
+00405861 ret
+00405862 sub eax,1000h
+00405867 test [eax],eax
+00405869 jmp short 00405854h
+0040586B int3
+0040586C jmp dword [406044h]
